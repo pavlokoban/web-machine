@@ -2,7 +2,7 @@ import * as React from 'react';
 import Link from 'next/link';
 import dataArticles from "../utils/dataArticles";
 import Image from 'next/image';
-import { Article } from '../types'; // Импорт интерфейса
+import { Article } from './types'; // Импорт интерфейса
 
 interface ServicesItemProps {
   article: Article;
