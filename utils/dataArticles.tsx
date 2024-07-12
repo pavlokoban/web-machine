@@ -1,5 +1,6 @@
 import { Article } from '../components/types';
-const dataArticles = {
+
+const dataArticles: { articles: Article[] } = {
     articles:[
         {
             name: 'Web Development',
