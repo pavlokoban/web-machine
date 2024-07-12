@@ -1,3 +1,4 @@
+import { Article } from '../components/types';
 const dataArticles = {
     articles:[
         {
