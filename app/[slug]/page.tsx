@@ -17,7 +17,7 @@ export default function ServicePageScreen() {
 
     return (
         <div>
-            <LayoutMain title={articlePage.name}>
+            <LayoutMain>
                 <h1>{articlePage.name}</h1>
             </LayoutMain>
         </div>
