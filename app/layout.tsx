@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
 import { Unbounded } from "next/font/google";
-import { Inter } from "next/font/google";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 
 const unbounded = Unbounded({ subsets: ["latin", "cyrillic-ext"]});
 const montserrat = Montserrat ({ subsets: ["latin", "cyrillic-ext"]});
-const inter = Inter ({ subsets: ["latin", "cyrillic-ext"]});
-
-
 
 export const metadata: Metadata = {
   title: "Web Machine Rocks!",

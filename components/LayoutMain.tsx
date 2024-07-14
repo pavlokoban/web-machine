@@ -4,12 +4,9 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import MainComponent from './MainComponent';
 
-export default function LayoutMain({title, children}){
+export default function LayoutMain({}){
 return (
     <>
-    <head>
-        <title>{title ? title + ' WM': ' WM1'}</title>
-    </head>
         <body>
         <div className={'flex min-h-screen flex-col justify-between'}>
             <header>
