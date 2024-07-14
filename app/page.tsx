@@ -7,7 +7,7 @@ import MainComponent from "@/components/MainComponent";
 export default function Home() {
   return (
     <>
-<LayoutMain title={'Home page'}>
+<LayoutMain>
     <MainComponent></MainComponent>
 </LayoutMain>
     </>

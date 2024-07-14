@@ -1,0 +1,93 @@
+.burgerButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  
+  .dot {
+    width: 6px;
+    height: 6px;
+    background-color: #333;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    margin: 0 3px;
+  }
+  
+  .burgerButton:hover .dot {
+    animation: glitch 0.9s forwards;
+  }
+  
+  @keyframes glitch {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .burgerButton.open .dot:nth-child(1) {
+    transform: translateX(8px);
+  }
+  
+  .burgerButton.open .dot:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burgerButton.open .dot:nth-child(3) {
+    transform: translateX(-8px);
+  }
+  
+  .closeIcon {
+    font-size: 80px; /* Увеличиваем размер крестика по-умолчанию 36px */
+    color: #333;
+  }
+  
+  .menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 60px); /* Почти до верха */
+    background-color: #fff;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    overflow: hidden;
+  }
+  
+  .menuOpen {
+    bottom: 0;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .menu li {
+    margin: 20px 0;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+  }
+  

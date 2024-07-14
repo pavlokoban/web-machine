@@ -11,13 +11,13 @@ export default function ServicePageScreen() {
 
     if (!articlePage) {
         return (
-            <h1>Page not found</h1>
+            <h1>Page not found-slugs</h1>
         );
     }
 
     return (
         <div>
-            <LayoutMain title={articlePage.name}>
+            <LayoutMain>
                 <h1>{articlePage.name}</h1>
             </LayoutMain>
         </div>
