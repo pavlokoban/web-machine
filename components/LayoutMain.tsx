@@ -22,7 +22,7 @@ const LayoutMain: React.FC<LayoutMainProps> = ({ children }) => {
               <img src='/web-machine-rocks-logo.svg' width={206} height={42} />
             </Link>
             <div className={'p-1'}>
-                <div className={'only-desc'}>
+                <div className={'only-desc main-menu-links'}>
               <Link className={'text-lg p-2'} href="/">
                 Web Development
               </Link>

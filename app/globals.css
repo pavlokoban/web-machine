@@ -83,6 +83,9 @@ h3  {
   height: 77px;
   border-bottom: solid 1px #F2F2F2;
 }
+.main-menu-links{
+  margin-right: 70px;
+}
 
 @layer utilities {
   .text-balance {

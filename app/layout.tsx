@@ -1,10 +1,12 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import { Unbounded } from "next/font/google";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import ClientLayout from "./client-layout";
 
-const unbounded = Unbounded({ subsets: ["latin", "cyrillic-ext"]});
-const montserrat = Montserrat ({ subsets: ["latin", "cyrillic-ext"]});
+const unbounded = Unbounded({ subsets: ["latin", "cyrillic-ext"] });
+const montserrat = Montserrat({ subsets: ["latin", "cyrillic-ext"] });
 
 export const metadata: Metadata = {
   title: "Web Machine Rocks!",
@@ -18,7 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>{children}</body>
+      <body className={montserrat.className}>
+        <ClientLayout>
+          {children}
+        </ClientLayout>
+      </body>
     </html>
   );
 }
