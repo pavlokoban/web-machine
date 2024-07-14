@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Head from 'next/head';
 import styles from './RuStyle.module.css'
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "2Web Machine Rocks!",
