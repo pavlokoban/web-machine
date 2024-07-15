@@ -38,6 +38,9 @@ body {
   font-style: normal;
   font-display: swap;
 }
+.hego-screen {
+  width:auto;
+}
 
 h1, h2 {
   font-family: 'Unbounded', system-ui, sans-serif;
@@ -46,17 +49,39 @@ h1, h2 {
 h1  {
   font-size: 61px;
   font-weight: 700;
+  line-height: 1.5;
+  margin-top: 24px;
 }
 
 h2  {
   font-size: 32px;
   font-weight: 500;
+  line-height: 1.5;
+  margin-top: 22px;
 }
 
 h3  {
   font-size: 24px;
   font-weight: 500;
+  line-height: 1.5;
+  margin-top: 18px;
 }
+
+/*@layer components {
+  .multimple-link {
+    @apply font-bold no-underline;
+    @apply bg-gradient-to-r from-green-500 to-pink-500;
+    @apply bg-no-repeat bg-left-bottom;
+    @apply bg-[length:0.3px];
+    @apply transition-all duration-500;
+
+  }
+  
+  .multimple-link:hover {
+    @apply bg-[length:100%_3px];
+  }
+}
+*/
 
 .telegram-bottom {
   margin-right: 20px;
@@ -92,6 +117,233 @@ h3  {
     text-wrap: balance;
   }
 }
+
+
+/* эффекты */
+/* The Text Swapping Link Hover Effect */
+.a-anim {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+.a-anim::before,
+.a-anim::after {
+ content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.a-anim::before {
+  background-color: #000;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.a-anim::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  color:#000;
+}
+
+.a-anim:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+.a-anim:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+.a-anim span {
+  display: inline-block;
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.a-anim:hover span {
+  transform: translate3d(-200%, 0, 0);
+}
+
+/* глитч */
+.glitch {
+  
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 67px;
+  top: 50%;
+  left: 50%;
+  letter-spacing: 5px;
+  font-weight: 700;
+  position: relative;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #000;
+
+  
+  &:before, &:after {
+    display: block;
+    content: attr(data-glitch);
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+  } &:after {
+    color: #f0f;
+    z-index: -2;
+  } &:before {
+    color: #0ff;
+    z-index: -1;
+  }
+  &:hover {
+    &:before {
+      animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both 5
+    }
+    &:after {
+      animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both 5
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .glitch {
+    font-size: 3em;
+  }
+}
+
+
+@keyframes glitch {
+  0% {
+    transform: translate(0)
+  }
+  20% {
+    transform: translate(-5px, 5px)
+  }
+  40% {
+    transform: translate(-5px, -5px)
+  }
+  60% {
+    transform: translate(5px, 5px)
+  }
+  80% {
+    transform: translate(5px, -5px)
+  }
+  to {
+    transform: translate(0)
+  }
+}
+
+/* круги */
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+.hero-background {
+  position: absolute; /* Changed to fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible; /* Changed to visible */
+  z-index: -1;
+}
+
+.hero-background svg {
+  position: absolute;
+  animation: float 10s ease-in-out infinite;
+}
+
+.circle1 {
+  width: 2000px;
+  height: 2000px;
+  stroke: rgba(117, 117, 117, 0.5);
+  animation-duration: 15s;
+  animation-delay: 0s;
+  left: -10%;
+  top: -20%;
+}
+
+.circle2 {
+  width: 900px;
+  height: 900px;
+  stroke: rgba(0, 0, 0, 0.5);
+  animation-duration: 20s;
+  animation-delay: 3s;
+  left: 50%;
+  top: -5%;
+}
+
+.circle3 {
+  width: 1250px;
+  height: 1250px;
+  stroke: rgba(0, 0, 255, 0.5);
+  animation-duration: 25s;
+  animation-delay: 5s;
+  left: 70%;
+  top: 30%;
+}
+
+/* Падающие элементы стека */
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+.falling-text {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.5); /* Сделать текст светлее */
+  font-size: 20px;
+  animation: fall linear infinite;
+  pointer-events: none; /* Make sure text doesn't interfere with cursor */
+  font-family: 'Unbounded', inherit;
+  /*font-family: inherit;  Использовать дефолтный шрифт проекта */
+  white-space: nowrap; /* Предотвратить перенос текста на следующую строку */
+  padding: 0 10px; /* Добавить отступы, чтобы избежать слипания */
+}
+
+#hero-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /* Ensure falling text stays within the view */
+  z-index: 1; /* Ensure it's on top */
+}
+
+#content-container {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  margin-top: 60px;
+  z-index: 0; /* Ensure it's below hero-container */
+}
+
+/* Медиа */
+
+
 
 @media (max-width: 992px) { 
   .only-desc {

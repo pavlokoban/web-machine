@@ -28,7 +28,7 @@ const Nav: React.FC = () => {
       </button>
       <div className={`${styles.menu} ${isOpen ? styles.menuOpen : ''}`}>
         <ul>
-          <li><a href="/">Home</a></li>
+          <li><a className="a-anim" href="/">Home</a></li>
           <li><a href="/services">Services</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>

@@ -19,18 +19,21 @@ const LayoutMain: React.FC<LayoutMainProps> = ({ children }) => {
         <header>
           <nav className={'flex h-12 items-center p-4 justify-between header-common'}>
             <Link className={'text-lg font-bold'} href="/">
-              <img src='/web-machine-rocks-logo.svg' width={206} height={42} />
+              <img src='/web-machine-rocks-logo.svg' width={170} height={35} />
             </Link>
             <div className={'p-1'}>
                 <div className={'only-desc main-menu-links'}>
-              <Link className={'text-lg p-2'} href="/">
+              <Link className={'p-2  a-anim'} href="/web-development">
                 Web Development
               </Link>
-              <Link className={'text-lg p-2'} href="/">
+              <Link className={'p-2 a-anim'} href="/seo">
                 SEO
               </Link>
-              <Link className={'text-lg p-2'} href="/">
-                Advertisiment
+              <Link className={'p-2 a-anim'} href="/ru">
+                ru
+              </Link>
+              <Link className={'p-2 a-anim'} href="/about">
+                About
               </Link>
               </div>
               <Nav />
