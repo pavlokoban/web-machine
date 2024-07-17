@@ -67,6 +67,13 @@ h3  {
   margin-top: 18px;
 }
 
+.h3ash1  {
+  font-size: 61px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 24px;
+}
+
 /*@layer components {
   .multimple-link {
     @apply font-bold no-underline;
@@ -510,6 +517,9 @@ h3  {
     display: none;
   }
   h1 {
+    font-size: 42px;
+  }
+  .h3ash1 {
     font-size: 42px;
   }
   .big-padding-top-desc {

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from './ContactForm.module.css';
 
 interface FormData {
   services: string[];
@@ -48,14 +49,14 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <form className="contactForm" onSubmit={handleSubmit}>
-      <h2>Let’s do something awesome!</h2>
+    <form className={styles.contactForm} onSubmit={handleSubmit}>
+      <h2 className={'h3ash1'}>Let’s do something awesome!</h2>
       <p>Tell us about your project and we will make it true. Fill out the form and send an email to hello@web-machine.rocks</p>
 
       <h3>Services</h3>
-      <div className="options">
+      <div className={styles.options}>
         {['web-development', 'design', 'promotion', 'other'].map((service) => (
-          <label key={service} className={`option ${formData.services.includes(service) ? 'selected' : ''}`}>
+          <label key={service} className={`${styles.option} ${formData.services.includes(service) ? styles.selected : ''}`}>
             <input
               type="checkbox"
               name="services"
@@ -69,9 +70,9 @@ const ContactForm: React.FC = () => {
       </div>
 
       <h3>Budget</h3>
-      <div className="options">
+      <div className={styles.options}>
         {['less than $1k', '$1k-3k', '$3k-7k', '$7k+'].map((budget) => (
-          <label key={budget} className={`option ${formData.budget === budget ? 'selected' : ''}`}>
+          <label key={budget} className={`${styles.option} ${formData.budget === budget ? styles.selected : ''}`}>
             <input
               type="radio"
               name="budget"
@@ -86,26 +87,28 @@ const ContactForm: React.FC = () => {
 
       <h3>Task</h3>
       <textarea
-        className="textarea"
+        className={styles.textarea}
         name="task"
         placeholder="Description (optional)"
         value={formData.task}
         onChange={handleChange}
       />
 
-      <label className="fileLabel">
+      <label className={styles.fileLabel}>
         Add File
         <input
           type="file"
-          className="fileInput"
+          className={styles.fileInput}
           accept=".pdf,.txt,.doc,.docx,.jpeg,.fig,.png"
           onChange={handleChange}
         />
       </label>
 
-      <div className="inputGroup">
+      <div className={'grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2'}>
+
+      <div className={styles.inputGroup}>
         <input
-          className="input"
+          className={styles.input}
           type="text"
           name="name"
           placeholder="Your Name"
@@ -116,9 +119,9 @@ const ContactForm: React.FC = () => {
         />
       </div>
 
-      <div className="inputGroup">
+      <div className={styles.inputGroup}>
         <input
-          className="input"
+          className={styles.input}
           type="email"
           name="email"
           placeholder="Your Email"
@@ -128,9 +131,9 @@ const ContactForm: React.FC = () => {
         />
       </div>
 
-      <div className="inputGroup">
+      <div className={styles.inputGroup}>
         <input
-          className="input"
+          className={styles.input}
           type="text"
           name="message"
           placeholder="Message"
@@ -139,9 +142,9 @@ const ContactForm: React.FC = () => {
         />
       </div>
 
-      <div className="inputGroup">
+      <div className={styles.inputGroup}>
         <input
-          className="input"
+          className={styles.input}
           type="tel"
           name="phone"
           placeholder="+1"
@@ -151,12 +154,13 @@ const ContactForm: React.FC = () => {
           required
         />
       </div>
+      </div>
 
-      <button type="submit" className="submitButton telegramim_pulse">
-        <span className="buttonText">Start</span>
-        <span className="buttonWaves"></span>
+      <button type="submit" className={`${styles.submitButton}`}>
+        <span className={styles.buttonText}>Send</span>
+        <span className={styles.buttonWaves}></span>
       </button>
-      <p className="privacyText">
+      <p className={styles.privacyText}>
         By sending this request, you agree that your data will be stored and processed by the website. For more information, please read our Privacy Policy.
       </p>
     </form>
