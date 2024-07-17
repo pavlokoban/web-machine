@@ -3,7 +3,15 @@
 import React from 'react';
 import Link from 'next/link';
 
-const AnimatedLink = ({ href, imgSrc, imgAlt, caseText, titleText }) => {
+interface AnimatedLinkProps {
+  href: string;
+  imgSrc: string;
+  imgAlt: string;
+  caseText: string;
+  titleText: string;
+}
+
+const AnimatedLink: React.FC<AnimatedLinkProps> = ({ href, imgSrc, imgAlt, caseText, titleText }) => {
   return (
     <Link href={href}>
       <div className="animated-link relative group">

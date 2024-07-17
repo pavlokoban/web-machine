@@ -3,7 +3,15 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
-const AnimatedVideoLink = ({ href, videoSrcWebm, videoSrcMp4, caseText, titleText }) => {
+interface AnimatedVideoLinkProps {
+  href: string;
+  videoSrcWebm: string;
+  videoSrcMp4: string;
+  caseText: string;
+  titleText: string;
+}
+
+const AnimatedVideoLink: React.FC<AnimatedVideoLinkProps> = ({ href, videoSrcWebm, videoSrcMp4, caseText, titleText }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
