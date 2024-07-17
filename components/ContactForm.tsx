@@ -24,7 +24,10 @@ const ContactForm: React.FC = () => {
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value, type, checked, files } = e.target;
+    const { name, value, type } = e.target as HTMLInputElement;
+    const checked = (e.target as HTMLInputElement).checked;
+    const files = (e.target as HTMLInputElement).files;
+
     if (type === 'checkbox') {
       setFormData((prev) => ({
         ...prev,
