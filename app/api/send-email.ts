@@ -7,11 +7,11 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
 
     // Настройка отправки почты
     const transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-          user: 'webmachinerocks@gmail.com', // ваш email
-          pass: 'Jerusalem112', // ваш пароль
-        },
+      service: 'gmail',
+      auth: {
+        user: 'webmachinerocks@gmail.com', // ваш email
+        pass: 'Jerusalem112', // ваш пароль
+      },
     });
 
     const mailOptions = {

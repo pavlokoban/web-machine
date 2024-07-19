@@ -88,7 +88,7 @@ const ContactForm: React.FC = () => {
   return (
     <div>
       <form className={styles.contactForm} onSubmit={handleSubmit}>
-        <h2 className='h3ash1'>Let’s do something awesome!</h2>
+        <h2>Let’s do something awesome!</h2>
         <p>Tell us about your project and we will make it true. Fill out the form and send an email to hello@web-machine.rocks</p>
 
         <h3>Services</h3>
@@ -191,7 +191,7 @@ const ContactForm: React.FC = () => {
           />
         </div>
 
-        <button type="submit" className={`${styles.submitButton}`}>
+        <button type="submit" className={`${styles.submitButton} telegramim_pulse`}>
           <span className={styles.buttonText}>Send</span>
           <span className={styles.buttonWaves}></span>
         </button>
