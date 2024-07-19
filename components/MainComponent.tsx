@@ -80,8 +80,8 @@ const MainComponent = () => {
     <div className="relative w-full overflow-hidden">
       <div ref={textContainerRef} id="hero-container"></div>
       <div className="relative z-10 container mx-auto p-10 px-10 m-10 w-100 h-screen">
-        <h1 className={'unbounded centered-texts big-padding-top-desc'}>The Web-Machine</h1>
-        <h3 className={'centered-texts'}>United technologies of success</h3>
+        <h1 className={'unbounded centered-texts big-padding-top-desc'}>The Web-Machine Agency</h1>
+        <h3 className={'centered-texts'}>#1 in Next.js / United technologies of success</h3>
         <div className="image-row-container">
         <div className={'hero-page-bottom-block'}>
         <ImageRow />

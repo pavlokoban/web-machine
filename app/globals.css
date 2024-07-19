@@ -368,7 +368,7 @@ h3  {
 
 .image-row-container {
   position: absolute;
-  bottom: 200px; /* Расстояние от низа контейнера */
+  bottom: 300px; /* Расстояние от низа контейнера */
   left: 50%;
   transform: translateX(-50%);
   display: flex;

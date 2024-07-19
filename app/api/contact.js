@@ -7,13 +7,13 @@ export default async function handler(req, res) {
     const transporter = nodemailer.createTransport({
       service: 'gmail', // или используйте другой почтовый сервис
       auth: {
-        user: 'your-email@gmail.com', // ваш email
-        pass: 'your-email-password', // ваш пароль
+        user: 'webmachinerocks@gmail.com', // ваш email
+        pass: 'Jerusalem112', // ваш пароль
       },
     });
 
     const mailOptions = {
-      from: 'your-email@gmail.com',
+      from: 'webmachinerocks@gmail.com',
       to: 'pavlokoban@icloud.com',
       subject: 'New Contact Form Submission',
       text: `
