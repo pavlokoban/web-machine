@@ -8,7 +8,7 @@ export default async function handler(req, res) {
       service: 'gmail', // или используйте другой почтовый сервис
       auth: {
         user: 'webmachinerocks@gmail.com', // ваш email
-        pass: 'Jerusalem112', // ваш пароль
+        pass: 'qjrsklkopkqjinve', // ваш пароль
       },
     });
 

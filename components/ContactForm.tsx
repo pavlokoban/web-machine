@@ -58,6 +58,11 @@ const ContactForm: React.FC = () => {
         }
       });
 
+      // Логирование данных формы перед отправкой
+      for (let pair of formDataToSend.entries()) {
+        console.log(pair[0] + ': ' + pair[1]);
+      }
+
       const response = await axios.post('/api/send-email', formDataToSend, {
         headers: {
           'Content-Type': 'multipart/form-data',
@@ -81,14 +86,14 @@ const ContactForm: React.FC = () => {
       }
     } catch (error) {
       console.error('Error submitting the form:', error);
-      alert('Произошла ошибка при отправке формы');
+      alert('Произошла ошибка при отправке формы 112');
     }
   };
 
   return (
     <div>
       <form className={styles.contactForm} onSubmit={handleSubmit}>
-        <h2>Let’s do something awesome!</h2>
+        <h2 className='h3ash1'>Let’s do something awesome!</h2>
         <p>Tell us about your project and we will make it true. Fill out the form and send an email to hello@web-machine.rocks</p>
 
         <h3>Services</h3>
@@ -191,7 +196,7 @@ const ContactForm: React.FC = () => {
           />
         </div>
 
-        <button type="submit" className={`${styles.submitButton} telegramim_pulse`}>
+        <button type="submit" className={`${styles.submitButton}`}>
           <span className={styles.buttonText}>Send</span>
           <span className={styles.buttonWaves}></span>
         </button>

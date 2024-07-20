@@ -1,5 +1,5 @@
-import type { NextApiRequest, NextApiResponse } from 'next';
 import nodemailer from 'nodemailer';
+//import type { NextApiRequest, NextApiResponse } from 'next';
 
 const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === 'POST') {
@@ -9,16 +9,16 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'webmachinerocks@gmail.com', // ваш email
-        pass: 'Jerusalem112', // ваш пароль
+        user: 'webmachinerocks@gmail.com',
+        pass: 'qjrsklkopkqjinve',
       },
     });
 
     const mailOptions = {
-        from: 'webmachinerocks@gmail.com', // От кого
-        to: 'pavlokoban@icloud.com', // Кому
-      subject: 'New Contact Form Submission', // Тема
-      text: JSON.stringify(formData, null, 2), // Текст письма
+      from: 'webmachinerocks@gmail.com',
+      to: 'pavlokoban@icloud.com',
+      subject: 'New Contact Form Submission',
+      text: JSON.stringify(formData, null, 2),
     };
 
     try {

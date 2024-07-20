@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/[slug]/page.js", "app/pages/[slug].js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/[slug]/page.js", "app/pages/[slug].js", "app/api/send-emails.js"],
   "exclude": ["node_modules"]
 }
