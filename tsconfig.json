@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "target": "es2015", // Установите как минимум ES2015
+    "downlevelIteration": true, // Добавьте этот флаг
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
