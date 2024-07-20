@@ -1,11 +1,10 @@
+import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
-//import type { NextApiRequest, NextApiResponse } from 'next';
 
-const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
-  if (req.method === 'POST') {
-    const formData = req.body;
+export const POST = async (req: NextRequest) => {
+  try {
+    const formData = await req.json();
 
-    // Настройка отправки почты
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -21,16 +20,14 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
       text: JSON.stringify(formData, null, 2),
     };
 
-    try {
-      await transporter.sendMail(mailOptions);
-      res.status(200).json({ message: 'Email sent successfully' });
-    } catch (error) {
-      console.error('Error sending email:', error);
-      res.status(500).json({ error: 'Error sending email' });
-    }
-  } else {
-    res.status(405).json({ error: 'Method not allowed' });
+    await transporter.sendMail(mailOptions);
+    return new Response(JSON.stringify({ message: 'Email sent successfully' }), { status: 200 });
+  } catch (error) {
+    console.error('Error in API route:', error);
+
+    // Приведение типа error к объекту с полем message, если это возможно
+    const errorMessage = (error instanceof Error) ? error.message : 'Unknown error';
+
+    return new Response(JSON.stringify({ error: 'Internal Server Error', details: errorMessage }), { status: 500 });
   }
 };
-
-export default sendEmail;
