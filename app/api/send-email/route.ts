@@ -1,10 +1,9 @@
+import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-export const POST = async (req: Request) => {
+export const POST = async (req: NextRequest) => {
   try {
-    console.log('Received request method:', req.method);
     const formData = await req.json();
-    console.log('Parsed form data:', formData);
 
     const transporter = nodemailer.createTransport({
       service: 'gmail',
@@ -21,12 +20,14 @@ export const POST = async (req: Request) => {
       text: JSON.stringify(formData, null, 2),
     };
 
-    const info = await transporter.sendMail(mailOptions);
-    console.log('Email sent successfully:', info.response);
-
+    await transporter.sendMail(mailOptions);
     return new Response(JSON.stringify({ message: 'Email sent successfully' }), { status: 200 });
   } catch (error) {
     console.error('Error in API route:', error);
-    return new Response(JSON.stringify({ error: 'Internal Server Error', details: error.message }), { status: 500 });
+
+    // Приведение типа error к объекту с полем message, если это возможно
+    const errorMessage = (error instanceof Error) ? error.message : 'Unknown error';
+
+    return new Response(JSON.stringify({ error: 'Internal Server Error', details: errorMessage }), { status: 500 });
   }
 };
