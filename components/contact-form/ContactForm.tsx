@@ -3,7 +3,15 @@ import styles from './ContactForm.module.css';
 import emailjs from "@emailjs/browser";
 
 const ContactForm: React.FC = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<{
+    services: string[],
+    budget: string,
+    task: string,
+    name: string,
+    email: string,
+    message: string,
+    phone: string,
+  }>({
     services: [],
     budget: '',
     task: '',
@@ -24,7 +32,7 @@ const ContactForm: React.FC = () => {
     if (type === 'checkbox') {
       setFormData((prev) => ({
         ...prev,
-        [name]: checked
+        services: checked
           ? [...prev.services, value]
           : prev.services.filter((service) => service !== value),
       }));
