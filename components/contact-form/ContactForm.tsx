@@ -1,20 +1,9 @@
 import React, { useState } from 'react';
 import styles from './ContactForm.module.css';
-import axios from 'axios';
-
-interface FormData {
-  services: string[];
-  budget: string;
-  task: string;
-  name: string;
-  email: string;
-  message: string;
-  phone: string;
-  file: File | null;
-}
+import emailjs from "@emailjs/browser";
 
 const ContactForm: React.FC = () => {
-  const [formData, setFormData] = useState<FormData>({
+  const [formData, setFormData] = useState({
     services: [],
     budget: '',
     task: '',
@@ -22,15 +11,15 @@ const ContactForm: React.FC = () => {
     email: '',
     message: '',
     phone: '',
-    file: null,
   });
 
   const [showModal, setShowModal] = useState(false);
+  const [modalMessage, setModalMessage] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value, type } = e.target as HTMLInputElement;
     const checked = (e.target as HTMLInputElement).checked;
-    const files = (e.target as HTMLInputElement).files;
 
     if (type === 'checkbox') {
       setFormData((prev) => ({
@@ -39,8 +28,6 @@ const ContactForm: React.FC = () => {
           ? [...prev.services, value]
           : prev.services.filter((service) => service !== value),
       }));
-    } else if (type === 'file' && files) {
-      setFormData((prev) => ({ ...prev, file: files[0] }));
     } else {
       setFormData((prev) => ({ ...prev, [name]: value }));
     }
@@ -48,29 +35,31 @@ const ContactForm: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsLoading(true);
+
+    const templateParams = {
+      from_name: formData.email,
+      to_name: "WebMachine team",
+      message: formData.message,
+      budget: formData.budget,
+      services: formData.services,
+      phone: formData.phone,
+      name: formData.name,
+      task: formData.task,
+      email: formData.email,
+    };
+
     try {
-      const formDataToSend = new FormData();
-      Object.entries(formData).forEach(([key, value]) => {
-        if (Array.isArray(value)) {
-          value.forEach((val) => formDataToSend.append(key, val));
-        } else {
-          formDataToSend.append(key, value as string | Blob);
-        }
-      });
-
-      // Логирование данных формы перед отправкой
-      for (let pair of formDataToSend.entries()) {
-        console.log(pair[0] + ': ' + pair[1]);
-      }
-
-      const response = await axios.post('/api/send-email', formDataToSend, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-      });
+      const response = await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? "",
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? "",
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY ?? ""
+      );
 
       if (response.status === 200) {
         setShowModal(true);
+        setModalMessage('Thank you! Your request has been received. We will contact you soon.');
         setFormData({
           services: [],
           budget: '',
@@ -79,14 +68,17 @@ const ContactForm: React.FC = () => {
           email: '',
           message: '',
           phone: '',
-          file: null,
         });
       } else {
-        alert('Произошла ошибка при отправке формы');
+        setShowModal(true);
+        setModalMessage('There was an error submitting the form.');
       }
     } catch (error) {
       console.error('Error submitting the form:', error);
-      alert('Произошла ошибка при отправке формы 112');
+      setShowModal(true);
+      setModalMessage('There was an error submitting the form.');
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -137,15 +129,7 @@ const ContactForm: React.FC = () => {
           onChange={handleChange}
         />
 
-        <label className={styles.fileLabel}>
-          Add File
-          <input
-            type="file"
-            className={styles.fileInput}
-            accept=".pdf,.txt,.doc,.docx,.jpeg,.fig,.png"
-            onChange={handleChange}
-          />
-        </label>
+        <div className={'grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2'}>
 
         <div className={styles.inputGroup}>
           <input
@@ -156,7 +140,7 @@ const ContactForm: React.FC = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            pattern="^[A-Za-z\s]{3,12}$"
+            pattern="^[A-Za-zА-Яа-яЁё\s]{3,12}$"
           />
         </div>
 
@@ -195,6 +179,7 @@ const ContactForm: React.FC = () => {
             required
           />
         </div>
+        </div>
 
         <button type="submit" className={`${styles.submitButton}`}>
           <span className={styles.buttonText}>Send</span>
@@ -206,10 +191,11 @@ const ContactForm: React.FC = () => {
       </form>
 
       {showModal && (
-        <div className={styles.modalOverlay}>
+        <div className={styles.modal}>
           <div className={styles.modalContent}>
-            <p>Thank you for your request! We will contact you shortly.</p>
-            <button onClick={() => setShowModal(false)}>OK</button>
+            <h2>{modalMessage === 'Thank you! Your request has been received. We will contact you soon.' ? 'Thank you!' : 'Error'}</h2>
+            <p>{modalMessage}</p>
+            <button onClick={() => setShowModal(false)}>Close</button>
           </div>
         </div>
       )}

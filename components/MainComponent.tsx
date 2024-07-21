@@ -7,7 +7,7 @@ import ImageRow from './ImageRow';
 import Link from 'next/link';
 import AnimatedLink from './AnimatedLink';
 import AnimatedVideoLink from './AnimatedVideoLink';
-import ContactForm from '../components/ContactForm';
+import ContactForm from './contact-form/ContactForm';
 
 const MainComponent = () => {
   const textContainerRef = useRef<HTMLDivElement>(null);
