@@ -1,0 +1,29 @@
+/* components/breadcrumbs/Breadcrumbs.module.css */
+.breadcrumb {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .breadcrumb .li {
+    position: relative;
+    margin-right: 30px;
+  }
+  
+  .breadcrumb .li::after {
+    /* content: ">";
+    content: "•";
+    */
+    content: "→";
+    position: absolute;
+    right: -25px; /* Adjust based on the margin */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff; /* Change to desired color */
+  }
+  
+  .breadcrumb .li:last-child::after {
+    content: "";
+  }
+  

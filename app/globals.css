@@ -31,6 +31,14 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.a-white {
+  color: white;
+}
+.inline-grid {
+display: inline-grid;
+width: 100%;
+}
+
 @font-face {
   font-family: 'Unbounded';
   src: url('/fonts/unbounded/static/Unbounded-Bold.ttf') format('truetype');
@@ -111,7 +119,7 @@ h3  {
 .footer-common {
   width: 100%;
   height:auto;
-  min-height: 300px;
+  /* min-height: 300px; */
   background-color: black;
   color: #fafafa;
 }
@@ -181,6 +189,57 @@ h3  {
 .a-anim:hover span {
   transform: translate3d(-200%, 0, 0);
 }
+/* white style */
+/* The Text Swapping Link Hover Effect */
+.a-anim-w {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+}
+
+.a-anim-w::before,
+.a-anim-w::after {
+ content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.a-anim-w::before {
+  background-color: #fff;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.a-anim-w::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  color:#fff;
+}
+
+.a-anim-w:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+.a-anim-w:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+.a-anim-w span {
+  display: inline-block;
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.a-anim-w:hover span {
+  transform: translate3d(-200%, 0, 0);
+}
+
 
 /* глитч */
 .glitch {
@@ -337,7 +396,19 @@ h3  {
   padding: 30px 50px; /* Добавить отступы, чтобы избежать слипания */
 }
 
+.hr-footer {
+  border-color:#ffffff45;
+  padding-bottom: 15px;
+  margin-top: 25px;
+}
+.copyright {
+  font-size: small;
+}
+
 #hero-container {
+  background: aliceblue;
+  background: #acf5da52;
+  background: #f5f5fa;
   position: absolute;
   top: 0;
   left: 0;
@@ -392,9 +463,10 @@ h3  {
 }
 
 .image-container img {
-  max-height: 50px; /* Задайте нужную высоту для изображений */
+  max-height: 50px;
   width: 150px;
-  object-fit: cover;
+  /* object-fit: cover; */
+  object-fit: contain;
   margin-right: 20px;
 }
 

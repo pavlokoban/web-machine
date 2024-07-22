@@ -3,6 +3,8 @@ import HeadComponent from './head';
 import { Unbounded } from "next/font/google";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import CookieBanner from '../components/cookiesbanner/CookieBanner';
+
 
 const unbounded = Unbounded({ subsets: ["latin", "cyrillic-ext"] });
 const montserrat = Montserrat({ subsets: ["latin", "cyrillic-ext"] });
@@ -26,7 +28,10 @@ export default function RootLayout({
         ></script>
         <HeadComponent />
       </head>
-      <body className={montserrat.className}>{children}</body>
+      <body className={montserrat.className}>{children}
+      <CookieBanner />
+      </body>
+
     </html>
   );
 }

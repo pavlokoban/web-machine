@@ -3,6 +3,7 @@ import React from 'react';
 import LayoutMain from '@/components/LayoutMain';
 import ContactForm from '@/components/contact-form/ContactForm';
 import { Metadata } from 'next';
+import Footer from '@/components/Footer';
 
 
 export const metadata: Metadata = {

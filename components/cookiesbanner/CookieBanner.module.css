@@ -1,0 +1,37 @@
+/* components/CookieBanner.module.css */
+.cookieBanner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .cookieBanner p {
+    margin: 0;
+    padding: 0 10px;
+    display: inline;
+  }
+  
+  .cookieBanner button {
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 50px;
+    background: #ACF4D9;
+    color: #000;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .cookieBanner button:hover {
+    color: #000;
+    background: #f5f5fa;
+  }

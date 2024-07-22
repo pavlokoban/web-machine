@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import styles from './ContactForm.module.css';
 import emailjs from "@emailjs/browser";
+import Footer from '../Footer';
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState<{

@@ -3,12 +3,14 @@
 import React from 'react';
 
 const images = [
-  '/images/kyiv-fest.svg',
-  '/path/to/image2.jpg',
-  '/path/to/image3.jpg',
-  '/path/to/image4.jpg',
-  '/path/to/image5.jpg',
-  '/path/to/image6.jpg'
+  '/images/next-js-logo.svg',
+  '/images/logo-react.svg',
+  '/images/node-js.svg',
+  '/images/postgresql-logo.svg',
+  '/images/wordpress-logo.svg',
+  '/images/laravel-logo.svg',
+  '/images/opencart-logo.svg',
+  '/images/typescript-logo.svg',
 ];
 
 const ImageRow = () => {
@@ -16,7 +18,7 @@ const ImageRow = () => {
     <div className="image-row">
       {images.map((src, index) => (
         <div key={index} className="image-container" style={{ animationDelay: `${index * 0.8}s` }}>
-          <img src={src} alt={`Image ${index + 1}`} />
+          <img src={src} alt={`Stack ${index + 1}`} />
         </div>
       ))}
     </div>

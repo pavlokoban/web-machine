@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import dataArticles from "../../utils/dataArticles";
+import "../globals.css";
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const { slug } = params;
