@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
 
     <Breadcrumbs />
 
-          <div className={'grid grid-cols-3 gap-4 md:grid-cols-2 lg:grid-cols-3'}>
+          <div className={'grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'}>
               <div className="inline-grid">
                     <Link className={'p-1 a-anim-w'} href="/web-development">Web Development</Link>
                     <Link className={'p-1 a-anim-w'} href="/web-development">Web Development</Link>

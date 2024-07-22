@@ -106,7 +106,7 @@ h3  {
   position: fixed;
   bottom: 20px;
   right: 0px;
-  z-index: 999999;
+  z-index: 9999999;
 }
 .centered-texts {
   text-align: center;
@@ -597,4 +597,11 @@ h3  {
   .big-padding-top-desc {
     padding-top: 10px;
   }
+  .image-container img {
+    max-height: 30px;
+    width: 40px;
+    /* object-fit: cover; */
+    object-fit: contain;
+    margin: auto;
  }
+}
