@@ -1,3 +1,4 @@
+'use client';
 import React, { useState } from 'react';
 import styles from './ContactForm.module.css';
 import emailjs from "@emailjs/browser";
@@ -98,7 +99,7 @@ const ContactForm: React.FC = () => {
 
         <h3>Services</h3>
         <div className={styles.options}>
-          {['web-development', 'design', 'promotion', 'other'].map((service) => (
+          {['web-development', 'design', 'SEO', 'Online advertisement', 'other'].map((service) => (
             <label key={service} className={`${styles.option} ${formData.services.includes(service) ? styles.selected : ''}`}>
               <input
                 type="checkbox"
@@ -114,7 +115,7 @@ const ContactForm: React.FC = () => {
 
         <h3>Budget</h3>
         <div className={styles.options}>
-          {['less than $1k', '$1k-3k', '$3k-7k', '$7k+'].map((budget) => (
+          {['less than $1k', '$1k-3k', '$3k-7k', '$7k-10k', '$10k+'].map((budget) => (
             <label key={budget} className={`${styles.option} ${formData.budget === budget ? styles.selected : ''}`}>
               <input
                 type="radio"

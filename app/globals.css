@@ -333,7 +333,7 @@ h3  {
  /* pointer-events: none;  */ /* Make sure text doesn't interfere with cursor */
   font-family: 'Unbounded', inherit;
   /*font-family: inherit;  Использовать дефолтный шрифт проекта */
-  white-space: nowrap; /* Предотвратить перенос текста на следующую строку */
+  /*white-space: nowrap; /* /* Предотвратить перенос текста на следующую строку */
   padding: 30px 50px; /* Добавить отступы, чтобы избежать слипания */
 }
 
@@ -368,7 +368,7 @@ h3  {
 
 .image-row-container {
   position: absolute;
-  bottom: 300px; /* Расстояние от низа контейнера */
+  bottom: 30%; /* Расстояние от низа контейнера */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
