@@ -8,6 +8,8 @@ import Link from 'next/link';
 import AnimatedLink from './AnimatedLink';
 import AnimatedVideoLink from './AnimatedVideoLink';
 import ContactForm from './contact-form/ContactForm';
+import ServiceLink from './servicelink/ServiceLink';
+import BrandSection from './brandsection/BrandSection';
 
 const MainComponent = () => {
   const textContainerRef = useRef<HTMLDivElement>(null);
@@ -15,7 +17,7 @@ const MainComponent = () => {
   useEffect(() => {
     const keywords = 
     ['SEO', 'PPC', 'JS', 'Next.js', 'Laravel', 'PHP', 'React', 'Wordpress', 'Design', 
-    'Figma', 'Nuxt', 'TypeScript', 'Vue', 'Branding', 'Openvart', 'SASS', 'Mockup', 'Prototype', 
+    'Figma', 'Nuxt', 'TypeScript', 'Vue', 'Branding', 'Opencart', 'SASS', 'Mockup', 'Prototype', 
     'B2B', 'B2C', 'Strategy', 'Google', 'GoogleAds', 'Web', 'Marketing', 'Creative', 'Baidu'];
     const container = textContainerRef.current;
 
@@ -88,7 +90,43 @@ const MainComponent = () => {
         </div>
         </div>
       </div>
+   
       <div id="content-container" className="relative z-0 container mx-auto p-10 px-10 m-10">
+        <div className='second-container'>
+        <h3 className='h3ash1'>Services</h3>
+        <p>Web Machine is an international creative agency which embraces cutting edge technology to solve business challenges 
+          through innovation, communication and strategy. Our agency was found in 2013 and since then we’ve provided marketing 
+          research and promotion for a wide variety of companies including those in the US and Chinese markets.</p>
+          <div className='space20'></div>
+          <ServiceLink 
+            title="Design"
+            description="Our expertise lies in creating elegantly designed websites based on UI/UX principles, 
+            focusing on intuitive and straightforward interfaces while staying abreast of current design trends."
+            href="/example"
+          />
+          <ServiceLink 
+            title="Web Development"
+            description="We specialize in developing corporate websites, online stores, and high-performance aggregators, 
+            ensuring that each project combines aesthetic appeal with user-centric functionality by using an advanced 
+            technological stack."
+            href="/example"
+          />
+          <ServiceLink 
+            title="SEO"
+            description="We’re also able to help you with strategic marketing, search engine promotion (SEO) and marketing 
+            research. Optimize your website for search engines!"
+            href="/example"
+          />
+          <ServiceLink 
+            title="Online advertisement"
+            description="We create and customize ads on Google, Facebook, Instagram and YouTube. Grow your business with our 
+            digital marketing services."
+            href="/example"
+          />
+        <div className='space20'></div>
+        <div className='space20'></div>
+
+        </div>
 
       <div className={'grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2'}>
 
@@ -118,6 +156,16 @@ const MainComponent = () => {
           caseText="Case"
           titleText="International mobile game developer Zplay: design and website development"
         />
+      </div>
+
+        <div className='relative z-0 blackblock mx-auto p-10 px-10 m-10'>
+          <div className='fake-container'>
+          <h3 className='h3ash1'>Think Big!</h3>
+          <BrandSection />
+          </div>
+        </div>
+
+        <div id="content-container" className='relative z-0 container mx-auto p-10 px-10 m-10'>
 
         <div className={'grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4'}>
           {dataArticles.articles.map((article) => (

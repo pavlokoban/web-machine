@@ -3,14 +3,14 @@
 import React from 'react';
 
 const images = [
+  '/images/typescript-logo.svg',
   '/images/next-js-logo.svg',
   '/images/logo-react.svg',
   '/images/node-js.svg',
   '/images/postgresql-logo.svg',
   '/images/wordpress-logo.svg',
-  '/images/laravel-logo.svg',
   '/images/opencart-logo.svg',
-  '/images/typescript-logo.svg',
+  '/images/laravel-logo.svg',
 ];
 
 const ImageRow = () => {

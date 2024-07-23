@@ -23,6 +23,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  font-weight: 300;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -34,9 +35,35 @@ body {
 .a-white {
   color: white;
 }
+
+.space20 {
+  display: block;
+  width: 100%;
+  height: 20px;
+  min-height: 20px;
+}
+
+.blackblock {
+  background: #000;
+  color: #fafafa;
+}
+
+.fake-container {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+
 .inline-grid {
 display: inline-grid;
 width: 100%;
+}
+
+.second-container {
+  margin-top: -100px;
+  margin-bottom: 50px;
 }
 
 @font-face {
@@ -142,6 +169,12 @@ h3  {
 
 /* эффекты */
 /* The Text Swapping Link Hover Effect */
+/* ссылки */
+.a-in-text-6-600 {
+  top: 6px;
+  font-weight: 600;
+  }
+
 .a-anim {
   overflow: hidden;
   position: relative;
@@ -405,9 +438,25 @@ h3  {
   font-size: small;
 }
 
+@keyframes gradientBackground {
+  0% {
+    background: #f5f5fa;
+  }
+  25% {
+    background: #acf5da52;
+  }
+  50% {
+    background: #acf5da00;
+  }
+  75% {
+    background: aliceblue;
+  }
+  100% {
+    background: #f5f5fa;
+  }
+}
+
 #hero-container {
-  background: aliceblue;
-  background: #acf5da52;
   background: #f5f5fa;
   position: absolute;
   top: 0;
@@ -416,6 +465,8 @@ h3  {
   height: 90vh;
   overflow: hidden; /* Ensure falling text stays within the view */
   z-index: 1; /* Ensure it's on top */
+  animation: gradientBackground 15s ease infinite;
+  transition: background 2s ease-in-out;
 }
 
 #content-container {

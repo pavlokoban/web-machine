@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import styles from './ContactForm.module.css';
 import emailjs from "@emailjs/browser";
 import Footer from '../Footer';
+import Link from 'next/link';
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState<{
@@ -96,11 +97,11 @@ const ContactForm: React.FC = () => {
     <div>
       <form className={styles.contactForm} onSubmit={handleSubmit}>
         <h2 className='h3ash1'>Let’s do something awesome!</h2>
-        <p>Tell us about your project and we will make it true. Fill out the form and send an email to hello@web-machine.rocks</p>
+        <p>Tell us about your project and we will make it true. Fill out the form and send an email to <Link className={'a-anim a-in-text-6-600'} href="mailto:hello@web-machine.rocks">hello@web-machine.rocks</Link></p>
 
         <h3>Services</h3>
         <div className={styles.options}>
-          {['web-development', 'design', 'SEO', 'Online advertisement', 'other'].map((service) => (
+          {['web-development', 'design', 'SEO', 'online advertisement', 'other'].map((service) => (
             <label key={service} className={`${styles.option} ${formData.services.includes(service) ? styles.selected : ''}`}>
               <input
                 type="checkbox"
