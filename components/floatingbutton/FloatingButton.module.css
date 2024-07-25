@@ -1,0 +1,57 @@
+.floatingButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .outerCircle {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    overflow: visible;
+  }
+  
+  .innerCircle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #acf4d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .innerText {
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  
+  .rotatingText {
+    font-size: 12px;
+    fill: black;
+    animation: rotate 30s linear infinite;
+  }
+  
+  .rotatingTextHover {
+    animation: rotate 10s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

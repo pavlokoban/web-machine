@@ -158,6 +158,7 @@ h3  {
 }
 .main-menu-links{
   margin-right: 30px;
+  font-weight: 500;
 }
 
 @layer utilities {

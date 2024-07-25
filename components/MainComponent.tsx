@@ -10,6 +10,10 @@ import AnimatedVideoLink from './AnimatedVideoLink';
 import ContactForm from './contact-form/ContactForm';
 import ServiceLink from './servicelink/ServiceLink';
 import BrandSection from './brandsection/BrandSection';
+import MarqueeText from './marqueetext/MarqueeText';
+import Testimonials from './testimonials/Testimonials';
+import FloatingButton from './floatingbutton/FloatingButton';
+
 
 const MainComponent = () => {
   const textContainerRef = useRef<HTMLDivElement>(null);
@@ -93,7 +97,7 @@ const MainComponent = () => {
    
       <div id="content-container" className="relative z-0 container mx-auto p-10 px-10 m-10">
         <div className='second-container'>
-        <h3 className='h3ash1'>Services</h3>
+        <h2 className='h3ash1'>Services</h2>
         <p>Web Machine is an international creative agency which embraces cutting edge technology to solve business challenges 
           through innovation, communication and strategy. Our agency was found in 2013 and since then we’ve provided marketing 
           research and promotion for a wide variety of companies including those in the US and Chinese markets.</p>
@@ -156,18 +160,22 @@ const MainComponent = () => {
           caseText="Case"
           titleText="International mobile game developer Zplay: design and website development"
         />
-      </div>
 
+      </div>
+      <MarqueeText />
         <div className='relative z-0 blackblock mx-auto p-10 px-10 m-10'>
           <div className='fake-container'>
-          <h3 className='h3ash1'>Think Big!</h3>
+          <h2 className='h3ash1'>Think Big!</h2>
           <BrandSection />
           </div>
         </div>
 
         <div id="content-container" className='relative z-0 container mx-auto p-10 px-10 m-10'>
+        <h2 className='h3ash1'>Testimonials</h2>
+        <Testimonials />
 
-        <div className={'grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4'}>
+        <h2 className='h3ash1'>Publications</h2>
+        <div className={'grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'}>
           {dataArticles.articles.map((article) => (
             <ServicesItem
               article={article}
@@ -176,10 +184,10 @@ const MainComponent = () => {
             </ServicesItem>
           ))}
         </div>
-        
         <ContactForm />
 
       </div>
+
     </div>
   );
 }

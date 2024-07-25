@@ -8,12 +8,12 @@ interface ServicesItemProps {
 
 export default function ServicesItem({ article }: ServicesItemProps) {
   return (
-    <div className={'max-w-sm rounded-md overflow-hidden shadow-lg'}>
+    <div className={'max-w-sm overflow-hidden shadow-lg'}>
       <Link href={`/${article.slug}`}>
         <img 
           src={article.image}
           alt={article.title}
-          className={'rounded shadow w-full'}
+          className={'shadow w-full'}
         />
         <div>
           {article.title + ' ' + article.description}
