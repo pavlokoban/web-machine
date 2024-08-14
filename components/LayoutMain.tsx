@@ -19,7 +19,7 @@ const LayoutMain: React.FC<LayoutMainProps> = ({ children }) => {
         <header>
           <nav className={'flex h-12 items-center p-4 justify-between header-common'}>
             <Link href="/">
-              <img src='/web-machine-rocks-logo.svg' width={170} height={35} />
+              <img src='/web-machine-rocks-logo-2024.svg' width={170} height={35} />
             </Link>
             <div className={'p-1'}>
                 <div className={'only-desc main-menu-links'}>

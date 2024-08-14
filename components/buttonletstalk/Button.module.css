@@ -1,0 +1,68 @@
+.discussButton {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 30px;
+    /*border: 1px solid black;*/
+    border-radius: 25px;
+    background-color: transparent;
+    background-color: #463bf7;
+    background-color: #feee33;
+    transition: all 0.3s ease;
+    color: black;
+    /*color: white;*/
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  
+  .discussButton:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .discussButton .arrow {
+    display: inline-block;
+    margin-left: 15px;
+    transition: all 0.3s ease;
+    opacity: 1;
+    transform: translateX(-10px);
+  }
+  
+  .discussButton:hover .arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .discussButton .arrow::before {
+    content: '→';
+    display: inline-block;
+  }
+
+  @keyframes colorChange {
+    0% {
+      background-color: #f04335;
+    }
+    20% {
+      background-color: #cdfe4a;
+    }
+    40% {
+      background-color: #feee33;
+    }
+    60% {
+      background-color: #fe7b88;
+    }
+    80% {
+      background-color: #463bf7;
+    }
+    100% {
+      background-color: #f8006a;
+    }
+  }
+   
