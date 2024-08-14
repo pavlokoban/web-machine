@@ -3,8 +3,8 @@ import styles from './Button.module.css';
 
 const DiscussButton = () => {
   return (
-    <Link href="/contacts" className={styles.discussButton}>
-      Обсудить проект
+    <Link href="/contact" className={styles.discussButton}>
+      Let's talk!
       <span className={styles.arrow}></span>
     </Link>
   );

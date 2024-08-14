@@ -6,10 +6,9 @@
     border-radius: 25px;
     background-color: transparent;
     background-color: #463bf7;
-    background-color: #feee33;
-    transition: all 0.3s ease;
-    color: black;
-    /*color: white;*/
+    /*background-color: #feee33;*/
+    /*color: black;*/
+    color: white;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -20,8 +19,19 @@
     text-decoration: none;
     margin-top: 20px;
     margin-right: 20px;
+    opacity: 0; 
+    transform: translateX(-20px); 
+    animation: fadeInB 1s ease forwards;
+    animation-delay: 0s; 
   }
-  
+
+  @keyframes fadeInB {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
   .discussButton:hover {
     background-color: black;
     color: white;
@@ -65,4 +75,11 @@
       background-color: #f8006a;
     }
   }
-   
+  @media (max-width: 992px) {  
+    .discussButton {
+      width: 100%;
+      text-align: center;
+      display: block;
+    }
+  }
+  

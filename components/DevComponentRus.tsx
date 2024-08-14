@@ -13,9 +13,10 @@ import MarqueeText from './marqueetext/MarqueeText';
 import Testimonials from './testimonials/Testimonials';
 import DiscussButtonRu from './buttonletstalk/ButtonLetsTalkRu';
 import ImageRow from './ImageRow';
+import CostEstimation from '../components/estimation/Estimation';
 
 
-const MainComponentRus = () => {
+const DevComponentRus = () => {
   const textContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -87,8 +88,10 @@ const MainComponentRus = () => {
     <div className="relative w-full overflow-hidden gray112">
       <div ref={textContainerRef} id=""></div>
       <div className="relative z-10 container mx-auto p-10 px-10 m-10 w-100">
-        <h1 className={'unbounded'}>Мы создаем успешные продукты цифровой эпохи</h1>
-        <h4 className={''}>Дизайн, стратегии и технологии для амбициозных компаний</h4>
+        <h1 className={'unbounded'}>Создание сайтов</h1>
+        <h4 className={''}>Создание сайта — это технология, это искусство, это маркетинг. Разработка сайта - будь то лендинг, или сложный портал или маркетплейс - это инвестиция, благодаря которой Ваш бизнес делает шаг навстречу Вашим клиентам, показывает его сильные стороны и преимущества.
+          Разработываем сайты - от лендингов до маркетплейсов (React, Next.js, Wordpress, Woocommerce, Opencart, Laravel).
+        </h4>
         
         <div className='space20'></div>
        
@@ -200,6 +203,13 @@ const MainComponentRus = () => {
         />
 
       </div>
+
+
+      <CostEstimation />
+
+
+
+
       <MarqueeText />
 
         <div className='relative z-0 blackblock mx-auto p-10 px-10 m-10'>
@@ -213,16 +223,6 @@ const MainComponentRus = () => {
         <h2 className='h3ash1'>Testimonials</h2>
         <Testimonials />
 
-        <h2 className='h3ash1'>Publications</h2>
-        <div className={'grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'}>
-          {dataArticles.articles.map((article) => (
-            <ServicesItem
-              article={article}
-              key={article.slug}
-            >
-            </ServicesItem>
-          ))}
-        </div>
         <ContactForm />
 
       </div>
@@ -232,4 +232,4 @@ const MainComponentRus = () => {
   );
 }
 
-export default MainComponentRus;
+export default DevComponentRus;

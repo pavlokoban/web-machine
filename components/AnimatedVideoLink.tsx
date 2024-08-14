@@ -31,7 +31,7 @@ const AnimatedVideoLink: React.FC<AnimatedVideoLinkProps> = ({ href, videoSrcWeb
             muted
             playsInline
             loop
-            className="w-full transition-transform duration-500 ease-in-out group-hover:transform group-hover:translate-y-2"
+            className="border-12 w-full transition-transform duration-500 ease-in-out group-hover:transform group-hover:translate-y-2"
             style={{ maxWidth: '100%' }}
           >
             <source src={videoSrcWebm} type="video/webm" />

@@ -18,7 +18,7 @@ const AnimatedLink: React.FC<AnimatedLinkProps> = ({ href, imgSrc, imgAlt, caseT
         <img 
           src={imgSrc}
           alt={imgAlt}
-          className="border-36 w-full transition-transform duration-500 ease-in-out group-hover:transform group-hover:translate-y-2"
+          className="border-12 w-full transition-transform duration-500 ease-in-out group-hover:transform group-hover:translate-y-2"
           width={500}
         />
         <div className="info-case flex">

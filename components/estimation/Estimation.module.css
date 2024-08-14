@@ -1,0 +1,149 @@
+.estimationForm {
+    max-width: 1000px;
+    margin: 120px auto;
+    padding: 20px;
+    display: block;
+  }
+  
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    margin-top: 12px;
+  }
+  
+  .option {
+    padding: 5px 20px;
+    border-radius: 20px;
+    background: #f5f5fa;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .option input {
+    display: none;
+  }
+  
+  .option:hover,
+  .option.selected {
+    background: #ACF4D9;
+  }
+  
+  .option:active,
+  .option:focus {
+    transform: translateY(1px);
+  }
+  
+  .input, .textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+    border-radius: 0%;
+  }
+  
+  .input:focus,
+  .textarea:focus {
+    border-color: #3ad196;
+    border-bottom: 1px solid;
+  }
+  
+  .submitButton {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background: #3ad196;
+    color: #000;
+    border: none;
+    font-weight: 600;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin: 30px auto;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .submitButton:hover {
+    animation: animationpulse 2s infinite;
+  }
+  
+  .submitButton .buttonText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease;
+  }
+  
+  @keyframes animationpulse {
+    0% {
+      transform: scale(1.0, 1.0);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+    10% {
+      transform: scale(1.0, 1.0);
+    }
+    70% {
+      box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .modalContent h2 {
+    margin-top: 0;
+  }
+  
+  .modalContent p {
+    margin: 20px 0;
+  }
+  
+  .modalContent button {
+    display: inline-block;
+    padding: 10px 50px;
+    background: #f5f5fa;
+    color: #000;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  
+  .modalContent button:hover {
+    background: #ACF4D9;
+    color: #000;
+  }
+  
