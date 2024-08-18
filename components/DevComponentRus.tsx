@@ -1,8 +1,6 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
-import dataArticles from "../utils/dataArticles";
-import ServicesItem from './ServicesItem';
 import Link from 'next/link';
 import AnimatedLink from './AnimatedLink';
 import AnimatedVideoLink from './AnimatedVideoLink';
@@ -14,6 +12,7 @@ import Testimonials from './testimonials/Testimonials';
 import DiscussButtonRu from './buttonletstalk/ButtonLetsTalkRu';
 import ImageRow from './ImageRow';
 import CostEstimation from '../components/estimation/Estimation';
+import StageSliderDevRu from './stageslider/StageSliderDevRu';
 
 
 const DevComponentRus = () => {
@@ -24,6 +23,7 @@ const DevComponentRus = () => {
     ['SEO', 'PPC', 'JS', 'Next.js', 'Laravel', 'PHP', 'React', 'Wordpress', 'Design', 
     'Figma', 'Nuxt', 'TypeScript', 'Vue', 'Branding', 'Opencart', 'SASS', 'Mockup', 'Prototype', 
     'B2B', 'B2C', 'Strategy', 'Google', 'GoogleAds', 'Web', 'Marketing', 'Creative', 'Baidu'];
+
     const container = textContainerRef.current;
 
     if (!container) return;
@@ -169,6 +169,25 @@ const DevComponentRus = () => {
 
         </div>
 
+        <div className="spoiler">
+  <div className="spoiler-summary" onClick={(e) => {
+      const content = e.currentTarget.nextElementSibling;
+      const icon = e.currentTarget.querySelector('.plus-icon');
+      if (content && icon) {
+        content.classList.toggle('open');
+        icon.classList.toggle('rotate');
+      }
+    }}>
+    <span className="plus-icon">+</span>
+    <span>Подробнее</span>
+  </div>
+  <div className="spoiler-content">
+    <h3>Тест</h3>
+    <p>Это скрытый текст, который будет полезен для SEO. Вы можете добавить сюда любой контент, который нужно скрыть, но при этом оставить его доступным для поисковых систем.</p>
+  </div>
+</div>
+
+
         </div>
         </div>
       <div className="relative w-full overflow-hidden white112">
@@ -202,13 +221,14 @@ const DevComponentRus = () => {
           titleText="International mobile game developer Zplay: design and website development"
         />
 
+      <h2 className='h3ash1'>Этапы разработки сайта</h2>
+      <p>Разрабатываем сайты и проектируем веб-интерфейсы с 2013 года, имеем опыт и экспертизу в веб-дизайне, верстке и программировании на PHP, JS.</p>
+      <p>Создали более 100 сайтов в различных тематиках и нишах.</p>
+      <div className='space20'></div>
+      <StageSliderDevRu />
+      <div className='space20'></div>
+      <div className='space20'></div>
       </div>
-
-
-      <CostEstimation />
-
-
-
 
       <MarqueeText />
 
@@ -223,7 +243,7 @@ const DevComponentRus = () => {
         <h2 className='h3ash1'>Testimonials</h2>
         <Testimonials />
 
-        <ContactForm />
+        <CostEstimation />
 
       </div>
       </div>

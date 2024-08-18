@@ -8,14 +8,34 @@
 //    config = webpackConfigurationHandler(config, context);
 //    return config;
 //  },
-
 const nextConfig = {
-//  i18n: {
-//    locales: ['en', 'ru', 'uk'] ,
-//    defaultLocale: 'en',
-//  },
+    //  i18n: {
+    //    locales: ['en', 'ru', 'uk'] ,
+    //    defaultLocale: 'en',
+    //  },
+    
+    };
+    
+    export default nextConfig;
+    
+    
+    
+    //import path from 'path';
+    
+    //export default {
+    //  i18n: {
+    //    locales: ['en', 'ru'],
+    //    defaultLocale: 'en',
+    //  },
+    //  localePath: path.resolve('./public/locales'),
+    //  localeDetection: false,
+    //};
 
-};
+//import createNextIntlPlugin from "next-intl/plugin";
+//const withNextIntl = createNextIntlPlugin();
+
+// @type {import('next').NextConfig} 
+ // const nextConfig = {};
 
 
-export default nextConfig;
+//export default withNextIntl(nextConfig);

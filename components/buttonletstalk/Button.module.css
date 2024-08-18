@@ -75,11 +75,12 @@
       background-color: #f8006a;
     }
   }
+  
   @media (max-width: 992px) {  
     .discussButton {
-      width: 100%;
+      width: auto;
       text-align: center;
-      display: block;
+      padding: 16px 30px;
     }
   }
   

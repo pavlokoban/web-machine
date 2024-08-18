@@ -2,8 +2,10 @@
 
 import * as React from 'react';
 import { useParams } from 'next/navigation';
-import dataArticles from "../../utils/dataArticles";
+import dataArticles from "../../../utils/dataArticles";
 import LayoutMain from '@/components/LayoutMain';
+import "../globals.css";
+
 
 export default function ServicePageScreen() {
     const { slug } = useParams();

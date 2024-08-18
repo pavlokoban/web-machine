@@ -1,0 +1,56 @@
+// app/contact/page.tsx
+import React from 'react';
+import LayoutMainRus from '@/components/LayoutMainRus';
+import ContactForm from '@/components/contact-form/ContactForm';
+import { Metadata } from 'next';
+import Footer from '@/components/Footer';
+
+
+export const metadata: Metadata = {
+    title: "ᐈ Контактная информация - WEB-MACHINE",
+    description: "⭐ Мы всегда на связи! Оставить заявку на разработку, продвижение сайта в WEB-MACHINE",
+    alternates: {
+      canonical: "https://web-machine.rocks/ru/contact/",
+      languages: {
+        en: "https://web-machine.rocks/contact/",
+        ru: "https://web-machine.rocks/ru/contact/",
+        uk: "https://web-machine.rocks/uk/contact/",
+      },
+    },
+  };
+
+
+const ContactPageRu = () => {
+  return (
+    <>
+      <LayoutMainRus>
+      <div id="content-container" className="relative z-0 container mx-auto p-10 px-10 m-10 border-36 white112" style={{padding:'70px'}}>
+        <h1 className={'unbounded'}>Рады поработать с Вами!</h1>
+        <div className={'grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2'}>
+        <p>phone:</p>
+    <p>email:</p>
+    <div className="social-links">
+  <a href="https://www.linkedin.com/in/pavlosokolenko/" target="_blank" rel="noopener noreferrer">
+    <img src="/images/team/sokolenko.jpeg" alt="LinkedIn CEO" />
+  </a>
+  <a href="https://www.linkedin.com/in/%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9-%D0%BF%D0%B5%D1%82%D1%80%D1%83%D1%88%D0%B5%D0%BD%D0%BA%D0%BE-90002690/" target="_blank" rel="noopener noreferrer">
+    <img src="/images/team/petrushenko.jpeg" alt="LinkedIn COO" />
+  </a>
+  <a href="https://www.linkedin.com/in/margarita-melikyan-6a2036160/" target="_blank" rel="noopener noreferrer">
+    <img src="/images/team/1521754615526.jpeg" alt="LinkedIn SEO" />
+  </a>
+  <a href="https://www.linkedin.com/in/irina-pelipko-92098152/" target="_blank" rel="noopener noreferrer">
+    <img src="/images/team/1647853856121.jpeg" alt="LinkedIn CMO" />
+  </a>
+</div>
+
+    <p>address</p>
+  </div>
+        <ContactForm />
+        </div>
+      </LayoutMainRus>
+    </>
+  );
+};
+
+export default ContactPageRu;

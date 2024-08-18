@@ -1,0 +1,12 @@
+{
+    "welcome": "Welcome to our website",
+    "contact": {
+      "heading": "Contact Us",
+      "phone": "Phone",
+      "email": "Email"
+    },
+    "footer": {
+      "copyright": "© 2024, All rights reserved."
+    }
+  }
+  

@@ -58,7 +58,7 @@ const EstimationComponent: React.FC = () => {
         e.preventDefault();
         setIsLoading(true);
 
-        const templateParams = {
+    const templateParams = {
             from_name: name,
             to_name: "WebMachine team",
             message,
@@ -220,46 +220,58 @@ const EstimationComponent: React.FC = () => {
                     </label>
                 ))}
             </div>
-
-            <h3>Ваш расчет</h3>
+            <div className={styles.summaryFields}>
+            <div className={styles.summaryFieldSum}>
+            <div className={styles.summaryTitle}>Ваш расчет</div>
             <p>Предварительная оценка часов работы: {calculateHours()} часов</p>
             <p>Предварительная оценка сметы: ${calculateCost()}</p>
-
+            <div className='space20'></div>
+            <p className='text-xs'>Данная оценка представлена в ознакомительных целях и каждый проект требует полноценной оценки задач и исходных данных.</p>
+            </div>
+            <div className={styles.summaryField}>
             <button onClick={() => setShowModal(true)} className={styles.submitButton}>
                 <span className={styles.buttonText}>Получить персональный расчет</span>
             </button>
+            </div>
+            </div>
 
             {showModal && (
-                <div className={styles.modal}>
-                    <div className={styles.modalContent}>
-                        <h2>Запрос персонального расчета</h2>
-                        <form onSubmit={handleSubmit}>
-                            <input
-                                type="text"
-                                placeholder="Ваше имя"
-                                value={name}
-                                onChange={(e) => setName(e.target.value)}
-                                required
-                                className={styles.input}
-                            />
-                            <input
-                                type="email"
-                                placeholder="Ваш Email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                required
-                                className={styles.input}
-                            />
-                            <textarea
-                                placeholder="Дополнительная информация"
-                                value={message}
-                                onChange={(e) => setMessage(e.target.value)}
-                                className={styles.textarea}
-                            />
-                            <button type="submit" className={styles.submitButton}>
-                                <span className={styles.buttonText}>Отправить</span>
-                            </button>
-                        </form>
+    <div className={styles.modal}>
+        <div className={styles.modalContent}>
+            <button onClick={() => setShowModal(false)} className={styles.closeButton} style={{ background: 'transparent', margin: '20px 0', position: 'relative', color: '#000', width: '100%', minHeight: '10px !important', textAlign: 'end', padding: '0px', height: '10px', top: '-20px' }}>
+                &#x2716;
+            </button>
+            <h2>Запрос персонального расчета</h2>
+            <form onSubmit={handleSubmit}>
+                <input
+                    type="text"
+                    placeholder="Ваше имя"
+                    name="name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                    className={styles.input}
+                />
+                <input
+                    type="email"
+                    placeholder="Ваш Email"
+                    name="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                    className={styles.input}
+                />
+                <textarea
+                    placeholder="Дополнительная информация"
+                    name="message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    className={styles.textarea}
+                />
+                <button type="submit" className={styles.submitButton}>
+                    <span className={styles.buttonText}>Отправить</span>
+                </button>
+                      </form>
                     </div>
                 </div>
             )}

@@ -1,5 +1,5 @@
 export default function Error () {
     return (
-    <h1>FFFF</h1>
+    <h1>40000000004</h1>
     )
 };
