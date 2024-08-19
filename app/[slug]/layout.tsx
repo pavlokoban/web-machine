@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 import dataArticles from "../../utils/dataArticles";
 import { Unbounded } from "next/font/google";
 import { Montserrat } from "next/font/google";
-import "../globals.css";
+//import "../globals.css";
 
 const unbounded = Unbounded({ subsets: ["latin", "cyrillic-ext"] });
 const montserrat = Montserrat({ subsets: ["latin", "cyrillic-ext"] });
