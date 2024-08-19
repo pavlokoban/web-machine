@@ -6,7 +6,7 @@ import Image from 'next/image';
 import MainComponent from './MainComponent';
 import { ReactNode } from 'react';
 import Footer from './Footer';
-import Nav from './Nav';
+import Nav from './nav/Nav';
 
 interface LayoutMainProps {
   children: ReactNode;

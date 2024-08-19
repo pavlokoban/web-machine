@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
-import { Article } from './types'; //импортирую обязательный для тайпскрипта интерфейс
+import { Article } from '../types'; //импортирую обязательный для тайпскрипта интерфейс
 
 
 interface ServicesItemProps { //не забыть переименовать все это с Service на Blog

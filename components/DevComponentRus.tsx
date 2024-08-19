@@ -2,15 +2,15 @@
 
 import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
-import AnimatedLink from './AnimatedLink';
-import AnimatedVideoLink from './AnimatedVideoLink';
+import AnimatedLink from './animatedlinks/AnimatedLink';
+import AnimatedVideoLink from './animatedlinks/AnimatedVideoLink';
 import ContactForm from './contact-form/ContactForm';
 import ServiceLink from './servicelink/ServiceLink';
 import BrandSection from './brandsection/BrandSection';
 import MarqueeText from './marqueetext/MarqueeText';
 import Testimonials from './testimonials/Testimonials';
 import DiscussButtonRu from './buttonletstalk/ButtonLetsTalkRu';
-import ImageRow from './ImageRow';
+import ImageRow from './imagerow/ImageRow';
 import CostEstimation from '../components/estimation/Estimation';
 import StageSliderDevRu from './stageslider/StageSliderDevRu';
 

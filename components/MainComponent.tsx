@@ -2,11 +2,11 @@
 
 import React, { useEffect, useRef } from 'react';
 import dataArticles from "../utils/dataArticles";
-import ServicesItem from './ServicesItem';
-import ImageRow from './ImageRow';
+import ServicesItem from './servicesitem/ServicesItem';
+import ImageRow from './imagerow/ImageRow';
 import Link from 'next/link';
-import AnimatedLink from './AnimatedLink';
-import AnimatedVideoLink from './AnimatedVideoLink';
+import AnimatedLink from './animatedlinks/AnimatedLink';
+import AnimatedVideoLink from './animatedlinks/AnimatedVideoLink';
 import ContactForm from './contact-form/ContactForm';
 import ServiceLink from './servicelink/ServiceLink';
 import BrandSection from './brandsection/BrandSection';
