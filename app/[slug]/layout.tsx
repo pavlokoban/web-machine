@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import dataArticles from "../../../utils/dataArticles";
+import dataArticles from "../../utils/dataArticles";
 import { Unbounded } from "next/font/google";
 import { Montserrat } from "next/font/google";
 import "../globals.css";
