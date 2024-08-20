@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import Link from 'next/link';
 import OfficeLocationsRus from '@/components/officelocations/OfficeLocationsRus';
 import ImageRow from '@/components/imagerow/ImageRow';
+import SEOCalculator from '@/components/seocalculator/SEOCalculator';
 
 
 export const metadata: Metadata = {
@@ -35,7 +36,7 @@ const ContactPageRu = () => {
         <div>
         <div className="social-links">
               <a href="https://www.linkedin.com/in/pavlosokolenko/" target="_blank" rel="noopener noreferrer">
-                <img src="/images/team/sokolenko.jpeg" alt="LinkedIn CEO" />
+                <img src="/images/team/pavlo-sokolenko.webp" alt="LinkedIn CEO" />
               </a>
               <a href="https://www.linkedin.com/in/%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9-%D0%BF%D0%B5%D1%82%D1%80%D1%83%D1%88%D0%B5%D0%BD%D0%BA%D0%BE-90002690/" target="_blank" rel="noopener noreferrer">
                 <img src="/images/team/petrushenko.jpeg" alt="LinkedIn COO" />
@@ -51,12 +52,12 @@ const ContactPageRu = () => {
           </div>
         </div>
         <div className='desc-col-2-50-mob-1-100'>
-        <div><p>Телефон: <Link className={'a-anim a-in-text-6-600'} href="tel:+11111111111">+1(111)111-11-11</Link></p></div>
+        <div><p>Телефон: <Link className={'a-anim a-in-text-6-600'} href="tel:+11111111111">+1(234)112-67-67</Link></p></div>
         <div><p>Email: <Link className={'a-anim a-in-text-6-600'} href="mailto:hello@web-machine.rocks">hello@web-machine.rocks</Link></p>
         </div>
         <div className='space20'></div>
         <OfficeLocationsRus />
-          
+
             </div>
 
           </div>

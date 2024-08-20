@@ -96,7 +96,7 @@ const ContactFormRus: React.FC = () => {
   return (
     <div>
       <form className={styles.contactForm} onSubmit={handleSubmit}>
-        <h2 className='h3ash1'>Давайте сделаем проект вместе!</h2>
+        <h2 className='h3ash1'>Оставить заявку</h2>
         <p>Расскажите нам о своем проекте, и мы воплотим его в жизнь. Заполните форму и отправьте письмо на адрес: <Link className={'a-anim a-in-text-6-600'} href="mailto:hello@web-machine.rocks">hello@web-machine.rocks</Link></p>
 
         <h3>Услуги</h3>
