@@ -7,7 +7,6 @@ import Footer from '@/components/Footer';
 import Link from 'next/link';
 import OfficeLocationsRus from '@/components/officelocations/OfficeLocationsRus';
 import ImageRow from '@/components/imagerow/ImageRow';
-import SEOCalculator from '@/components/seocalculator/SEOCalculator';
 
 
 export const metadata: Metadata = {
