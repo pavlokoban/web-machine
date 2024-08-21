@@ -26,10 +26,10 @@ const SEOCalculatorRus = () => {
     let baseInvestment = 1000;
     baseInvestment += geography.length * 200;
     baseInvestment += parseInt(sections) * 300;
-    baseInvestment += languages * 400;
-    baseInvestment += siteAge * 500;
+    baseInvestment += languages * 430;
+    baseInvestment += siteAge / 500;
     baseInvestment += competition === 'новая ниша' ? 100 : 600;
-    baseInvestment += currentSEO * 700;
+    baseInvestment += currentSEO / 700;
     baseInvestment += promotionAggressiveness * 800;
     baseInvestment += budget * 900;
     baseInvestment += hasCopywriter === 'да' ? 0 : 500;
@@ -205,7 +205,7 @@ const SEOCalculatorRus = () => {
             <p>Оставить заявку на персональный просчет по SEO:</p>
           <Link href="/ru/seo#order" className={styles.discussButtonSEO}>Обсудить проект<span className={styles.arrowSEO}></span>
           </Link>
-          <p style={{marginTop: '10px', marginBottom: '-6px'}}>Встроенный SEO онлайн калькулятор:</p>
+          <p className={styles.pForEmbed}>Встроенный SEO онлайн калькулятор:</p>
           <EmbedCodeSection />
 
         </div>

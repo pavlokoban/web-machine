@@ -6,7 +6,7 @@ import Image from 'next/image';
 import MainComponent from './MainComponent';
 import { ReactNode } from 'react';
 import Footer from './Footer';
-import Nav from './nav/Nav';
+import NavRus from './nav/NavRus';
 
 interface LayoutMainProps {
   children: ReactNode;
@@ -39,7 +39,7 @@ const LayoutMainRus: React.FC<LayoutMainProps> = ({ children }) => {
                 Контакты
               </Link>
               </div>
-              <Nav />
+              <NavRus />
             </div>
   
           </nav>

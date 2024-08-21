@@ -39,7 +39,11 @@ const Dropdown: React.FC<DropdownProps> = ({ label, options, selectedOptions, on
       <label className={styles.dropdownLabel}>{label}</label>
       <div className={styles.selectContainer} onClick={handleDropdownToggle}>
         <div className={styles.select}>
-          {selectedOptions.length > 0 ? selectedOptions[0] : 'Выберите...'}
+          {selectedOptions.length > 0 
+            ? multiple 
+              ? selectedOptions.join(', ') 
+              : selectedOptions[0]
+            : 'Выберите...'}
           <span className={styles.dropdownIcon}></span> {/* Значок выпадающего списка */}
         </div>
         {isOpen && (
