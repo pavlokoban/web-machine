@@ -139,7 +139,11 @@
   .menuColumn a {
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 22px;
+  }
+
+  .marginDescFor2Col {
+    margin-top: 30px;
   }
   
   .footer {
@@ -148,20 +152,34 @@
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
+    padding: 50px 100px;
   }
   
   .languages, .socialLinks {
     width: 50%;
     display: flex;
+    /*
     justify-content: space-evenly;
+    */
   }
   
   .languages a, .socialLinks a {
     color: #fff;
     text-decoration: none;
     font-size: 14px;
+    margin-right: 20px;
   }
-  
+  .languages a {
+    border-radius: 50%;
+    border: 1px solid #ffffff38;
+    padding: 12px;
+  }
+  .languages a:hover {
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 12px;
+  }
+
   @media (max-width: 768px) {
     .menu {
       flex-direction: column;
@@ -177,13 +195,19 @@
       font-size: 28px;
       margin-bottom: 15px;
     }
+
+    .aAsH3 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
   
     .menuColumn a {
-      font-size: 16px;
+      font-size: 20px;
     }
   
     .footer {
       flex-direction: column;
+      padding: 10px;
     }
   
     .languages, .socialLinks {
@@ -203,6 +227,7 @@
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
+    padding: 50px 100px;
   }
   
   .footerContainer {
@@ -210,17 +235,26 @@
     bottom: 20px;
     width: 100%;
   }
+  a.p-1.a-anim-w.aAsH3 {
+    font-size: 24px;
+    font-weight: 600;
+  }
     
   @media (max-width: 768px) {
 
     .menuColumns {
       display: block;
+      padding: 10px;
+    }
+
+    a.p-1.a-anim-w.aAsH3 {
+      font-size: 18px;
+      font-weight: 600;
     }
 
     .menu {
-     /*  height: auto; 
+     height: auto; 
       overflow-y: auto; 
-           */
       height: 100%;
       overflow-y: scroll;
  
@@ -231,6 +265,15 @@
       margin-bottom: 20px; /* Отступы между блоками */
   
     }
+
+    .a-as-h3 {
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    .marginDescFor2Col {
+      margin-top: 0px;
+    }
   
     .footer {
       width: 100%; /* Вся ширина экрана для нижнего блока */
@@ -238,4 +281,56 @@
       margin-top: 20px; /* Отступ сверху для footer */
     }
   }
+
+  /* white style */
+/* The Text Swapping Link Hover Effect */
+.a-anim-w {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+}
+
+.a-anim-w::before,
+.a-anim-w::after {
+ content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.a-anim-w::before {
+  background-color: #fff;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.a-anim-w::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  color:#fff;
+}
+
+.a-anim-w:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+.a-anim-w:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+.a-anim-w span {
+  display: inline-block;
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.a-anim-w:hover span {
+  transform: translate3d(-200%, 0, 0);
+}
+
   

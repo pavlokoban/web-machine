@@ -22,7 +22,7 @@ const NavRus: React.FC = () => {
       document.body.style.overflow = 'auto';
     };
   }, [isOpen]);
-  
+
 
   return (
     <>
@@ -47,24 +47,27 @@ const NavRus: React.FC = () => {
     <div className={styles.menuColumns}>
       <div className={styles.menuColumn}>
         <h2>Услуги</h2>
-        <ul style={{fontSize: '10px'}}>
-          <li><a href="#">Веб-дизайн</a></li>
-          <li><a href="#">Разработка сайтов</a></li>
-          <li><a href="#">Разработка интернет магазинов</a></li>
-          <li><a href="#">Разработка маркетплейсов, аукционов</a></li>
-          <li><a href="#">Продвижение сайтов</a></li>
-          <li><a href="#">Интернет-реклама</a></li>
+        <ul>
+          <li><a className="p-1 a-anim-w" href="#">Веб-дизайн</a></li>
+          <li><a className="p-1 a-anim-w" href="#">Разработка сайтов</a></li>
+          <li><a className="p-1 a-anim-w" href="#">Разработка интернет магазинов</a></li>
+          <li><a className="p-1 a-anim-w" href="#">Разработка маркетплейсов, аукционов</a></li>
+          <li><a className="p-1 a-anim-w" href="#">Продвижение сайтов</a></li>
+          <li><a className="p-1 a-anim-w" href="#">Интернет-реклама</a></li>
         </ul>
       </div>
       <div className={styles.menuColumn}>
+        <div className={styles.marginDescFor2Col}>
         <ul>
-          <li><a href="#">Кейсы</a></li>
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Отзывы</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a className="p-1 a-anim-w text-xl font-bold" href="#">Кейсы</a></li>
+          <li><a className="p-1 a-anim-w text-xl font-bold" href="#">Компания</a></li>
+          <li><a className="p-1 a-anim-w text-xl font-bold" href="#">Отзывы</a></li>
+          <li><a className="p-1 a-anim-w text-xl font-bold" href="#">Контакты</a></li>
         </ul>
-        <p>Email: hello@web-machine.rocks</p>
+        <br></br>
+        <p><a className="p-1 a-anim-w" href="mailto:hello@web-machine.rocks">Email: hello@web-machine.rocks</a></p>
         <DiscussButtonRu />
+      </div>
       </div>
     </div>
     <div className={styles.footerContainer}>
