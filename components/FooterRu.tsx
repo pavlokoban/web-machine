@@ -67,7 +67,7 @@ const FooterRu: React.FC = () => {
           <p>Офис разработки: Киев, Украина</p>
           <p>Преставительства: Гуанчжоу, Китай | Даллас, США | Братислава, Словакия</p>
           <p><a className={'p-2 a-anim-w main-menu-links a-white'} href="mailto:hello@web-machine.rocks">Email: hello@web-machine.rocks</a></p>
-                <img max-width="170px" src="/clutch_review_tr_ru.svg" alt="Clutch Review" />
+                <img src="/clutch_review_tr_ru.svg" alt="Clutch Review" />
 
 
           <div style={{maxWidth: '270px'}}><DiscussButtonRu /></div>
