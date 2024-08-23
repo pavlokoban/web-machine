@@ -9,6 +9,9 @@ export const getPageTitle = async (path) => {
       '/ru/web-development': 'Создание сайтов',
       '/ru/seo': 'Продвижение сайтов',
       '/services': 'Our Services',
+      '/ru/sitemap': 'Карта сайта',
+      '/ru/seo-cost-calculator': 'SEO онлайн калькулятор',
+      '/ru/web-development-cost-calculator': 'Оценка стоимости веб-разработки онлайн',
       // Add more paths and their titles here
     };
   

@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import MainComponent from './MainComponent';
 import { ReactNode } from 'react';
-import Footer from './Footer';
+import FooterRu from './FooterRu';
 import NavRus from './nav/NavRus';
 
 interface LayoutMainProps {
@@ -45,7 +45,7 @@ const LayoutMainRus: React.FC<LayoutMainProps> = ({ children }) => {
           </nav>
         </header>
         <main>{children}</main>
-        <Footer />
+        <FooterRu />
       </div>
     </>
   );

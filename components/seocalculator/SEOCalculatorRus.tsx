@@ -23,11 +23,11 @@ const SEOCalculatorRus = () => {
   const [isEmbedPopupOpen, setEmbedPopupOpen] = useState(false);
 
   const calculateInvestmentRange = () => {
-    let baseInvestment = 1065; // Уменьшенное начальное значение
+    let baseInvestment = 333; // Уменьшенное начальное значение
 
     // 1. География
     const geographyCoefficients: { [key: string]: number } = {
-      'Украина': 100,
+      'Украина': 112,
       'США / Канада': 5200,
       'Германия / Австрия': 5250,
       'Польша': 3460,
