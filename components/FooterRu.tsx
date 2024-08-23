@@ -101,7 +101,7 @@ const FooterRu: React.FC = () => {
     </div>
     <hr className={'hr-footer'}/>
             <div className='grid'>
-                <p className={'copyright'}>© 2013-2024 г. Все права защищены. Компания ООО "Web-Machine"</p>
+                <p className={'copyright'}>© 2013-2024 г. Все права защищены. Компания ООО &quot;Web-Machine&quot;</p>
             </div>
 
     </div>
