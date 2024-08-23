@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Breadcrumbs from './breadcrumbs/Breadcrumbs';
 import DiscussButtonRu from './buttonletstalk/ButtonLetsTalkRu';
 import styles from './nav/Nav.module.css';
+import Image from 'next/image';
 
 const FooterRu: React.FC = () => {
   useEffect(() => {
@@ -67,10 +68,14 @@ const FooterRu: React.FC = () => {
           <p>Офис разработки: Киев, Украина</p>
           <p>Преставительства: Гуанчжоу, Китай | Даллас, США | Братислава, Словакия</p>
           <p><a className={'p-2 a-anim-w main-menu-links a-white'} href="mailto:hello@web-machine.rocks">Email: hello@web-machine.rocks</a></p>
-                <img src="/clutch_review_tr_ru.svg" alt="Clutch Review" />
+               
+
+<Image src="/clutch_review_tr_ru.svg" alt="Clutch Review" width={150} height={100} />
 
 
-          <div style={{maxWidth: '270px'}}><DiscussButtonRu /></div>
+          <div style={{maxWidth: '270px'}}>
+            <DiscussButtonRu />
+            </div>
 
                         <div className={'telegram-bottom'}>
                           <a
