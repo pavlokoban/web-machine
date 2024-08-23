@@ -64,13 +64,15 @@ const FooterRu: React.FC = () => {
           </div>
 
           <div className="inline-grid">
+            <div className='footerAdrressText'>
           <p>Штаб-квартира: Таллинн, Эстония</p>
           <p>Офис разработки: Киев, Украина</p>
           <p>Преставительства: Гуанчжоу, Китай | Даллас, США | Братислава, Словакия</p>
+          </div>
           <p><a className={'p-2 a-anim-w main-menu-links a-white'} href="mailto:hello@web-machine.rocks">Email: hello@web-machine.rocks</a></p>
                
 
-<Image src="/clutch_review_tr_ru.svg" alt="Clutch Review" width={150} height={100} />
+            <Image src="/clutch_review_tr_ru.svg" alt="Clutch Review" width={171} height={100} />
 
 
           <div style={{maxWidth: '270px'}}>
