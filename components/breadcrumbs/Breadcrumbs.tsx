@@ -30,11 +30,22 @@ const Breadcrumbs = () => {
       <ol className={styles.breadcrumb}>
         {titles.map((title, index) => {
           const href = '/' + pathParts.slice(0, index + 1).join('/');
+          const isLast = index === titles.length - 1;
           return (
-            <li key={href} className={styles.li}>
-              <Link href={href}>
-                {title}
-              </Link>
+            <li key={href} className={styles['breadcrumb-item']}>
+              {isLast ? (
+                <span className={styles.active}>{title}</span>
+              ) : (
+                <Link href={href}>
+                  {index === 0 ? (
+                    <span rel="v:url" property="v:title">
+                      {title}
+                    </span>
+                  ) : (
+                    title
+                  )}
+                </Link>
+              )}
             </li>
           );
         })}

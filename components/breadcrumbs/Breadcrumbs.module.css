@@ -1,40 +1,41 @@
-/* components/breadcrumbs/Breadcrumbs.module.css */
 .breadcrumb {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-  }
-  
-  .breadcrumb .li {
-    position: relative;
-    margin-right: 30px;
-  }
-  
-  .breadcrumb .li::after {
-    /* content: ">";
-    content: "•";
-    */
-    content: "→";
-    position: absolute;
-    right: -25px; /* Adjust based on the margin */
-    top: 50%;
-    transform: translateY(-50%);
-    color: #ffffff; /* Change to desired color */
-  }
-  
-  .breadcrumb .li:last-child::after {
-    content: "";
-  }
-  
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
 
-  @media (max-width: 992px) { 
-  .breadcrumb {
-    display: inline-block;
-  }
-  .breadcrumb .li::after {
-      margin: inherit;
-      right: -10px;
-      position: relative;
-  }
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.breadcrumb li::before {
+  content: url("data:image/svg+xml,%3Csvg width='15' height='9' viewBox='0 0 15 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.3536 4.35355C13.5488 4.15829 13.5488 3.84171 13.3536 3.64645L10.1716 0.464466C9.97631 0.269204 9.65973 0.269204 9.46447 0.464466C9.2692 0.659728 9.2692 0.976311 9.46447 1.17157L12.2929 4L9.46447 6.82843C9.2692 7.02369 9.2692 7.34027 9.46447 7.53553C9.65973 7.7308 9.97631 7.7308 10.1716 7.53553L13.3536 4.35355ZM0 4.5H13V3.5H0V4.5Z' fill='%23ADADAD'/%3E%3C/svg%3E%0A");
+  margin: 0 8px;
+}
+
+.breadcrumb li:first-child::before {
+  content: none;
+}
+
+.breadcrumb li:first-child a {
+  color: white;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: #ADADAD;
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb li:last-child a {
+  color: #ffffff; /* Цвет активной страницы */
+  pointer-events: none; /* Отключение ссылки для текущей страницы */
 }

@@ -46,23 +46,23 @@ const NavRus: React.FC = () => {
   <div className={styles.menuContainer}>
     <div className={styles.menuColumns}>
       <div className={styles.menuColumn}>
-        <h2>Услуги</h2>
+        <h2><a className="p-1 a-anim-w text-xl font-bold" href="/ru/services">Услуги</a></h2>
         <ul>
-          <li><a className="p-1 a-anim-w" href="#">Веб-дизайн</a></li>
-          <li><a className="p-1 a-anim-w" href="#">Разработка сайтов</a></li>
-          <li><a className="p-1 a-anim-w" href="#">Разработка интернет магазинов</a></li>
-          <li><a className="p-1 a-anim-w" href="#">Разработка маркетплейсов, аукционов</a></li>
-          <li><a className="p-1 a-anim-w" href="#">Продвижение сайтов</a></li>
-          <li><a className="p-1 a-anim-w" href="#">Интернет-реклама</a></li>
+          <li><a className="p-1 a-anim-w" href="/ru/web-design">Веб-дизайн</a></li>
+          <li><a className="p-1 a-anim-w" href="/ru/web-development">Разработка сайтов</a></li>
+          <li><a className="p-1 a-anim-w" href="/ru/online-store-development">Разработка интернет магазинов</a></li>
+          <li><a className="p-1 a-anim-w" href="/ru/marketplace-auction-development">Разработка маркетплейсов, аукционов</a></li>
+          <li><a className="p-1 a-anim-w" href="/ru/seo">Продвижение сайтов</a></li>
+          <li><a className="p-1 a-anim-w" href="/ru/ads">Интернет-реклама</a></li>
         </ul>
       </div>
       <div className={styles.menuColumn}>
         <div className={styles.marginDescFor2Col}>
         <ul>
-          <li><a className="p-1 a-anim-w text-xl font-bold" href="#">Кейсы</a></li>
-          <li><a className="p-1 a-anim-w text-xl font-bold" href="#">Компания</a></li>
-          <li><a className="p-1 a-anim-w text-xl font-bold" href="#">Отзывы</a></li>
-          <li><a className="p-1 a-anim-w text-xl font-bold" href="#">Контакты</a></li>
+          <li><a className="p-1 a-anim-w text-xl font-bold" href="/ru/cases">Кейсы</a></li>
+          <li><a className="p-1 a-anim-w text-xl font-bold" href="/ru/company">Компания</a></li>
+          <li><a className="p-1 a-anim-w text-xl font-bold" href="/ru/reviews">Отзывы</a></li>
+          <li><a className="p-1 a-anim-w text-xl font-bold" href="/ru/contact">Контакты</a></li>
         </ul>
         <br></br>
         <p><a className="p-1 a-anim-w" href="mailto:hello@web-machine.rocks">Email: hello@web-machine.rocks</a></p>
@@ -73,17 +73,17 @@ const NavRus: React.FC = () => {
     <div className={styles.footerContainer}>
       <div className={styles.footer}>
       <div className={styles.languages}>
-      <a href="/en/">EN</a>
+      <a href="https://web-machine.rocks">EN</a>
       <a href="/ru/">RU</a>
       <a href="/uk/">UA</a>
       <a href="/zh/">ZH</a>
     </div>
     <div className={styles.socialLinks}>
-      <a href="#">LinkedIn</a>
-      <a href="#">Facebook</a>
-      <a href="#">Instagram</a>
-      <a href="#">Clutch</a>
-      <a href="#">Behance</a>
+        <a target="_blank" rel="nofollow noopener noreferrer" href="https://www.linkedin.com/company/the-web-machine/">LinkedIn</a>
+        <a target="_blank" rel="nofollow noopener noreferrer" href="https://www.facebook.com/THEWEBMACHINE/">Facebook</a>
+        <a target="_blank" rel="nofollow noopener noreferrer" href="https://www.instagram.com/web.machine/">Instagram</a>
+        <a target="_blank" rel="nofollow noopener noreferrer" href="https://clutch.co/profile/web-machine">Clutch</a>
+        <a target="_blank" rel="nofollow noopener noreferrer" href="https://www.behance.net/webmachineagency">Behance</a>
     </div>
       </div>
     </div>

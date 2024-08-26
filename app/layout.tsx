@@ -16,14 +16,6 @@ export const metadata: Metadata = {
   robots: "index,follow",
   generator: "Typescript",
   verification: { google: ""},
-  alternates: {
-    canonical: "https://web-machine.rocks/",
-    languages: {
-      en: "https://web-machine.rocks/",
-      ru: "https://web-machine.rocks/ru/",
-      uk: "https://web-machine.rocks/uk/",
-    },
-  },
 };
 
 export default function RootLayout({
@@ -32,7 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
 return (
-<html lang="en" dir="ltr">
+ // <html lang="en" dir="ltr"></html>
+<html dir="ltr">
       <head>
         <script
           src="https://www.googletagmanager.com/gtag/js?id=G-8Y0XBRKL31&amp;cx=c&amp;_slc=1"

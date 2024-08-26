@@ -36,18 +36,18 @@ const FooterRu: React.FC = () => {
                     <Link className={'p-1 a-anim-w'} href="/ru/seo">Раскрутка сайтов</Link>
                     <br></br>
                     <div className={styles.languages}>
-                    <a href="/en/">EN</a>
+                    <a href="https://web-machine.rocks">EN</a>
                     <a href="/ru/">RU</a>
                     <a href="/uk/">UA</a>
                     <a href="/zh/">ZH</a>
                     </div>
                     <br></br>
                     <div className={styles.socialLinks}>
-                    <a href="#">LinkedIn</a>
-                    <a href="#">Facebook</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">Clutch</a>
-                    <a href="#">Behance</a>
+                    <a target="_blank" rel="nofollow noopener noreferrer" href="https://www.linkedin.com/company/the-web-machine/">LinkedIn</a>
+                    <a target="_blank" rel="nofollow noopener noreferrer" href="https://www.facebook.com/THEWEBMACHINE/">Facebook</a>
+                    <a target="_blank" rel="nofollow noopener noreferrer" href="https://www.instagram.com/web.machine/">Instagram</a>
+                    <a target="_blank" rel="nofollow noopener noreferrer" href="https://clutch.co/profile/web-machine">Clutch</a>
+                    <a target="_blank" rel="nofollow noopener noreferrer" href="https://www.behance.net/webmachineagency">Behance</a>
                     </div>
               </div>
 
@@ -58,9 +58,10 @@ const FooterRu: React.FC = () => {
                 <Link className={'p-1 a-anim-w'} href="/ru/company">Компания</Link>
                 <Link className={'p-1 a-anim-w'} href="/ru/services">Сервисы</Link>
                 <Link className={'p-1 a-anim-w'} href="/ru/contact">Контакты</Link>
+                <Link className={'p-1 a-anim-w'} href="/ru/sitemap">Карта сайта</Link>
                 <br></br>
                 <Link className={'a-anim-w text-sm'} href="/ru/legal">Юридическая информация</Link>
-                <Link className={'a-anim-w text-sm'} href="/ru/cookies">Политика Кукис</Link>
+                <Link className={'a-anim-w text-sm'} href="/ru/cookies">Политика Cookies</Link>
           </div>
 
           <div className="inline-grid">

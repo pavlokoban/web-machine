@@ -36,7 +36,7 @@ const SitemapPageRu = () => {
         <ul>
         <li><a className="p-1 a-anim-w text-xl font-bold" href="/ru/">Главная страница</a></li>
         <li><a className="p-1 a-anim-w text-xl font-bold" href="/ru/services">Услуги</a>
-                <ul className="ml-4"> {/* Добавляем отступ слева для вложенного списка */}
+                <ul className="ml-4">
                     <li><a className="p-1 a-anim-w" href="/ru/web-design">Дизайн сайта</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/web-development">Создание сайта</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/online-store-development">Создание интернет-магазина</a></li>
@@ -52,7 +52,7 @@ const SitemapPageRu = () => {
                 </ul></li>
         <li><a className="p-1 a-anim-w text-xl font-bold" href="/ru/blog">Блог</a></li>
         <li><a className="p-1 a-anim-w text-xl font-bold" href="/ru/services">Сервисы</a>
-                <ul className="ml-4"> {/* Добавляем отступ слева для вложенного списка */}
+                <ul className="ml-4">
                     <li><a className="p-1 a-anim-w" href="/ru/seo-cost-calculator">SEO калькулятор онлайн</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/dev-development-cost-calculator">Калькулятор разработки сайта онлайн</a></li>
                 </ul></li>
@@ -69,7 +69,7 @@ const SitemapPageRu = () => {
         <div className='desc-col-2-50-mob-1-100'>
         <ul>
             <li><a className="p-1 a-anim-w text-xl font-bold" href="/ru/cases">Портфолио</a>
-            <ul className="ml-4"> {/* Добавляем отступ слева для вложенного списка */}
+            <ul className="ml-4">
                     <li><a className="p-1 a-anim-w" href="/ru/web">Разработка интернет-магазина Ukreina</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/web">Создание сайта ведущего китайского разработчика игр ZPLAY</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/web">Разработка портала Health-UA</a></li>
@@ -77,6 +77,8 @@ const SitemapPageRu = () => {
                     <li><a className="p-1 a-anim-w" href="/ru/web">Дизайн и разработка сайта для бренда Роганская вода</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/web">Разработка интернет-магазина швейного оборудования Amtex</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/web">Разработка сайта Carglass</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/web">Разработка интернет-магазина Procraft</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/web">Разработка сайта автодилера Hyundai</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/web">Разработка интернет-магазина Modiva</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/web">SEO оптимизация оптового магазина Карнавал Приколов</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/web">Разработка и продвижение интернет-магазина Palvira</a></li>
