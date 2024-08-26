@@ -5,6 +5,11 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import CookieBanner from '../components/cookiesbanner/CookieBanner';
 import React from 'react';
+// import { usePathname } from 'next/navigation';
+// import { ReactNode } from 'react';
+// import { getLangFromPath } from '../getLangFromPath';
+import { headers } from 'next/headers';
+
 
 const unbounded = Unbounded({ subsets: ["latin", "cyrillic-ext"] });
 const montserrat = Montserrat({ subsets: ["latin", "cyrillic-ext"] });
@@ -18,27 +23,60 @@ export const metadata: Metadata = {
   verification: { google: ""},
 };
 
+// 1) оригинал:
+// export default function RootLayout({children,}: {children: React.ReactNode;}) {
+//  return (
+//<html lang="en" dir="ltr">
+
+// 5) вариант непонятный
+//export async function generateStaticParams() {
+//  return [
+//    { lang: 'en', slug: [] },
+//   { lang: 'ru', slug: ['ru'] },
+//    { lang: 'ru', slug: ['web-development'] },
+//    // Добавьте другие пути по необходимости
+//  ];
+//}
+
+// вариант мучений: export default function RootLayout({
+//  children,
+//  params,
+//}: {
+//  children: React.ReactNode;
+//  params: { lang?: string; slug?: string[] };
+//}) {
+//  const langParam = params.lang || 'en';
+//  const slugArray = params.slug || [];
+//  const fullPath = `/${langParam}${slugArray.length > 0 ? '/' + slugArray.join('/') : ''}`;
+//  const lang = getLangFromPath(fullPath);
+//  return (
+//    <html lang={lang}>
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-return (
- // <html lang="en" dir="ltr"></html>
-<html dir="ltr">
+  const requestHeaders = headers();
+
+  const lang = requestHeaders.get('x-lang') || 'en';
+  return (
+    <html lang={lang}>
+
       <head>
         <script
           src="https://www.googletagmanager.com/gtag/js?id=G-8Y0XBRKL31&amp;cx=c&amp;_slc=1"
           async
         >
         </script>
+      
           <meta itemScope itemType="https://schema.org/Organization" />
           <meta itemProp="name" content="WEB-MACHINE" />
           <meta itemProp="logo" content="https://web-machine.rocks/images/main/web-machine-logo.png" />
           <meta itemProp="url" content="https://web-machine.rocks/" />
           <meta itemProp="telephone" content="+38 068 112 112 8" />
           <meta itemProp="streetAddress" content="вул. Дорогожицька, 3" />
-          <meta itemProp="addressLocality" content="Tallin" />
+          <meta itemProp="addressLocality" content="Киев, Украина" />
 
         <HeadComponent />
       </head>

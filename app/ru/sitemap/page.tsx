@@ -8,7 +8,6 @@ import Link from 'next/link';
 import OfficeLocationsRus from '@/components/officelocations/OfficeLocationsRus';
 import ImageRow from '@/components/imagerow/ImageRow';
 
-
 export const metadata: Metadata = {
     title: "Карта сайта - WEB-MACHINE",
     description: "Полное меню всех разделов и страниц, доступных на сайте нашей компании WEB-MACHINE",
@@ -21,7 +20,6 @@ export const metadata: Metadata = {
       },
     },
   };
-
 
 const SitemapPageRu = () => {
   return (
@@ -121,7 +119,7 @@ const SitemapPageRu = () => {
         <ContactFormRus />
         </div>
       </LayoutMainRus>
-    </>
+      </>
   );
 };
 
