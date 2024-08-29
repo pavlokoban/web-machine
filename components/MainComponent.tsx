@@ -139,6 +139,7 @@ const MainComponent = () => {
           imgSrc="/images/portfolio/okko_cover_01-min.png"
           imgAlt="Design, technical support and development of sections on the website of the OKKO gas station network."
           caseText="Case"
+          stackArray={["React.js", "Design", "SEO", "Web-development"]}
           titleText="Design, technical support and development of sections on the website of the OKKO gas station network."
         />
 
@@ -148,6 +149,7 @@ const MainComponent = () => {
           imgSrc="/images/portfolio/case_carglass.jpeg"
           imgAlt="Creation of a website for the Carglass® brand - an international brand of a division of the Belron® Group - a world leader in the field of repair and replacement of automobile glass"
           caseText="Case"
+          stackArray={["React.js", "Design", "SEO", "Web-development"]}
           titleText="Creation of a website for the Carglass® brand - an international brand of a division of the Belron® Group - a world leader in the field of repair and replacement of automobile glass"
         />
       
@@ -158,6 +160,7 @@ const MainComponent = () => {
           videoSrcWebm="/movie/case_zplay_light.webm"
           videoSrcMp4="/movie/case_zplay_light.mp4"
           caseText="Case"
+          stackArray={["React.js", "Design", "SEO", "Web-development"]}
           titleText="International mobile game developer Zplay: design and website development"
         />
 
