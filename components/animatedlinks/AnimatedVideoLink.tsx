@@ -8,10 +8,11 @@ interface AnimatedVideoLinkProps {
   videoSrcWebm: string;
   videoSrcMp4: string;
   caseText: string;
+  stackArray: string[];
   titleText: string;
 }
 
-const AnimatedVideoLink: React.FC<AnimatedVideoLinkProps> = ({ href, videoSrcWebm, videoSrcMp4, caseText, titleText }) => {
+const AnimatedVideoLink: React.FC<AnimatedVideoLinkProps> = ({ href, videoSrcWebm, videoSrcMp4, caseText, stackArray = [], titleText }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -40,13 +41,27 @@ const AnimatedVideoLink: React.FC<AnimatedVideoLinkProps> = ({ href, videoSrcWeb
         ) : (
           <div className="video-placeholder">Loading...</div>
         )}
-        <div className="info-case flex">
+
+        <div className="info-case ">
+        <h3 className="title-format-info">{titleText}</h3>
+        <span className="stack-line"></span>
+          <div className="flex">
           <p className="article-format">{caseText}</p>
-          <h3 className="title-format-info">{titleText}</h3>
+          <div className="stack-array">
+            {stackArray.map((item, index) => (
+              <span key={index} className="stack-item">
+                {item}
+                {index < stackArray.length - 1 && <span className="comma">, </span>}
+              </span>
+            ))}
+          </div>
+
         </div>
+        </div>
+
         <div className="overlay">
           <div className="circle">
-            <div className="arrow">&#x279C;</div> {/* Heavy Round-Tipped Rightwards Arrow */}
+            <div className="arrow">&#x2794;</div> {/* альтернативный вариант &#x279C; */}
           </div>
         </div>
       </div>

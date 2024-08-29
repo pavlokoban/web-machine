@@ -653,7 +653,39 @@ h4  {
   }
 }
 
+.stack-array {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  text-align: right; 
+}
 
+.stack-item {
+  margin-right: 6px;
+  height: fit-content;
+  padding: 3px 15px;
+  font-size: 12px;
+  /*border: 1px solid #ccd6e5;*/
+  border-radius: 12px;
+  color: #3f3e3e;
+  background-color: #ccd6e5;
+  background-color: #ccd6e52b;
+  font-weight: 300;
+}
+
+.comma {
+  margin-right: 5px;
+  display: none;
+}
+
+.stack-line {
+  display: block;
+  height: 1px;
+  background-color:#e4ebf5;
+  background-color: #ccd6e599;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
 /* портфолио ссылки */
 
 .info-case {
@@ -664,8 +696,9 @@ h4  {
 .article-format {
   width: 15%;
   max-width: 100px;
-  background: #f5f5fa;
-  text-align: center;
+  /*background: #f5f5fa;
+  text-align: center;*/
+  text-align: left;
   border-radius: 12px;
   height: -moz-fit-content;
   height: fit-content;
@@ -677,10 +710,12 @@ h4  {
 }
 
 .title-format-info {
-  text-align: right;
+  text-align: left;
   width: 100%;
   margin-top: -8px;
   font-weight: 400;
+  font-size: 30px;
+  line-height: 1.5;
 }
 
 .animated-link {
@@ -732,6 +767,7 @@ h4  {
   background-color: rgba(0, 255, 0, 0.8);
   background-color: #ACF4D9;
   background-color: #3AD196; /* Полупрозрачный зеленый круг */
+  background-color: #fff;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -860,7 +896,7 @@ h4  {
 .desc-col-2-50-mob-1-100 {
   display: block;
   width: 50%;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 /* Люди на странице контактов */
@@ -929,6 +965,8 @@ h4  {
 
 .footerAdrressText {
   font-size: medium;
+  font-size: 14px;
+  line-height: 1.8;
 }
 
 /* Медиа */
@@ -960,6 +998,16 @@ h4  {
   }
   .only-desc {
     display: none;
+  }
+  .stack-item {
+    margin-right: 8px;
+    margin-bottom: 6px;
+  }
+  .article-format{
+    display: none;
+  }
+  .title-format-info {
+    font-size: 24px;
   }
   .footerAdrressText {
     font-size: small;
@@ -1003,11 +1051,12 @@ h4  {
   width: auto;
   border: none;
   margin-left: auto;
+  display: none;
 }
-.px-10 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
+  .px-10 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 @media (min-width: 740px) {
@@ -1016,3 +1065,19 @@ h4  {
     background-image: linear-gradient(180deg, #FFFFFF 8%, #D3CDC6 100%);
   }
 }
+@media (min-width: 1380px) {
+  .container, .fake-container {
+    max-width: 1300px;
+  }
+}
+@media (min-width: 1440px) {
+  .container, .fake-container {
+    max-width: 1380px;
+  }
+}
+@media (min-width: 1700px) {
+  .container, .fake-container {
+    max-width: 1600px;
+  }
+}
+

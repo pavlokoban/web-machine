@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Head from 'next/head';
-import styles from './RuStyle.module.css'
 import type { Metadata } from "next";
 import LayoutMainRus from "@/components/LayoutMainRus";
 import SEORus from './SEORus';

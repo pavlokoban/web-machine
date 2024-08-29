@@ -9,6 +9,8 @@ export function middleware(req: NextRequest) {
     lang = 'ru';
   } else if (pathname.startsWith('/uk')) {
     lang = 'uk';
+  } else if (pathname.startsWith('/zh')) {
+    lang = 'zh';
   }
 
   // Создаем экземпляр NextResponse

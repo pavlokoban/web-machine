@@ -120,7 +120,7 @@ const SEORus = () => {
         </Link>
         </div>
         <div className='projects-num'>
-          <Link href="/ru/works">
+          <Link href="/ru/cases">
             300+ проектов с 2013 года
           </Link>
         </div>
@@ -215,15 +215,17 @@ const SEORus = () => {
           imgSrc="/images/portfolio/okko_cover_01-min.png"
           imgAlt="Design, technical support and development of sections on the website of the OKKO gas station network."
           caseText="Case"
+          stackArray={["React.js", "Design", "SEO", "Web-development"]}
           titleText="Design, technical support and development of sections on the website of the OKKO gas station network."
         />
 
 
       <AnimatedLink 
           href="/"
-          imgSrc="/images/portfolio/case_carglass.jpeg"
+          imgSrc="/images/portfolio/case_carglass_cover.jpeg"
           imgAlt="Creation of a website for the Carglass® brand - an international brand of a division of the Belron® Group - a world leader in the field of repair and replacement of automobile glass"
           caseText="Case"
+          stackArray={["React.js", "Design", "SEO", "Web-development"]}
           titleText="Creation of a website for the Carglass® brand - an international brand of a division of the Belron® Group - a world leader in the field of repair and replacement of automobile glass"
         />
       
@@ -231,9 +233,10 @@ const SEORus = () => {
 
         <AnimatedVideoLink 
           href="/"
-          videoSrcWebm="/movie/case_zplay_light.webm"
-          videoSrcMp4="/movie/case_zplay_light.mp4"
+          videoSrcWebm="/movie/case_zplay_cover.webm"
+          videoSrcMp4="/movie/case_zplay_cover.mp4"
           caseText="Case"
+          stackArray={["React.js", "Design", "SEO", "Web-development"]}
           titleText="International mobile game developer Zplay: design and website development"
         />
 

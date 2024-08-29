@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import styles from './ContactForm.module.css';
 import emailjs from "@emailjs/browser";
-import Footer from '../Footer';
+import Footer from '../footer/Footer';
 import Link from 'next/link';
 
 const ContactFormRus: React.FC = () => {

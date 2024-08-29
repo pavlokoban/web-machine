@@ -3,7 +3,7 @@ import Head from 'next/head';
 import styles from './RuStyle.module.css'
 import type { Metadata } from "next";
 import LayoutMainRus from "@/components/LayoutMainRus";
-import DevComponentRus from '@/components/DevComponentRus';
+import DevComponentRus from './DevComponentRus';
 
 export const metadata: Metadata = {
   title: "Разработка сайтов в Киеве и Украине: цена | Заказать создание сайта под ключ!",

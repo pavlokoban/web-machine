@@ -3,7 +3,6 @@ import React from 'react';
 import LayoutMainRus from '@/components/LayoutMainRus';
 import ContactFormRus from '@/components/contact-form/ContactFormRus';
 import { Metadata } from 'next';
-import Footer from '@/components/Footer';
 import Link from 'next/link';
 import OfficeLocationsRus from '@/components/officelocations/OfficeLocationsRus';
 import ImageRow from '@/components/imagerow/ImageRow';

@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import MainComponent from './MainComponent';
 import { ReactNode } from 'react';
-import FooterRu from './FooterRu';
+import FooterRu from './footer/FooterRu';
 import NavRus from './nav/NavRus';
 
 interface LayoutMainProps {
