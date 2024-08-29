@@ -232,7 +232,7 @@ const DevComponentRus = () => {
       <AnimatedVideoLink 
           href="/"
           videoSrcWebm="/movie/case_carglass.webm"
-          videoSrcMp4="/movie/case_rog_1.mp4"
+          videoSrcMp4="/movie/case_carglass.mp4"
           caseText="Кейс"
           stackArray={["React.js", "Design", "SEO", "Web-development"]}
           titleText="International mobile game developer Zplay: design and website development"
