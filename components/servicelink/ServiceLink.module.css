@@ -12,6 +12,8 @@
   .serviceLink:hover {
     /* background-color: #f5f5f5; */
     border-bottom: 1px solid #000;
+    background-color: #acf4d9;
+    border-bottom: 1px solid #3ad197;
   }
   
   .serviceLink:hover .arrowContainer {

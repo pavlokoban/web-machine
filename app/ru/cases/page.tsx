@@ -8,7 +8,7 @@ import AnimatedVideoLink from '@/components/animatedlinks/AnimatedVideoLink';
 
 export const metadata: Metadata = {
   title: "Портфолио",
-  description: "⭐ Портфолио",
+  description: "Портфолио",
   alternates: {
     canonical: "https://web-machine.rocks/ru/cases",
     languages: {

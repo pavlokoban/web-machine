@@ -183,6 +183,15 @@ width: 100%;
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Major Mono Display';
+  src: url('/fonts/majormonodisplay/MajorMonoDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 .hego-screen {
   width: auto;
 }
