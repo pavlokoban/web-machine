@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
     const script = document.createElement('script');
     script.type = 'text/javascript';
     script.async = true;
-    script.src = '//telegram.im/widget-button/index.php?id=@WEB_MACHINE';
+   // script.src = '//telegram.im/widget-button/index.php?id=@WEB_MACHINE';
     document.getElementsByTagName('head')[0].appendChild(script);
 
     return () => {

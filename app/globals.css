@@ -57,6 +57,14 @@ body {
 
 }
 
+hr.servicesHr {
+height: 1px;
+background-color: #c4cbd6;
+border: 1px;
+margin: 8px;
+}
+
+
 .border-36 {border-radius: 36px;}
 .border-12 {border-radius: 12px;}
 
@@ -263,6 +271,17 @@ h4  {
 }
 .centered-texts {
   text-align: center;
+}
+
+.sub-title-service-texts {
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+.sub-h4-service-texts {
+  font-size: x-large;
+  margin: 0 12px;
+  font-weight: 700;
 }
 
 .big-padding-top-desc {
@@ -1089,4 +1108,3 @@ h4  {
     max-width: 1600px;
   }
 }
-

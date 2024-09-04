@@ -25,6 +25,32 @@
     animation-delay: 0s; 
   }
 
+  .circleDiscussButton {
+    padding: 30px;
+    width: 160px;
+    height: 160px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 100%;
+    opacity: 0; 
+    transform: translateX(-20px); 
+    animation: fadeInB 1s ease forwards;
+    animation-delay: 0s; 
+    text-decoration: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    background-color: #3ad196;
+  }
+
   @keyframes fadeInB {
     to {
       opacity: 1;
@@ -32,12 +58,12 @@
     }
   }
 
-  .discussButton:hover {
+  .discussButton:hover, .circleDiscussButton:hover {
     background-color: black;
     color: white;
   }
   
-  .discussButton .arrow {
+  .discussButton .arrow, .circleDiscussButton .arrow {
     display: inline-block;
     margin-left: 15px;
     transition: all 0.3s ease;
@@ -45,15 +71,16 @@
     transform: translateX(-10px);
   }
   
-  .discussButton:hover .arrow {
+  .discussButton:hover .arrow, .circleDiscussButton:hover .arrow {
     opacity: 1;
     transform: translateX(0);
   }
   
-  .discussButton .arrow::before {
+  .discussButton .arrow::before, .circleDiscussButton .arrow::before {
     content: '→';
     display: inline-block;
   }
+
 
   @keyframes colorChange {
     0% {

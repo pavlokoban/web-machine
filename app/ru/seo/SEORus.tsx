@@ -3,19 +3,21 @@
 import { headers } from 'next/headers';
 import Head from 'next/head';
 import LayoutMainRus from "@/components/LayoutMainRus";
+import ContactForm from '@/components/contact-form/ContactForm';
+
 import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import AnimatedLink from '@/components/animatedlinks/AnimatedLink';
 import AnimatedVideoLink from '@/components/animatedlinks/AnimatedVideoLink';
-import ContactForm from '@/components/contact-form/ContactForm';
 import ServiceLink from '@/components/servicelink/ServiceLink';
 import BrandSection from '@/components/brandsection/BrandSection';
 import MarqueeText from '@/components/marqueetext/MarqueeText';
 import Testimonials from '@/components/testimonials/Testimonials';
-import DiscussButtonRu from '@/components/buttonletstalk/ButtonLetsTalkRu';
+import CircleDiscussButtonSEORu from '@/components/buttonletstalk/CircleButtonSEORu';
 import ImageRow from '@/components/imagerow/ImageRow';
 import CostEstimation from '@/components/estimation/Estimation';
 import StageSliderDevRu from '@/components/stageslider/StageSliderDevRu';
+import CountUp from 'react-countup';
 
 
 const SEORus = () => {
@@ -91,59 +93,39 @@ const SEORus = () => {
     <div className="relative w-full overflow-hidden gray112">
       <div ref={textContainerRef} id=""></div>
       <div className="relative z-10 container mx-auto p-10 px-10 m-10 w-100">
-        <h1 className={'unbounded'}>Продвижение сайтов (SEO)</h1>
-        <h4 className={''}>Продвижение сайта — это процесс, который включает в себя комплекс мероприятий по внутренней SEO оптимизации и набор действий, направленных на повышение видимости сайта в поисковой системе Google. Таким образом, поисковое продвижение сайтов заключается в систематическом повышении качества страниц и их релевантности поисковым запросам целевых пользователей. Также следует отметить, что раскрутка сайта — это один из самых высокорентабельных инструментов интернет-маркетинга и развития бизнеса онлайн, в частности электронной коммерции.
+        <h1 className={'unbounded centered-texts'}>Продвижение сайтов (SEO)</h1>
+        <h4 className={'centered-texts sub-title-service-texts'}>Продвижение сайта — это процесс, который включает в себя комплекс мероприятий по внутренней SEO оптимизации и набор действий, направленных на повышение видимости сайта в поисковой системе Google. Таким образом, поисковое продвижение сайтов заключается в систематическом повышении качества страниц и их релевантности поисковым запросам целевых пользователей. Также следует отметить, что раскрутка сайта — это один из самых высокорентабельных инструментов интернет-маркетинга и развития бизнеса онлайн, в частности электронной коммерции.
         </h4>
         
         <div className='space20'></div>
        
         <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2'>
           <div>
-            <h3>Стоимость:</h3>
-            <hr style={{height: '1px', backgroundColor: '#c4cbd6', border: '1px', margin: '12px'}}></hr>
-            <p style={{fontSize: 'large', margin: '0 12px', fontWeight: '500'}}>от 8900 грн/мес.</p>
+            <h3 className='centered-texts'>Стоимость:</h3>
+            <hr className="servicesHr"></hr>
+            <p className='centered-texts sub-h4-service-texts'>от <CountUp start={19000} end={11200} duration={2} separator={" "} /> грн/мес.</p>
 
           </div>
           <div>
-          <h3>Сроки:</h3>
-          <hr style={{height: '1px', backgroundColor: '#c4cbd6', border: '1px', margin: '12px'}}></hr>
-          <p style={{fontSize: 'large', margin: '0 12px', fontWeight: '500'}}>от 6 мес.</p>
+          <h3 className='centered-texts'>Сроки:</h3>
+          <hr className="servicesHr"></hr>
+          <p className='centered-texts sub-h4-service-texts'>от <CountUp  start={12} end={6} duration={2} /> мес.</p>
         </div>
 
         </div>
         <div className='inline-flex-desc'>
         
-        <DiscussButtonRu />
-        <div className='projects-clutch'>
-        <Link href="/ru/reviews">
-        <img src="/clutch_review_tr_ru.svg" alt="Clutch Review" />
-        </Link>
-        </div>
-        <div className='projects-num'>
-          <Link href="/ru/cases">
-            300+ проектов с 2013 года
-          </Link>
-        </div>
+        <CircleDiscussButtonSEORu reflink="/ru/contact" />
+
+
         </div>
 
-      <div className='space20'></div>
-      <div className='space20'></div>
+
       <div className='space20'></div>
 
-      <div className="video-container">
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline 
-          className="w-full h-auto border-36"
-        >
-          <source src="/movie/showreel-test2.webm" type="video/webm" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
       
       </div>
+      <MarqueeText />
 
 
       <div id="content-container" className="relative z-0 container mx-auto p-10 px-10 m-10">
