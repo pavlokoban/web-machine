@@ -192,7 +192,7 @@ const ContactFormRus: React.FC = () => {
         </div>
         </div>
 
-        <button type="submit" className={`${styles.submitButton}`}>
+       <button type="submit" className={`${styles.submitButton}`}>
           <span className={styles.buttonText}>Отправить</span>
           <span className={styles.buttonWaves}></span>
         </button>

@@ -237,6 +237,15 @@ const DevComponentRus = () => {
           stackArray={["React.js", "Design", "SEO", "Web-development"]}
           titleText="International mobile game developer Zplay: design and website development"
         />
+
+<AnimatedVideoLink 
+          href="/"
+          videoSrcWebm="/movie/case_utopia.webm"
+          videoSrcMp4="/movie/case_utopia.mp4"
+          caseText="Кейс"
+          stackArray={["React.js", "Design", "SEO", "Web-development"]}
+          titleText="Utopia mobile game developer Zplay: design and website development"
+        />
       
         </div>
 

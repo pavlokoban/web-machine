@@ -57,6 +57,7 @@
       transform: translateX(0);
     }
   }
+ 
 
   .discussButton:hover, .circleDiscussButton:hover {
     background-color: black;
@@ -113,5 +114,81 @@
     .circleDiscussButton {
     display: flex;
   }
+  }
+
+  .circleDiscussButton {
+    padding: 30px;
+    width: 160px;
+    height: 160px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 100%;
+    opacity: 0; 
+    transform: translateY(20px); 
+    animation: fadeInB 1s ease forwards;
+    animation-delay: 0s; 
+    text-decoration: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease, box-shadow 0.5s ease;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3ad196;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    will-change: transform;
+  }
+  
+  .circleDiscussButton:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .circleDiscussButton:active {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .circleDiscussButton:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(58, 209, 150, 0.3), transparent);
+    border-radius: 50%;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  
+  .circleDiscussButton:hover:before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  
+  .circleDiscussButton .arrow {
+    display: inline-block;
+    margin-left: 15px;
+    transition: all 0.3s ease;
+    opacity: 1;
+    transform: translateX(-10px);
+  }
+  
+  .circleDiscussButton:hover .arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .circleDiscussButton .arrow::before {
+    content: '→';
+    display: inline-block;
   }
   

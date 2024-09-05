@@ -109,7 +109,7 @@ const SEORus = () => {
           <div>
           <h3 className='centered-texts'>Сроки:</h3>
           <hr className="servicesHr"></hr>
-          <p className='centered-texts sub-h4-service-texts'>от <CountUp  start={12} end={6} duration={2} /> мес.</p>
+          <p className='centered-texts sub-h4-service-texts'>от <CountUp start={12} end={6} duration={2} /> мес.</p>
         </div>
 
         </div>
