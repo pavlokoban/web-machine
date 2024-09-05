@@ -1,88 +1,118 @@
 .marqueeContainer {
-    background: transparent;
-    overflow: hidden;
-    position: relative;
-    white-space: nowrap;
-    font-size: 42px;
-    color: black;
-    padding: 10px 0;
-    /**/
-    padding: 20px 0;
-    background: #3ad196;
-    font-family: 'Major Mono Display';  
-    /**/
+  background: #41d6a0;
+  overflow: hidden;
+  position: relative;
+  font-size: 42px;
+  color: black;
+  padding: 20px 0;
+  font-family: 'Major Mono Display';
+}
+
+/* Верхняя строка */
+.topMarquee {
+  display: inline-flex;
+  animation: marqueeContinuousTop 45s linear infinite;
+  white-space: nowrap;
+  font-size: 20px;
+  position: absolute;
+  top: 10px; /* Верхняя строка видима поверх видео */
+  left: 0;
+  width: 100%;
+  z-index: 10; /* Строка поверх видео */
+}
+
+.smallText {
+  display: inline-block;
+  padding-right: 50px;
+  color: #000;
+}
+
+/* Основная бегущая строка под видео */
+.marquee {
+  display: inline-flex;
+  animation: marqueeContinuous 45s linear infinite;
+  white-space: nowrap;
+  max-width: 100%;
+  z-index: 1;
+}
+
+.text {
+  display: inline-block;
+  padding-right: 50px;
+  position: relative;
+}
+
+/* Белая бегущая строка поверх видео (с диагональным движением) */
+.diagonalMarquee {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  animation: diagonalMarquee 45s linear infinite; /* Движение под углом */
+  z-index: 5;
+}
+
+.diagonalText {
+  font-size: 70px;
+  color: white;
+  white-space: nowrap;
+}
+
+/* Анимация для всех бегущих строк (непрерывная) */
+@keyframes marqueeContinuous {
+  0% {
+    transform: translateX(10%);
   }
-  
+  10% {
+    transform: translateX(-10%);
+  }
+  20% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marqueeContinuousTop {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Анимация для белой строки (под углом) */
+@keyframes diagonalMarquee {
+  0% {
+    transform: translateX(10%) translateY(0%) rotate(-10deg);
+  }
+  100% {
+    transform: translateX(-100%) translateY(0%) rotate(-10deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .marqueeContainer {
+    font-size: 28px;
+  }
+
+  .smallText {
+    font-size: 16px;
+  }
+
+  .diagonalText {
+    font-size: 28px;
+  }
+  .diagonalMarquee {
+    animation: diagonalMarquee 30s linear infinite; /* Движение под углом */
+  }
+  .topMarquee {
+    animation: marqueeContinuous 30s linear infinite;
+  }
   .marquee {
-    display: inline-flex;
-    animation: marquee 15s linear infinite;
+    animation: marqueeContinuous 30s linear infinite;
   }
-  
-  .text {
-    display: inline-block;
-    padding-right: 50px;
-    position: relative;
-  }
-  
-  .text::before,
-  .text::after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    color: white;
-    opacity: 0.8;
-    clip-path: inset(0 0 0 0);
-  }
-  
-  .text::before {
-    color: cyan;
-    transform: translate(-2px, -2px);
-    mix-blend-mode: screen;
-  }
-  
-  .text::after {
-    color: magenta;
-    transform: translate(2px, 2px);
-    mix-blend-mode: screen;
-  }
-  
-  .marqueeContainer:hover .text::before,
-  .marqueeContainer:hover .text::after {
-    animation: glitch 0.3s steps(2, end) infinite;
-  }
-  
-  @keyframes marquee {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-  
-  @keyframes glitch {
-    0% {
-      clip-path: inset(0 0 0 0);
-    }
-    33% {
-      clip-path: inset(0 50% 0 0);
-      transform: translate(2px, -2px);
-    }
-    66% {
-      clip-path: inset(50% 0 0 0);
-      transform: translate(-2px, 2px);
-    }
-    100% {
-      clip-path: inset(0 0 0 0);
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .marqueeContainer {
-      font-size: 28px;
-    }
-  }
-  
+}

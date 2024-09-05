@@ -27,6 +27,7 @@ const testimonialsData = [
 
 const Testimonials = () => {
   return (
+    <>
     <div className={styles.testimonialsContainer}>
       {testimonialsData.map((testimonial, index) => (
         <div key={index} className={styles.testimonial}>
@@ -42,6 +43,22 @@ const Testimonials = () => {
         </div>
       ))}
     </div>
+     {/* Видео */}
+     <div style={{ maxWidth: '600px', margin: 'auto', position: 'relative' }}>
+     <video 
+       width="100%" 
+       height="auto" 
+       autoPlay 
+       loop 
+       muted 
+       playsInline 
+       controls={false}
+     >
+       <source src="/movie/LoveToClient.mp4" type="video/mp4" />
+       Your browser does not support the video tag.
+     </video>
+     </div>
+     </>
   );
 };
 

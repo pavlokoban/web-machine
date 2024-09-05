@@ -266,6 +266,21 @@ const DevComponentRus = () => {
           <div className='fake-container'>
           <h2 className='h3ash1'>Think Big!</h2>
           <BrandSection />
+          <div style={{ maxWidth: '600px', margin: 'auto', marginTop: '-250px'}}>
+          <video 
+                width="100%" 
+
+                height="auto" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline 
+                controls={false}
+              >
+                <source src="/movie/ThinkBig.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+        </video>
+        </div>
           </div>
         </div>
 

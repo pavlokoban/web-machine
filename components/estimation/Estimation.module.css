@@ -11,18 +11,18 @@
   }
   
   .summaryTitle {
-    font-size: 28px;
-    font-weight: 500;
+    font-size: 32px;
+    font-weight: 700;
     line-height: 1.5;
-    margin: 12px 0;
-    border-bottom: 1px solid #ccc;
+    margin: 12px 0 50px 0;
+    border-bottom: 1px solid #ffffff;
   }
 
   .summaryFieldSum {
-    padding: 16px 32px 50px 32px;
+    padding: 32px 42px 50px 42px;
     border: 1px solid #f5f5fa;
-    background: #f5f5fa;
-    border-radius: 12px;
+    background: #e4ebf575;
+    border-radius: 36px;
   }
 
   .summaryFields {
@@ -198,4 +198,61 @@
 
 .closeButton:hover {
   color: #FF0000;
+}
+
+.discussButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 30px;
+  /*border: 1px solid black;*/
+  border-radius: 25px;
+  background-color: transparent;
+  background-color: #463bf7;
+  /*background-color: #feee33;*/
+  /*color: black;*/
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-right: 20px;
+  opacity: 0; 
+  transform: translateX(-20px); 
+  animation: fadeInB 1s ease forwards;
+  animation-delay: 0s; 
+}
+@keyframes fadeInB {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.discussButton:hover {
+  background-color: black;
+  color: white;
+}
+
+.discussButton .arrow {
+  display: inline-block;
+  margin-left: 15px;
+  transition: all 0.3s ease;
+  opacity: 1;
+  transform: translateX(-10px);
+}
+
+.discussButton:hover .arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.discussButton .arrow::before {
+  content: '→';
+  display: inline-block;
 }

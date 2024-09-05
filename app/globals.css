@@ -8,10 +8,13 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   */
+  --archive-color-blue: #463bf7;
   --background-global: 255,255,255;
-  --color-main-1: #3ad196;
-  --color-main-2: #ACF4D9;
-  --color-main-3: #463bf7;
+  --color-main-green-deep: #3ad196;
+  --color-main-green-light: #ACF4D9;
+  --color-main-blue-deep: #0119fa;
+  --color-main-blue-light: #a5adff;
+
 }
 
 /*

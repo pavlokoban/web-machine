@@ -221,13 +221,16 @@ const EstimationComponent: React.FC = () => {
                 ))}
             </div>
             <div className={styles.summaryFields}>
-            <div className={styles.summaryFieldSum}>
-            <div className={styles.summaryTitle}>Ваш расчет</div>
-            <p>Предварительная оценка часов работы: {calculateHours()} часов</p>
-            <p>Предварительная оценка сметы: ${calculateCost()}</p>
-            <div className='space20'></div>
-            <p className='text-xs'>Данная оценка представлена в ознакомительных целях и каждый проект требует полноценной оценки задач и исходных данных.</p>
-            </div>
+                <div className={styles.summaryFieldSum}>
+                    <div className={styles.summaryTitle}>Ваш расчет</div>
+                    <p>Предварительная оценка часов работы: {calculateHours()} часов</p>
+                    <p style={{fontWeight: '700'}}>Предварительная оценка сметы: ${calculateCost()}</p>
+                    <div className='space20'></div>
+                    <p className='text-xs'>Данная оценка представлена в ознакомительных целях и каждый проект требует полноценной оценки задач и исходных данных.</p>
+                        <button onClick={() => setShowModal(true)} className={styles.discussButton}>
+                         <span className="discussButton">Получить персональный расчет</span>
+                        </button>
+                </div>
             <div className={styles.summaryField}>
             <button onClick={() => setShowModal(true)} className={styles.submitButton}>
                 <span className={styles.buttonText}>Получить персональный расчет</span>
