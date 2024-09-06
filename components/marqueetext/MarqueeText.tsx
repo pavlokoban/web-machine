@@ -22,7 +22,7 @@ const MarqueeText: React.FC = () => {
           playsInline 
           controls={false}
         >
-          <source src="/movie/MarqueeText.mp4" type="video/mp4" />
+          <source src="/movie/MarqueeText.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
 
