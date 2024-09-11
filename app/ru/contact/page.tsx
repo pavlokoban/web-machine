@@ -37,7 +37,7 @@ const ContactPageRu = () => {
                 <img src="/images/team/pavlo-sokolenko.webp" alt="LinkedIn CEO" />
               </a>
               <a href="https://www.linkedin.com/in/%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9-%D0%BF%D0%B5%D1%82%D1%80%D1%83%D1%88%D0%B5%D0%BD%D0%BA%D0%BE-90002690/" target="_blank" rel="noopener noreferrer">
-                <img src="/images/team/petrushenko.jpeg" alt="LinkedIn COO" />
+                <img src="/images/team/1644932312854.jpeg" alt="LinkedIn COO" />
               </a>
               <a href="https://www.linkedin.com/in/margarita-melikyan-6a2036160/" target="_blank" rel="noopener noreferrer">
                 <img src="/images/team/1521754615526.jpeg" alt="LinkedIn SEO" />

@@ -103,7 +103,7 @@ const SEORus = () => {
           <div>
             <h3 className='centered-texts'>Стоимость:</h3>
             <hr className="servicesHr"></hr>
-            <p className='centered-texts sub-h4-service-texts'>от <CountUp start={19000} end={11200} duration={2} separator={" "} /> грн/мес.</p>
+            <p className='centered-texts sub-h4-service-texts'>от <CountUp start={690} end={330} duration={2} separator={" "} /> $/мес.</p>
 
           </div>
           <div>
@@ -113,7 +113,7 @@ const SEORus = () => {
         </div>
 
         </div>
-        <div className='inline-flex-desc'>
+        <div className='flex'>
         
         <CircleDiscussButtonSEORu reflink="/ru/contact" />
 

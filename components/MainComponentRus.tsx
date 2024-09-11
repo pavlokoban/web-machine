@@ -119,7 +119,7 @@ const MainComponentRus = () => {
           playsInline 
           className="w-full h-auto border-36"
         >
-          <source src="/movie/showreel-test2.webm" type="video/webm" />
+          <source src="/movie/ShowReelDarkGray.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
       </div>

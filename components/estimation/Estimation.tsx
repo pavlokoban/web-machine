@@ -231,12 +231,7 @@ const EstimationComponent: React.FC = () => {
                          <span className="discussButton">Получить персональный расчет</span>
                         </button>
                 </div>
-            <div className={styles.summaryField}>
-            <button onClick={() => setShowModal(true)} className={styles.submitButton}>
-                <span className={styles.buttonText}>Получить персональный расчет</span>
-            </button>
-            </div>
-            </div>
+            </div> 
 
             {showModal && (
     <div className={styles.modal}>

@@ -1,37 +1,87 @@
 /* components/CookieBanner.module.css */
 .cookieBanner {
+  position: fixed;
+  left: auto;
+  width: auto;
+  /*background-color: rgb(255 255 255);*/
+  color: #000000;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
+  bottom: 30px;
+  margin: 0 auto;
+  border-radius: 36px;
+  max-width: 1200px;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 20px;
+  padding: 12px 42px;
+  right: auto;
+  background: rgb(255 255 255 / 86%);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(7px);
+  overflow: hidden;
+}
+
+.cookieBanner p {
+  margin: 0;
+  padding: 0 10px;
+  display: inline;
+}
+
+.buttonsContainer {
+  margin-top: 10px;
+}
+
+.cookieBanner button {
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 30px;
+  background: #ACF4D9;
+  color: #000;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+  font-weight: 500;
+}
+
+.cookieBanner button:hover {
+  color: #000;
+  background: #3ad197;
+}
+
+.cookieBanner .declineButton {
+
+  background: #000000;
+  color: #fff;
+}
+
+.cookieBanner .declineButton:hover {
+  background: #ff4d4d;
+  color: #fff;
+}
+
+@media (max-width: 992px) { 
+  .cookieBanner {
+    display: inline-block;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 12px;
+    right: auto;
+    border-radius: 0;
+    max-width: 1200px;
     position: fixed;
     bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    text-align: center;
-    padding: 10px;
-    z-index: 1000;
+    left: auto;
+    width: auto;
   }
-  
-  .cookieBanner p {
-    margin: 0;
-    padding: 0 10px;
-    display: inline;
+  .buttonsContainer {
+  margin-top: 6px;
+  display: block;
   }
-  
-  .cookieBanner button {
-    margin-left: 10px;
-    border: none;
-    cursor: pointer;
-    display: inline-block;
-    padding: 10px 50px;
-    background: #ACF4D9;
-    color: #000;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    font-weight: 500;
-  }
-  
-  .cookieBanner button:hover {
-    color: #000;
-    background: #f5f5fa;
-  }
+}

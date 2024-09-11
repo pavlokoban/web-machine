@@ -1,5 +1,6 @@
 .marqueeContainer {
-  background: #3ad197;
+  background: var(--color-main-1-deep);
+  background: var(--color-main-2-deep);
   overflow: hidden;
   position: relative;
   font-size: 42px;

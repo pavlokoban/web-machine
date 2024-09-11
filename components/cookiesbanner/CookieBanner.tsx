@@ -18,12 +18,20 @@ const CookieBanner = () => {
     setBannerVisible(false);
   };
 
+  const handleDecline = () => {
+    localStorage.setItem('cookieConsent', 'false');
+    setBannerVisible(false);
+  };
+
   if (!isBannerVisible) return null;
 
   return (
     <div className={styles.cookieBanner}>
       <p>This website uses cookies to ensure you get the best experience on our website.</p>
-      <button onClick={handleAccept}>OK</button>
+      <div className={styles.buttonsContainer}>
+        <button onClick={handleDecline} className={styles.declineButton}>Decline</button>
+        <button onClick={handleAccept}>Accept</button>
+      </div>
     </div>
   );
 };

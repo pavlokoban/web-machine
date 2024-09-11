@@ -5,7 +5,7 @@
     /*border: 1px solid black;*/
     border-radius: 25px;
     background-color: transparent;
-    background-color: #463bf7;
+    background-color: var(--color-main-2-deep);
     /*background-color: #feee33;*/
     /*color: black;*/
     color: white;
@@ -81,28 +81,6 @@
     content: '→';
     display: inline-block;
   }
-
-
-  @keyframes colorChange {
-    0% {
-      background-color: #f04335;
-    }
-    20% {
-      background-color: #cdfe4a;
-    }
-    40% {
-      background-color: #feee33;
-    }
-    60% {
-      background-color: #fe7b88;
-    }
-    80% {
-      background-color: #463bf7;
-    }
-    100% {
-      background-color: #f8006a;
-    }
-  }
   
   @media (max-width: 992px) {  
     .discussButton {
@@ -140,7 +118,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #3ad196;
+    background-color: var(--color-main-1-deep);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     will-change: transform;
   }

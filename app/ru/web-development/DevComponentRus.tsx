@@ -114,6 +114,7 @@ const DevComponentRus = () => {
       <div className='space20'></div>
       <div className='space20'></div>
 
+
       <div className="video-container">
         <video 
           autoPlay 
@@ -122,7 +123,7 @@ const DevComponentRus = () => {
           playsInline 
           className="w-full h-auto border-36"
         >
-          <source src="/movie/showreel-test2.webm" type="video/webm" />
+          <source src="/movie/ShowReelBlue.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
       </div>
@@ -269,7 +270,6 @@ const DevComponentRus = () => {
           <div style={{ maxWidth: '600px', margin: 'auto', marginTop: '-250px'}}>
           <video 
                 width="100%" 
-
                 height="auto" 
                 autoPlay 
                 loop 
@@ -277,7 +277,7 @@ const DevComponentRus = () => {
                 playsInline 
                 controls={false}
               >
-                <source src="/movie/ThinkBig.mp4" type="video/mp4" />
+                <source src="/movie/ThinkBig.webm" type="video/webm" />
                 Your browser does not support the video tag.
         </video>
         </div>
