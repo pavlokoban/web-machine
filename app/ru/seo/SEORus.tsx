@@ -216,7 +216,6 @@ const SEORus = () => {
         <AnimatedVideoLink 
           href="/"
           videoSrcWebm="/movie/case_zplay_cover.webm"
-          videoSrcMp4="/movie/case_zplay_cover.mp4"
           caseText="Case"
           stackArray={["React.js", "Design", "SEO", "Web-development"]}
           titleText="International mobile game developer Zplay: design and website development"
