@@ -62,6 +62,7 @@
   .discussButton:hover, .circleDiscussButton:hover {
     background-color: black;
     color: white;
+    box-shadow: 1px 1px 20px #acf4d975;
   }
   
   .discussButton .arrow, .circleDiscussButton .arrow {
