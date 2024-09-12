@@ -44,11 +44,11 @@
     margin-top: 10px;
     font-size: 14px;
     font-weight: 100;
-    opacity: .33;
+    opacity: .5;
   }
 
   .brand:hover .name {
-    opacity: .7;
+    opacity: .9;
   }
   
   .flag {

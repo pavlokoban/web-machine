@@ -82,9 +82,9 @@ margin: 8px;
   display: inline-flex;
   align-items: center;  
   border-radius: 25px;
-  /*border: 1px solid #000;
-  background-color: #fff;*/
-  border: 1px solid #ffffff;
+  border: 1px solid #000;
+  /*background-color: #fff;*/
+  /*border: 1px solid #ffffff;*/
   background-color: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -107,8 +107,9 @@ margin: 8px;
 }
 
 .projects-clutch:hover {
-  /*box-shadow: 1px 1px 20px #acf4d9;*/
+  box-shadow: 1px 1px 20px #acf4d9;
   background-color: #fff;
+  border: 1px solid #101010;
 }
 
 .projects-num {
@@ -116,10 +117,7 @@ margin: 8px;
   align-items: center;
   padding: 10px 30px;
   border-radius: 25px;
-  /*border: 1px solid #463bf7;
-  background-color: #3ad196ba;
-  color: #fff;*/
-  border: 1px solid #ffffff;
+  border: 1px solid #101010;
   background-color: transparent;
   color: #000000;
   font-size: 14px;
@@ -138,8 +136,9 @@ margin: 8px;
 }
 
 .projects-num:hover {
-  /*box-shadow: 1px 1px 20px #acf4d9;*/
+  box-shadow: 1px 1px 20px #acf4d9;
   background-color: #fff;
+  border: 1px solid #101010;
 }
 
 .button-info {
@@ -588,7 +587,8 @@ h4  {
 }
 
 .hr-footer {
-  border-color:#ffffff45;
+  border-color: #ffffff45;
+  border-color: #ffffff29;
   padding-bottom: 15px;
   margin-top: 25px;
 }

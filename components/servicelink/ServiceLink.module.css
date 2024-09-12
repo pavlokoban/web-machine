@@ -3,17 +3,14 @@
     align-items: center;
     padding: 20px;
     border-bottom: 1px solid #f5f5f5;
-    border-bottom: 1px solid #ccd6e599;
     text-decoration: none;
     color: black;
     transition: all 0.3s ease;
   }
   
   .serviceLink:hover {
-    /* background-color: #f5f5f5; */
-    border-bottom: 1px solid #000;
-    background-color: #acf4d9;
-    border-bottom: 1px solid #3ad197;
+    background-color: #e4ebf575;
+    border-bottom: 1px solid var(--color-main-2-light);
   }
   
   .serviceLink:hover .arrowContainer {
@@ -29,7 +26,8 @@
   .title {
     flex: 1 1 30%;
     font-size: x-large;
-    font-weight: 700;
+    font-weight: 500;
+    font-family: 'Unbounded', system-ui, sans-serif;
   }
   
   .description {

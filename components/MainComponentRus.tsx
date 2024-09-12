@@ -1,16 +1,14 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
-import dataArticles from "../utils/dataArticles";
-import ServicesItem from './servicesitem/ServicesItem';
 import Link from 'next/link';
 import AnimatedLink from './animatedlinks/AnimatedLink';
 import AnimatedVideoLink from './animatedlinks/AnimatedVideoLink';
-import ContactForm from './contact-form/ContactForm';
+import ContactFormRus from './contact-form/ContactFormRus';
 import ServiceLink from './servicelink/ServiceLink';
 import BrandSectionRu from './brandsection/BrandSectionRu';
 import MarqueeText from './marqueetext/MarqueeText';
-import Testimonials from './testimonials/Testimonials';
+import TestimonialsRu from './testimonials/TestimonialsRu';
 import DiscussButtonRu from './buttonletstalk/ButtonLetsTalkRu';
 import ImageRow from './imagerow/ImageRow';
 import CircleDiscussButtonSEORu from '@/components/buttonletstalk/CircleButtonSEORu';
@@ -94,7 +92,6 @@ const MainComponentRus = () => {
         <div className='space20'></div>
        
         <div className='inline-flex-desc'>
-        
         <DiscussButtonRu />
         <div className='projects-clutch'>
         <Link href="/ru/reviews">
@@ -108,9 +105,7 @@ const MainComponentRus = () => {
         </div>
         </div>
 
-      <div className='space20'></div>
-      <div className='space20'></div>
-      <div className='space20'></div>
+      <div className='space60'></div>
 
       <div className="video-container">
         <video 
@@ -276,9 +271,9 @@ const MainComponentRus = () => {
 
         <div id="content-container" className='relative z-0 container mx-auto p-10 px-10 m-10'>
         <h2 className='h3ash1'>Отзывы клиентов</h2>
-        <Testimonials />
+        <TestimonialsRu />
 
-        <ContactForm />
+        <ContactFormRus />
 
       </div>
       </div>
