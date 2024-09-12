@@ -8,11 +8,12 @@ import AnimatedLink from './animatedlinks/AnimatedLink';
 import AnimatedVideoLink from './animatedlinks/AnimatedVideoLink';
 import ContactForm from './contact-form/ContactForm';
 import ServiceLink from './servicelink/ServiceLink';
-import BrandSection from './brandsection/BrandSection';
+import BrandSectionRu from './brandsection/BrandSectionRu';
 import MarqueeText from './marqueetext/MarqueeText';
 import Testimonials from './testimonials/Testimonials';
 import DiscussButtonRu from './buttonletstalk/ButtonLetsTalkRu';
 import ImageRow from './imagerow/ImageRow';
+import CircleDiscussButtonSEORu from '@/components/buttonletstalk/CircleButtonSEORu';
 
 
 const MainComponentRus = () => {
@@ -97,7 +98,7 @@ const MainComponentRus = () => {
         <DiscussButtonRu />
         <div className='projects-clutch'>
         <Link href="/ru/reviews">
-        <img src="/clutch_review_tr_ru.svg" alt="Clutch Review" />
+        <img src="/clutch_review_unit_black.svg" alt="Clutch Review" />
         </Link>
         </div>
         <div className='projects-num'>
@@ -126,50 +127,44 @@ const MainComponentRus = () => {
       
       </div>
 
+      <div className='space20'></div>
 
-      <div id="content-container" className="relative z-0 container mx-auto p-10 px-10 m-10">
-        <div className='second-container'>
-        <h2 className='h3ash1'>Услуги</h2>
-        <p>Web Machine - международное веб-агентство, которое использует передовые технологии для решения бизнес-задач
+      <ImageRow />
+      <div className='space80'></div>
+
+</div>
+
+
+  <div className="relative w-full overflow-hidden white112">
+      <div className="relative z-10 container mx-auto p-10 px-10 m-10 w-100">
+      <h2 className='h3ash1'>Наши компетенции</h2>
+        <p>WEB-MACHINE - международное веб-агентство, которое использует передовые технологии для решения бизнес-задач
 с помощью инноваций, коммуникации и стратегии. Наше агентство было основано в 2013 году, и с тех пор мы предоставляем услуги по дизайну, разработке и продвижение для абмизиозных компаний по всему миру</p>
           <div className='space20'></div>
           <ServiceLink
             title="Дизайн"
-            description="Our expertise lies in creating elegantly designed websites based on UI/UX principles, 
-            focusing on intuitive and straightforward interfaces while staying abreast of current design trends."
-            href="/example"
+            description="Создаем яркий и подчеркивающий сильные стороны бренда дизайн на основе исследований, UI/UX и модных трендов"
+            href="/ru/design"
           />
           <ServiceLink 
             title="Разработка"
-            description="We specialize in developing corporate websites, online stores, and high-performance aggregators, 
-            ensuring that each project combines aesthetic appeal with user-centric functionality by using an advanced 
-            technological stack."
-            href="/example"
+            description="Создаем удобные сайты на основе UI/UX и уникального дизайна, разрабатываем продающие интернет-магазины"
+            href="/ru/web-development"
           />
           <ServiceLink 
             title="SEO"
-            description="We’re also able to help you with strategic marketing, search engine promotion (SEO) and marketing 
-            research. Optimize your website for search engines!"
-            href="/example"
+            description="Стратегический маркетинг, поисковое продвижение сайтов на основе маркетинговых исследований"
+            href="/ru/seo"
           />
           <ServiceLink 
             title="Реклама"
-            description="We create and customize ads on Google, Facebook, Instagram and YouTube. Grow your business with our 
-            digital marketing services."
-            href="/example"
+            description="Создаём и настраиваем рекламу в Google, Facebook, Instagram и в Youtube"
+            href="/ru/ads"
           />
-        <div className='space20'></div>
-        <div className='space20'></div>
-        <div className='space20'></div>
-      <ImageRow />
-      <div className='space20'></div>
+        <div className='space60'></div>
 
-        </div>
 
-        </div>
-        </div>
-      <div className="relative w-full overflow-hidden white112">
-      <div className="relative z-10 container mx-auto p-10 px-10 m-10 w-100">
+
       <div className={'desc-flex-mob-block'}>
       <div className={'desc-col-2-50-mob-1-100'}>
 
@@ -191,6 +186,26 @@ const MainComponentRus = () => {
           stackArray={["React.js", "Design", "SEO", "Web-development"]}
           titleText="Creation of a website for the Carglass® brand - an international brand of a division of the Belron® Group - a world leader in the field of repair and replacement of automobile glass"
         />
+
+
+          <AnimatedVideoLink 
+          href="/"
+          videoSrcWebm="/movie/RoganskaVideoPresentation.webm"
+          caseText="Кейс"
+          stackArray={["React.js", "Design", "SEO", "Web-development"]}
+          titleText="Utopia mobile game developer Zplay: design and website development"
+        />
+
+          <AnimatedVideoLink 
+          href="/"
+          videoSrcWebm="/movie/SpaceUnderVideoPresentation.webm"
+          caseText="Кейс"
+          stackArray={["React.js", "Design", "SEO", "Web-development"]}
+          titleText="Utopia mobile game developer Zplay: design and website development"
+        />
+
+
+
         </div>
 
         <div className={'desc-col-2-50-mob-1-100'}>
@@ -207,7 +222,6 @@ const MainComponentRus = () => {
         <AnimatedVideoLink 
           href="/"
           videoSrcWebm="/movie/case_zplay_cover.webm"
-          videoSrcMp4="/movie/case_zplay_cover.mp4"
           caseText="Case"
           stackArray={["React.js", "Design", "SEO", "Web-development"]}
           titleText="International mobile game developer Zplay: design and website development"
@@ -216,17 +230,34 @@ const MainComponentRus = () => {
         <AnimatedVideoLink 
           href="/"
           videoSrcWebm="/movie/case_utopia.webm"
-          videoSrcMp4="/movie/case_utopia.mp4"
           caseText="Кейс"
           stackArray={["React.js", "Design", "SEO", "Web-development"]}
           titleText="Utopia mobile game developer Zplay: design and website development"
+        />
+
+        <AnimatedVideoLink 
+          href="/"
+          videoSrcWebm="/movie/HyundaiVideoPresentation.webm"
+          caseText="Кейс"
+          stackArray={["React.js", "Design", "SEO", "Web-development"]}
+          titleText="Utopia mobile game developer Zplay: design and website development"
+        />
+
+      <AnimatedVideoLink 
+          href="/ru/seo-cost-calculator"
+          videoSrcWebm="/movie/SEOCostCalculatorVideo.webm"
+          caseText="Сервис"
+          stackArray={["Typescript", "Node.js", "React.js", "SEO", "Web-development"]}
+          titleText="SEO калькулятор онлайн: сервис оценки инвестиций в онлайн маркетинг"
         />
       
         </div>
         
 
         </div>
-
+        <div className='flex'>
+          <CircleDiscussButtonSEORu text="Больше кейсов" reflink="/ru/cases" />
+        </div>
 
 
 
@@ -235,25 +266,18 @@ const MainComponentRus = () => {
 
         <div className='relative z-0 blackblock mx-auto p-10 px-10 m-10'>
           <div className='fake-container'>
-          <h2 className='h3ash1'>Think Big!</h2>
-          <BrandSection />
+          <h2 className='h3ash1'>Мыслим масштабно!</h2>
+          <p>Среди наших клиентов по разработке, интернет-маркетингу и комплексному продвижению в Украине такие компании как имеющие свой отдел маркетинга, так и компании, с которыми мы работаем как аутсорсинговый отдел digital-маркетинга.<br>
+          </br>География ключевых клиентов: Украина, Великобритания, Китай, США, Эстония, Австралия, Польша, Канада.</p>
+          <div className='space20'></div>
+          <BrandSectionRu />
           </div>
         </div>
 
         <div id="content-container" className='relative z-0 container mx-auto p-10 px-10 m-10'>
-        <h2 className='h3ash1'>Testimonials</h2>
+        <h2 className='h3ash1'>Отзывы клиентов</h2>
         <Testimonials />
 
-        <h2 className='h3ash1'>Publications</h2>
-        <div className={'grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'}>
-          {dataArticles.articles.map((article) => (
-            <ServicesItem
-              article={article}
-              key={article.slug}
-            >
-            </ServicesItem>
-          ))}
-        </div>
         <ContactForm />
 
       </div>

@@ -115,7 +115,7 @@ const SEORus = () => {
         </div>
         <div className='flex'>
         
-        <CircleDiscussButtonSEORu reflink="/ru/contact" />
+        <CircleDiscussButtonSEORu text="Обсудить проект" reflink="/ru/contact" />
 
 
         </div>

@@ -215,7 +215,6 @@ const DevComponentRus = () => {
         <AnimatedVideoLink 
           href="/"
           videoSrcWebm="/movie/case_legal_cover.webm"
-          videoSrcMp4="/movie/case_legal_cover.mp4"
           caseText="Кейс"
           stackArray={["React.js", "Design", "SEO", "Web-development"]}
           titleText="International mobile game developer Zplay: design and website development"
@@ -224,7 +223,6 @@ const DevComponentRus = () => {
 <AnimatedVideoLink 
           href="/"
           videoSrcWebm="/movie/case_zplay_cover.webm"
-          videoSrcMp4="/movie/case_zplay_cover.mp4"
           caseText="Кейс"
           stackArray={["React.js", "Design", "SEO", "Web-development"]}
           titleText="International mobile game developer Zplay: design and website development"
@@ -233,7 +231,6 @@ const DevComponentRus = () => {
       <AnimatedVideoLink 
           href="/"
           videoSrcWebm="/movie/case_carglass.webm"
-          videoSrcMp4="/movie/case_carglass.mp4"
           caseText="Кейс"
           stackArray={["React.js", "Design", "SEO", "Web-development"]}
           titleText="International mobile game developer Zplay: design and website development"
@@ -242,7 +239,6 @@ const DevComponentRus = () => {
 <AnimatedVideoLink 
           href="/"
           videoSrcWebm="/movie/case_utopia.webm"
-          videoSrcMp4="/movie/case_utopia.mp4"
           caseText="Кейс"
           stackArray={["React.js", "Design", "SEO", "Web-development"]}
           titleText="Utopia mobile game developer Zplay: design and website development"

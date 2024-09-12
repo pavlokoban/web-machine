@@ -6,21 +6,20 @@ import Link from 'next/link';
 interface AnimatedVideoLinkProps {
   href: string;
   videoSrcWebm: string;
-  videoSrcMp4: string;
   caseText: string;
   stackArray: string[];
   titleText: string;
 }
 
-const AnimatedVideoLink: React.FC<AnimatedVideoLinkProps> = ({ href, videoSrcWebm, videoSrcMp4, caseText, stackArray = [], titleText }) => {
+const AnimatedVideoLink: React.FC<AnimatedVideoLinkProps> = ({ href, videoSrcWebm, caseText, stackArray = [], titleText }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     const video = document.createElement('video');
-    video.src = videoSrcMp4 || videoSrcWebm;
+    video.src = videoSrcWebm;
     video.onloadeddata = () => setIsLoaded(true);
     video.load();
-  }, [videoSrcWebm, videoSrcMp4]);
+  }, [videoSrcWebm]);
 
   return (
     <Link href={href}>
@@ -36,7 +35,6 @@ const AnimatedVideoLink: React.FC<AnimatedVideoLinkProps> = ({ href, videoSrcWeb
             style={{ maxWidth: '100%' }}
           >
             <source src={videoSrcWebm} type="video/webm" />
-            <source src={videoSrcMp4} type="video/mp4" />
           </video>
         ) : (
           <div className="video-placeholder">Loading...</div>

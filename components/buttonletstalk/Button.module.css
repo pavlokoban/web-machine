@@ -5,10 +5,10 @@
     /*border: 1px solid black;*/
     border-radius: 25px;
     background-color: transparent;
-    background-color: var(--color-main-2-deep);
-    /*background-color: #feee33;*/
-    /*color: black;*/
-    color: white;
+    background-color: var(--color-main-1-deep);
+    /*background-color: #feee33;
+    color: white; */
+    color: black;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -48,7 +48,7 @@
     position: relative;
     display: inline-flex;
     align-items: center;
-    background-color: #3ad196;
+    background-color: var(--color-main-1-deep);
   }
 
   @keyframes fadeInB {

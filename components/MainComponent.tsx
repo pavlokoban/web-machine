@@ -158,7 +158,6 @@ const MainComponent = () => {
         <AnimatedVideoLink 
           href="/"
           videoSrcWebm="/movie/case_zplay_light.webm"
-          videoSrcMp4="/movie/case_zplay_light.mp4"
           caseText="Case"
           stackArray={["React.js", "Design", "SEO", "Web-development"]}
           titleText="International mobile game developer Zplay: design and website development"

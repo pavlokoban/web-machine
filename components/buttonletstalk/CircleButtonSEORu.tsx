@@ -3,12 +3,13 @@ import styles from './Button.module.css';
 
 interface CircleDiscussButtonSEORuProps {
   reflink: string;
+  text: string;
 }
 
-const CircleDiscussButtonSEORu: React.FC<CircleDiscussButtonSEORuProps> = ({ reflink }) => {
+const CircleDiscussButtonSEORu: React.FC<CircleDiscussButtonSEORuProps> = ({ reflink, text }) => {
   return (
     <Link href={reflink} className={styles.circleDiscussButton}>
-      Обсудить проект<span className={styles.arrow}></span>
+      {text}<span className={styles.arrow}></span>
     </Link>
   );
 };
