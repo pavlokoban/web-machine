@@ -1,11 +1,22 @@
 import Link from 'next/link';
 import styles from './Button.module.css';
+import clsx from 'clsx'; // инструмент объединения классов
 
-const DiscussButtonRu = () => {
+interface ButtonLetsTalkRuProps {
+  href: string;
+  text: string;
+  additionalClasses?: string;
+}
+
+const ButtonLetsTalkRu: React.FC<ButtonLetsTalkRuProps> = ({ href, text, additionalClasses = '' }) => {
   return (
-    <Link href="/ru/contact" className={styles.discussButton}>Обсудить проект<span className={styles.arrow}></span>
-</Link>
+    //<Link href={reflink} className={clsx(styles.discussButton, additionalClasses)}>
+    <Link href={href} className={`${styles.discussButton} ${additionalClasses}`}>
+      {text}
+      <span className={styles.arrow}></span>
+    </Link>
   );
 };
 
-export default DiscussButtonRu;
+export default ButtonLetsTalkRu;
+

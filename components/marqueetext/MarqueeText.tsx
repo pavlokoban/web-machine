@@ -12,18 +12,17 @@ const MarqueeText: React.FC = () => {
       </div>
 
       {/* Видео */}
-      <div style={{ maxWidth: '600px', margin: 'auto', position: 'relative' }}>
+      <div style={{ maxWidth: '600px', margin: 'auto', position: 'relative'}}>
         <video 
-          width="100%" 
-          height="auto" 
+          className={styles.videoStyles}
           autoPlay 
           loop 
           muted 
           playsInline 
           controls={false}
         >
-          <source src="/movie/MarqueeText.webm" type="video/webm" />
-          Your browser does not support the video tag.
+          <source src="/movie/MarquueTextUpdBlack.webm" type="video/webm" />
+          Ваш браузер не поддерживает формат видео WEMP.
         </video>
 
         {/* Белая бегущая строка поверх видео */}

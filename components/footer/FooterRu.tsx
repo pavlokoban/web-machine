@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Breadcrumbs from '../breadcrumbs/Breadcrumbs';
-import DiscussButtonRu from '../buttonletstalk/ButtonLetsTalkRu';
+import ButtonLetsTalk from '../buttonletstalk/ButtonLetsTalk';
 import styles from '../nav/Nav.module.css';
 import Image from 'next/image';
 
@@ -80,7 +80,7 @@ const FooterRu: React.FC = () => {
 
 
           <div style={{maxWidth: '270px'}}>
-            <DiscussButtonRu />
+            <ButtonLetsTalk сtahref="/ru/contact" text="Обсудить проект" />
             </div>
 
                         <div className={'telegram-bottom'}>

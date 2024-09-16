@@ -1,83 +1,82 @@
 .serviceLink {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    border-bottom: 1px solid #f5f5f5;
-    text-decoration: none;
-    color: black;
-    transition: all 0.3s ease;
-  }
-  
-  .serviceLink:hover {
-    background-color: #e4ebf575;
-    border-bottom: 1px solid var(--color-main-2-light);
-  }
-  
-  .serviceLink:hover .arrowContainer {
-    background-color: #000;
-    border-color: #000;
-  }
-  
-  .serviceLink:hover .arrow {
-    border-color: white;
-    color:#f5f5f5;
-  }
-  
-  .title {
-    flex: 1 1 30%;
-    font-size: x-large;
-    font-weight: 500;
-    font-family: 'Unbounded', system-ui, sans-serif;
-  }
-  
-  .description {
-    flex: 1 1 60%;
-    padding: 0 10px;
-  }
-  
-  .arrowContainer {
-    flex: 1 1 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70px;
-    max-width: 70px;
-    height: 70px;
-    border: 1px solid #f5f5f5;
-    border: 1px solid #000000;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-    margin-left: 10px;
-  }
-  
-  .arrow {
-    font-size: 18px; /* Размер стрелки */
-    color: black;
-    transition: color 0.3s ease;
-  }
-  
-  
-  @media (max-width: 768px) {
-    .serviceLink {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px dashed;
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.serviceLink:last-child {
+  border-bottom: none; /* Убираем нижнюю границу у последнего элемента */
+}
+
+.serviceLink:hover {
+  background-color: #e4ebf575;
+}
+
+.serviceLink:hover .arrowContainer {
+  background-color: #000;
+  border-color: #000;
+}
+
+.serviceLink:hover .arrow {
+  color: #f5f5f5;
+}
+
+.title {
+  flex: 1 1 20%;
+  font-size: x-large;
+  font-weight: 500;
+  font-family: 'Unbounded', system-ui, sans-serif;
+}
+
+.description {
+  flex: 1 1 70%;
+  padding: 0 10px;
+  font-weight: 500;
+}
+
+.arrowContainer {
+  flex: 1 1 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  max-width: 70px;
+  height: 70px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.arrow {
+  font-size: 18px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+  .serviceLink {
       flex-direction: column;
       align-items: flex-start;
-    }
-  
-    .title, .description, .arrowContainer {
+  }
+
+  .title, .description, .arrowContainer {
       flex: none;
       width: 100%;
       text-align: left;
-    }
-  
-    .description {
-      padding: 10px 0;
-    }
-  
-    .arrowContainer {
-      width: 100%;
-      display: flex;
-      /* justify-content: flex-end; */
-      justify-content: center;
-    }
   }
-  
+
+  .description {
+      padding: 10px 0;
+  }
+
+  .arrowContainer {
+      width: 100%;
+      justify-content: center;
+  }
+}

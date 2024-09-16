@@ -9,7 +9,7 @@ import ServiceLink from '@/components/servicelink/ServiceLink';
 import BrandSection from '@/components/brandsection/BrandSection';
 import MarqueeText from '@/components/marqueetext/MarqueeText';
 import Testimonials from '@/components/testimonials/Testimonials';
-import DiscussButtonRu from '@/components/buttonletstalk/ButtonLetsTalkRu';
+import ButtonLetsTalk from '@/components/buttonletstalk/ButtonLetsTalk';
 import ImageRow from '@/components/imagerow/ImageRow';
 import CostEstimation from '@/components/estimation/Estimation';
 import StageSliderDevRu from '@/components/stageslider/StageSliderDevRu';
@@ -85,7 +85,7 @@ const DevComponentRus = () => {
 
   return (
 <>
-    <div className="relative w-full overflow-hidden gray112">
+    <div className="relative w-full overflow-hidden brave112">
       <div ref={textContainerRef} id=""></div>
       <div className="relative z-10 container mx-auto p-10 px-10 m-10 w-100">
         <h1 className={'unbounded'}>Создание сайтов</h1>
@@ -97,7 +97,7 @@ const DevComponentRus = () => {
        
         <div className='inline-flex-desc'>
         
-        <DiscussButtonRu />
+        <ButtonLetsTalk сtahref="#" text="Обсудить проект" additionalClasses="blackToGreen" />
         <div className='projects-clutch'>
         <Link href="/ru/reviews">
         <img src="/clutch_review_tr_ru.svg" alt="Clutch Review" />
@@ -123,7 +123,7 @@ const DevComponentRus = () => {
           playsInline 
           className="w-full h-auto border-36"
         >
-          <source src="/movie/ShowReelBlue.webm" type="video/webm" />
+          <source src="/movie/ShowReelDarkGray.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
       </div>

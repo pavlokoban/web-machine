@@ -99,7 +99,7 @@ const ContactFormRus: React.FC = () => {
         <h2 className='h3ash1'>Оставить заявку</h2>
         <p>Расскажите нам о своем проекте, и мы воплотим его в жизнь. Заполните форму и отправьте письмо на адрес: <Link className={'a-anim a-in-text-6-600'} href="mailto:hello@web-machine.rocks">hello@web-machine.rocks</Link></p>
 
-        <h3>Услуги</h3>
+        <h3 className='unbounded-font'>Услуги</h3>
         <div className={styles.options}>
           {['разработка сайта', 'дизайн', 'SEO', 'реклама', 'прочее'].map((service) => (
             <label key={service} className={`${styles.option} ${formData.services.includes(service) ? styles.selected : ''}`}>
@@ -115,7 +115,7 @@ const ContactFormRus: React.FC = () => {
           ))}
         </div>
 
-        <h3>Бюджет</h3>
+        <h3 className='unbounded-font'>Бюджет</h3>
         <div className={styles.options}>
           {['меньше $1k', '$1k-3k', '$3k-7k', '$7k-10k', '$10k+'].map((budget) => (
             <label key={budget} className={`${styles.option} ${formData.budget === budget ? styles.selected : ''}`}>
@@ -131,7 +131,7 @@ const ContactFormRus: React.FC = () => {
           ))}
         </div>
 
-        <h3>Задача</h3>
+        <h3 className='unbounded-font'>Задача</h3>
         <textarea
           className={styles.textarea}
           name="task"

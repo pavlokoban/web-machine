@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import DiscussButtonRu from '../buttonletstalk/ButtonLetsTalkRu';
+import ButtonLetsTalk from '@/components/buttonletstalk/ButtonLetsTalk';
 import styles from './Nav.module.css';
 
 const NavRus: React.FC = () => {
@@ -66,7 +66,7 @@ const NavRus: React.FC = () => {
         </ul>
         <br></br>
         <p><a className="p-1 a-anim-w" href="mailto:hello@web-machine.rocks">Email: hello@web-machine.rocks</a></p>
-        <DiscussButtonRu />
+        <ButtonLetsTalk сtahref="#" text="Обсудить проект" additionalClasses="blackToGreen" />
       </div>
       </div>
     </div>

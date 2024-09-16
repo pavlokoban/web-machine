@@ -11,9 +11,15 @@
   --archive-color-blue: #463bf7;
   /* https://colorscheme.ru/#3521Tn7Jdw0w0  */
   --background-global: 255,255,255;
-  --color-main-1-deep: #3ad196;
-  --color-main-1-light: #ACF4D9;
-  --color-main-1-medium: #6AE8B8;
+  /*
+  --color-main-1-deep-bak: #3ad196;
+  --color-main-1-light: #83f8be;
+  */
+  --color-main-1-deep: #1af287;
+  --color-main-1-light: #8af8c4;
+  --color-main-1-dark: #0b683e;  
+  /*--color-main-1-light: #ACF4D9;
+  --color-main-1-medium: #6AE8B8;*/
   --color-main-1-light2: #8CE8C5;
   --color-main-2-deep: #0119fa;
   --color-main-2-light: #a5adff;
@@ -21,6 +27,8 @@
   --color-main-3-light: #FFA075;
   --color-main-3-extralight: #FFB99A;
   --color-add-1: #ee82ee;
+  --color-c0fc01: #c0fc01;
+  --color-1af287: #1af287;
 }
 
 /*
@@ -67,6 +75,45 @@ body {
 
 }
 
+.blackToGreen {
+  border: 1px solid black;
+  background-color: #000 !important;
+  color: white !important;
+}
+.blackToGreen:hover {
+  border: 1px solid var(--color-main-1-deep) !important;
+  background-color: var(--color-main-1-deep) !important;
+  color: black !important;
+}
+
+.lightGreenToWhite {
+  border: 1px solid var(--color-main-1-light) !important;
+  background-color: var(--color-main-1-light) !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+.lightGreenToWhite:hover {
+  border: 1px solid #fff !important;
+  background-color: #fff !important;
+  color: black !important;
+}
+
+.whiteToLightGreen {
+  border: 1px solid #fff !important;
+  background-color: #fff !important;
+  color: black !important;  
+}
+
+.whiteToLightGreen:hover {
+  border: 1px solid var(--color-main-1-light) !important;
+  background-color: var(--color-main-1-light) !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+.grayscale30 {
+filter: grayscale(.3);
+}
+
 hr.servicesHr {
 height: 1px;
 background-color: #c4cbd6;
@@ -107,7 +154,7 @@ margin: 8px;
 }
 
 .projects-clutch:hover {
-  box-shadow: 1px 1px 20px #acf4d9;
+  /*box-shadow: 1px 1px 20px #acf4d9;*/
   background-color: #fff;
   border: 1px solid #101010;
 }
@@ -136,7 +183,7 @@ margin: 8px;
 }
 
 .projects-num:hover {
-  box-shadow: 1px 1px 20px #acf4d9;
+  /*box-shadow: 1px 1px 20px #acf4d9;*/
   background-color: #fff;
   border: 1px solid #101010;
 }
@@ -176,6 +223,7 @@ margin: 8px;
 display: inline-grid;
 width: 100%;
 }
+
 .inline-flex-desc {
   display:  inline-flex;
   width: 100%;
@@ -215,6 +263,10 @@ width: 100%;
 
 h1, h2 {
   font-family: 'Unbounded', system-ui, sans-serif;
+}
+
+.unbounded-font {
+  font-family: 'Unbounded', system-ui, sans-serif; 
 }
 
 h1  {
@@ -296,8 +348,15 @@ h4  {
 .big-padding-top-desc {
   padding-top: 70px;
 }
+/* custom var of contaiters */
+.black112 {background-color: #000; color: #fff;}
 .gray112 {background-color: #e4ebf5}
 .white112 {background-color: #fff}
+.brave112 {background-color: var(--color-main-1-deep);}
+.withoutPaddingTop {padding-top: 0;}
+.withoutPaddingBottom {padding-bottom: 0;}
+.withoutMarginTop {margin-top: 0;}
+.withoutMarginBottom {margin-bottom: 0;}
 
 .footer-common {
   width: 100%;
@@ -866,6 +925,31 @@ h4  {
 }
 /* стили спойлера: конец */
 
+.achievements-wrapper {
+  padding: 12px 0;
+}
+
+.achievement-image {
+  max-height: 24px;
+}
+.achievement-image-clutch {
+  max-height: 17px;
+  margin-top: 3px;
+}
+
+.achievement-block {
+  padding: 5px 16px;
+  margin: 0 16px;
+  border-radius: 36px;
+  vertical-align: middle;
+  background-color: #e4ebf5;
+  /*
+  border: 1px solid #dee5f0;
+  background-color: var(--color-main-1-deep);
+  background-color: #8af8c4;
+  background-color: #fff;
+  */
+}
 
 /**/
 .animation-wrapper {
@@ -1131,5 +1215,38 @@ overflow: hidden;
 @media (min-width: 1700px) {
   .container, .fake-container {
     max-width: 1600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .achievements-wrapper {
+    padding: 30px 0;
+    
+  }
+
+  .achievements-row {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    gap: 8px;
+  }
+
+  .achievement-block {
+    flex: 1 1 calc(33% - 20px); /* Блоки занимают до 33% ширины с учетом отступов */
+    margin: 8px 0;
+  }
+
+  .achievement-image {
+    margin: auto;
+  }
+  .achievement-image-clutch {
+    margin: 3px auto;
+  }
+
+  /* Если экран меньше 480px, блоки будут занимать больше места */
+  @media (max-width: 480px) {
+    .achievement-block {
+      flex: 1 1 calc(50% - 20px); /* Блоки будут занимать 50% ширины */
+    }
   }
 }

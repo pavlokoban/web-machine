@@ -29,70 +29,94 @@ const CasesRu = () => {
         </h4>
         
         <div className='space20'></div>
-        
-        <div className='desc-flex-mob-block'>
-        <div className='desc-col-2-50-mob-1-100'>
-        <AnimatedLink 
-          href="/"
-          imgSrc="/images/portfolio/okko_cover_01-min.png"
-          imgAlt="Design, technical support and development of sections on the website of the OKKO gas station network"
-          caseText="Кейс"
-          stackArray={["React.js", "Design", "SEO", "Web-development"]}
-          titleText="Design, technical support and development of sections on the website of the OKKO national gas station network"
-        />
-
+        <div className='space20'></div>
+    <div className={'desc-flex-mob-block'}>
+      <div className={'desc-col-2-50-mob-1-100'}>
 
       <AnimatedLink 
           href="/"
-          imgSrc="/images/portfolio/case_carglass_cover.jpeg"
-          imgAlt="Creation of a website for the Carglass® brand - an international brand of a division of the Belron® Group - a world leader in the field of repair and replacement of automobile glass"
+          imgSrc="/images/portfolio/okko_cover_01-min.png"
+          imgAlt="Дизайн, техподдержка и развитие сайта сети OKKO"
           caseText="Кейс"
-          stackArray={["React.js", "Design", "SEO", "Web-development"]}
-          titleText="Creation of a website for the Carglass® brand - an international brand of a division of the Belron® Group - a world leader in the field of repair and replacement of automobile glass"
+          stackArray={["Design", "Support", "Web-development"]}
+          titleText="Дизайн, техподдержка и развитие сайта сети OKKO"
         />
+
+        <AnimatedLink 
+          href="/"
+          imgSrc="/images/portfolio/hyundai-cover-5.jpg"
+          imgAlt="Дизайн и разработка сайта дилера Hyundai Truck and Bus"
+          caseText="Case"
+          stackArray={["React.js", "Design", "Web-development"]}
+          titleText="Дизайн и разработка сайта дилера Hyundai Truck and Bus"
+        />
+
+
+        <AnimatedLink 
+          href="/"
+          imgSrc="/images/portfolio/zplay-cover-1.jpg"
+          imgAlt="Дизайн и разработка сайта для разработка игр Zplay (Китай, Пекин)"
+          caseText="Кейс"
+          stackArray={["Worpdress", "Design", "Figma", "Web-development"]}
+          titleText="Дизайн и разработка сайта для разработка игр Zplay (Китай, Пекин)"
+        />
+
+
+        <AnimatedLink 
+          href="/"
+          imgSrc="/images/portfolio/lg-cover-1.jpg"
+          imgAlt="Дизайн и разработка международного иммиграционного сервиса LegalGrounds"
+          caseText="Кейс"
+          stackArray={["Wordpress", "Design", "Web-development"]}
+          titleText="Дизайн и разработка международного иммиграционного сервиса LegalGrounds"
+        />
+
         </div>
 
         <div className={'desc-col-2-50-mob-1-100'}>
        
         <AnimatedLink 
           href="/"
-          imgSrc="/images/portfolio/case_roganska_cover.png"
-          imgAlt="Creation of a website for the Roganska mineral water - an international brand of a division of the Belron® Group - a world leader in the field of repair and replacement of automobile glass"
+          imgSrc="/images/portfolio/carglass-cover-1.jpg"
+          imgAlt="Creation of a website for the Carglass® brand - an international brand of a division of the Belron® Group - a world leader in the field of repair and replacement of automobile glass"
           caseText="Кейс"
-          stackArray={["React.js", "Design", "SEO", "Web-development"]}
-          titleText="Creation of a website for the Roganska mineral water"
+          stackArray={["Opencart", "Design", "SEO", "Web-development"]}
+          titleText="Дизайн и разработка сайта лоя Carglass® (Belron® групп) - мирового лидера производства и замены стекол для автомобилей"
         />
+       
+       <AnimatedLink 
+          href="/"
+          imgSrc="/images/portfolio/roganska-cover-3.jpg"
+          imgAlt="Дизайн и создание сайта для бренда воды Роганская"
+          caseText="Кейс"
+          stackArray={["Wordpress", "Design", "SEO", "Web-development"]}
+          titleText="Дизайн и создание сайта для бренда воды Роганская"
+        />
+
 
         <AnimatedVideoLink 
-          href="/"
-          videoSrcWebm="/movie/case_legal_cover.webm"
-          caseText="Кейс"
-          stackArray={["React.js", "Design", "SEO", "Web-development"]}
-          titleText="International mobile game developer Zplay: design and website development"
+          href="/ru/seo-cost-calculator"
+          videoSrcWebm="/movie/SEOCostCalculatorVideo.webm"
+          caseText="Сервис"
+          stackArray={["Typescript", "Node.js", "React.js", "SEO", "Web-development"]}
+          titleText="SEO калькулятор онлайн: сервис оценки инвестиций в онлайн маркетинг"
         />
 
-        <AnimatedVideoLink 
+        <AnimatedLink 
           href="/"
-          videoSrcWebm="/movie/case_zplay_cover.webm"
+          imgSrc="/images/portfolio/haited-cover-2.jpg"
+          imgAlt="Дизайн и создание интернет-магазина Haited"
           caseText="Кейс"
-          stackArray={["React.js", "Design", "SEO", "Web-development"]}
-          titleText="International mobile game developer Zplay: design and website development"
-        />
-
-      <AnimatedVideoLink 
-          href="/"
-          videoSrcWebm="/movie/case_carglass.webm"
-          caseText="Кейс"
-          stackArray={["React.js", "Design", "SEO", "Web-development"]}
-          titleText="International mobile game developer Zplay: design and website development"
+          stackArray={["Opencart", "Design", "Web-development"]}
+          titleText="Дизайн и создание интернет-магазина Haited"
         />
       
         </div>
         
 
         </div>
+       
         </div>
-        
         <div id="content-container" className="relative z-0 container mx-auto p-10 px-10 m-10 border-36 white112 desc-padding-70-mob-30">
         <ContactFormRus />
         </div>
