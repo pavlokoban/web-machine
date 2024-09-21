@@ -15,7 +15,7 @@ import CountUp from 'react-countup';
 import PricingPlansRu from '@/components/pricingplans/PricingPlansRu';
 
 
-const DevComponentRus = () => {
+const DevOnlineStoreRu = () => {
   const textContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -88,16 +88,15 @@ const DevComponentRus = () => {
     <div className="relative w-full overflow-hidden gray112">
       <div ref={textContainerRef} id=""></div>
       <div className="relative z-10 container mx-auto p-10 px-10 m-10 w-100">
-      <h1 className={'unbounded centered-texts'}>Создание сайтов</h1>
-      <h4 className={'centered-texts sub-title-service-texts'}>Создание сайта — это технология, это искусство, это маркетинг. Разработка сайта - будь то лендинг, или сложный портал или маркетплейс - это инвестиция, благодаря которой Ваш бизнес делает шаг навстречу Вашим клиентам, показывает его сильные стороны и преимущества.
-          Разработываем сайты - от лендингов до маркетплейсов (React, Next.js, Wordpress, Woocommerce, Opencart, Laravel).
+      <h1 className={'unbounded centered-texts'}>Создание интернет-магазинов</h1>
+      <h4 className={'centered-texts sub-title-service-texts'}>Разработка интернет-магазина — это не только дизайн и код, это прежде всего простота и логика взаимодействия, направленные на одно - на увеличение продаж. Мы разрабатываем современные интернет-магазины под ключ, построенные на современных технологиях (Woocommerce, Opencart, Laravel).
         </h4>
         
         <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2'>
           <div>
             <h3 className='centered-texts'>Стоимость:</h3>
             <hr className="servicesHr"></hr>
-            <p className='centered-texts sub-h4-service-texts'>от $<CountUp start={12000} end={2600} duration={2} separator={" "} /></p>
+            <p className='centered-texts sub-h4-service-texts'>от $<CountUp start={12000} end={2900} duration={3} separator={" "} /></p>
 
           </div>
           <div>
@@ -118,7 +117,7 @@ const DevComponentRus = () => {
 
       <div className="relative w-full overflow-hidden black112">
       <div className="relative z-10 container mx-auto p-10 px-10 m-10 w-100">
-        <h2 className='h3ash1'>Цены на разработку сайта</h2>
+        <h2 className='h3ash1'>Цены на разработку интернет-магазина</h2>
         <p>В зависимости от целей и задач, могут быть разные варанты реализации. От промо-лендингов до маркетплейсов и порталов, также существуют различные программные решения и используемые платформы, такие как Wordpress, React, Next, Opencart, Shopify, Laravel и прочие.</p>
           <div className='space40'></div>
 
@@ -222,7 +221,7 @@ const DevComponentRus = () => {
 
       <AnimatedLink 
           href="/"
-          imgSrc="/images/portfolio/okko_cover_01-min.png"
+          imgSrc="/images/portfolio/underspace-cover-4.jpg"
           imgAlt="Дизайн, техподдержка и развитие сайта сети OKKO"
           caseText="Кейс"
           stackArray={["Design", "Support", "Web-development"]}
@@ -231,7 +230,7 @@ const DevComponentRus = () => {
 
         <AnimatedLink 
           href="/"
-          imgSrc="/images/portfolio/hyundai-cover-5.jpg"
+          imgSrc="/images/portfolio/ukreina-cover-2.jpg"
           imgAlt="Дизайн и разработка сайта дилера Hyundai Truck and Bus"
           caseText="Case"
           stackArray={["React.js", "Design", "Web-development"]}
@@ -241,7 +240,7 @@ const DevComponentRus = () => {
 
         <AnimatedLink 
           href="/"
-          imgSrc="/images/portfolio/zplay-cover-1.jpg"
+          imgSrc="/images/portfolio/lamps4makeup_cover_01-min.png"
           imgAlt="Дизайн и разработка сайта для разработка игр Zplay (Китай, Пекин)"
           caseText="Кейс"
           stackArray={["Worpdress", "Design", "Figma", "Web-development"]}
@@ -255,22 +254,20 @@ const DevComponentRus = () => {
        
         <AnimatedLink 
           href="/"
-          imgSrc="/images/portfolio/carglass-cover-1.jpg"
+          imgSrc="/images/portfolio/varvar-cover-2.jpg"
           imgAlt="Разработка сайта Carglass® - создание корпоративного сайта компании"
           caseText="Кейс"
           stackArray={["Opencart", "Design", "SEO", "PPC", "Web-development"]}
-          titleText="Дизайн и разработка сайта для Carglass® (Belron® групп) - мирового лидера производства и замены стекол для автомобилей"
+          titleText="Дизайн и разработка сайта лоя Carglass® (Belron® групп) - мирового лидера производства и замены стекол для автомобилей"
         />
        
-       <AnimatedLink 
+       <AnimatedVideoLink 
           href="/"
-          imgSrc="/images/portfolio/roganska-cover-3.jpg"
-          imgAlt="Дизайн и создание сайта для бренда воды Роганская"
+          videoSrcWebm="/movie/case_utopia.webm"
           caseText="Кейс"
           stackArray={["Wordpress", "Design", "SEO", "Web-development"]}
           titleText="Дизайн и создание сайта для бренда воды Роганская"
         />
-
 
         <AnimatedLink 
           href="/"
@@ -355,4 +352,4 @@ const DevComponentRus = () => {
   );
 }
 
-export default DevComponentRus;
+export default DevOnlineStoreRu;

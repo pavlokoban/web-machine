@@ -66,9 +66,9 @@ const FooterRu: React.FC = () => {
 
           <div className="inline-grid">
             <div className='footerAdrressText'>
-          <p>Штаб-квартира: Таллинн, Эстония 🇪🇪</p>
-          <p>Офис разработки: Киев, Украина 🇺🇦</p>
-          <p>Преставительства: 
+          <p><span className='underline'>Штаб-квартира:</span> Таллинн, Эстония 🇪🇪</p>
+          <p><span className='underline'>Офис разработки:</span> Киев, Украина 🇺🇦</p>
+          <p><span className='underline'>Преставительства:</span> 
           <br>
           </br>Гуанчжоу, Китай 🇨🇳 <br>
           </br> Братислава, Словакия 🇸🇰</p>
@@ -80,7 +80,7 @@ const FooterRu: React.FC = () => {
 
 
           <div style={{maxWidth: '270px'}}>
-            <ButtonLetsTalk сtahref="/ru/contact" text="Обсудить проект" />
+            <ButtonLetsTalk сtahref="/ru/contact" text="Обсудить проект" additionalClasses="blackToGreen" />
             </div>
 
                         <div className={'telegram-bottom'}>

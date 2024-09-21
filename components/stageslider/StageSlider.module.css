@@ -73,7 +73,7 @@
   }
   
   .resultTextP {
-    background-color: #3AD196;
+    background-color: var(--color-main-1-deep);
     color: #000000;
     font-weight: 400;
     font-size: 20px;

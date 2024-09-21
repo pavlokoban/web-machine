@@ -1,23 +1,18 @@
 'use client';
 
-import { headers } from 'next/headers';
-import Head from 'next/head';
-import LayoutMainRus from "@/components/LayoutMainRus";
-import ContactForm from '@/components/contact-form/ContactForm';
-
 import React, { useEffect, useRef } from 'react';
-import Link from 'next/link';
 import AnimatedLink from '@/components/animatedlinks/AnimatedLink';
 import AnimatedVideoLink from '@/components/animatedlinks/AnimatedVideoLink';
 import ServiceLink from '@/components/servicelink/ServiceLink';
-import BrandSection from '@/components/brandsection/BrandSection';
+import BrandSectionRu from '@/components/brandsection/BrandSectionRu';
 import MarqueeText from '@/components/marqueetext/MarqueeText';
-import Testimonials from '@/components/testimonials/Testimonials';
+import TestimonialsRu from '@/components/testimonials/TestimonialsRu';
 import CircleDiscussButtonSEORu from '@/components/buttonletstalk/CircleButtonSEORu';
 import ImageRow from '@/components/imagerow/ImageRow';
-import CostEstimation from '@/components/estimation/Estimation';
-import StageSliderDevRu from '@/components/stageslider/StageSliderDevRu';
+import ContactFormRus from '@/components/contact-form/ContactFormRus';
+import StageSliderSeoRu from '@/components/stageslider/StageSliderSeoRu';
 import CountUp from 'react-countup';
+import PolygonWithPointsRu from '@/components/dynamicdiamond/DynamicDiamondRu';
 
 
 const SEORus = () => {
@@ -115,59 +110,22 @@ const SEORus = () => {
         </div>
         <div className='flex'>
         
-        <CircleDiscussButtonSEORu text="Обсудить проект" reflink="/ru/contact" />
+        <CircleDiscussButtonSEORu text="Обсудить проект" reflink="#contact-form-here" />
 
 
         </div>
-
-
-      <div className='space20'></div>
-
-      
+      <div className='space20'></div>      
       </div>
-      <MarqueeText />
+    
+    
+      <div className="relative w-full overflow-hidden black112">
+      <div className="relative z-10 container mx-auto p-10 px-10 m-10 w-100">
+        <h2 className='h3ash1'>Продвижение сайта — 10 основ</h2>
+        <p>SEO оптимизация — это сложный и трудоёмкий процесс.<br></br>
+        В нашей компании для продвижения сайтов мы прорабатываем 10 основных направлений:</p>
+      <PolygonWithPointsRu />
 
-
-      <div id="content-container" className="relative z-0 container mx-auto p-10 px-10 m-10">
-        <div className='second-container'>
-        <h2 className='h3ash1'>Услуги</h2>
-        <p>Web Machine - международное веб-агентство, которое использует передовые технологии для решения бизнес-задач
-с помощью инноваций, коммуникации и стратегии. Наше агентство было основано в 2013 году, и с тех пор мы предоставляем услуги по дизайну, разработке и продвижение для абмизиозных компаний по всему миру</p>
-          <div className='space20'></div>
-          <ServiceLink
-            title="Дизайн"
-            description="Our expertise lies in creating elegantly designed websites based on UI/UX principles, 
-            focusing on intuitive and straightforward interfaces while staying abreast of current design trends."
-            href="/example"
-          />
-          <ServiceLink 
-            title="Разработка"
-            description="We specialize in developing corporate websites, online stores, and high-performance aggregators, 
-            ensuring that each project combines aesthetic appeal with user-centric functionality by using an advanced 
-            technological stack."
-            href="/example"
-          />
-          <ServiceLink 
-            title="SEO"
-            description="We’re also able to help you with strategic marketing, search engine promotion (SEO) and marketing 
-            research. Optimize your website for search engines!"
-            href="/example"
-          />
-          <ServiceLink 
-            title="Реклама"
-            description="We create and customize ads on Google, Facebook, Instagram and YouTube. Grow your business with our 
-            digital marketing services."
-            href="/example"
-          />
-        <div className='space20'></div>
-        <div className='space20'></div>
-        <div className='space20'></div>
-      <ImageRow />
-      <div className='space20'></div>
-
-        </div>
-
-        <div className="spoiler">
+      <div className="spoiler">
   <div className="spoiler-summary" onClick={(e) => {
       const content = e.currentTarget.nextElementSibling;
       const icon = e.currentTarget.querySelector('.plus-icon');
@@ -177,71 +135,56 @@ const SEORus = () => {
       }
     }}>
     <span className="plus-icon">+</span>
-    <span>Подробнее</span>
+    <span>Подробнее о SEO</span>
   </div>
   <div className="spoiler-content">
-    <h3>Тест</h3>
-    <p>Это скрытый текст, который будет полезен для SEO. Вы можете добавить сюда любой контент, который нужно скрыть, но при этом оставить его доступным для поисковых систем.</p>
-  </div>
-</div>
+  <h2>Что такое поисковое продвижение сайта и SEO-оптимизация?</h2>
+  <p>Очень трудно представить в наше время бизнес, у которого нет сайта, и сайт, который не нуждался бы в продвижении! Ведь как сказал Билл Гейтс: <em>Если вашего бизнеса нет в интернете, значит вас нет в бизнесе</em>! Поэтому раскрутка сайта – это один из ключевых инструментов интернет-маркетинга, позволяющий сайту быть доступным целевой аудитории по интересующим её запросам. Действительное, целевое обращение! Так что же такое раскрутка?</p>
+<p><strong>Продвижение сайта в поисковых системах</strong> – это комплекс мероприятий по приведению технических параметров сайта к соответствию требований поисковых систем, внутренняя и внешняя оптимизация.</p>
+<p>Можно выделить продвижение в топ (ориентация на повышение позиций в выдаче по определенным запросам) и продвижение по трафику (увеличение посещаемости сайта за счет переходов по ссылкам, рекламе и т.п.).</p>
+<p>Эффективное продвижение сайта зависит от множества факторов. Так, например, существует более 200 факторов ранжирования сайта в поисковой системе Google, проводя работу по каждому из них можно влиять на результаты выдачи. Наша компания при проведении полного seo-аудита анализирует их все, но, к сожалению, повлиять на все факторы невозможно, например, нельзя скорректировать возраст домена, указав вместо 5 мес. – 5 лет. Тем не менее, среди факторов есть основные, работая с которыми мы можем достичь заметного успеха!</p>
+<h2>Раскрутка сайта в поисковых системах</h2>
+<p>Наши действия по SEO-оптимизации сайта:</p>
+    <ol>
+        <li>Проведение маркетингового исследования, включающего анализ конъюнктуры рынка, конкуренции, потребительского рынка, сегментирование целевой аудитории, а также подготовку маркетинговой стратегии продвижения (позиционирование и прочее)</li>
+        <li>Проведение расширенного аудита сайта, включая анализ скорости загрузки продвигаемого сайта, а также работоспособность сервера</li>
+        <li>Подбор и составление семантического ядра пул поисковых запросов, по которым сайт будет продвигаться в поисковых системах</li>
+        <li>Техническая настройка сайта (устранение дублей в файле .htaccess, настройка индексации в robots.txt и настройка валидной карты сайта), настройка страницы 404-ошибки</li>
+        <li>Анализ юзабилити (UI/UX) продвигаемого сайта, SEO-оптимизация структуры под поисковые запросы и требования поисковых систем</li>
+        <li>Контент-менеджмент: уникализация текстов, seo-оптимизация веб-сайта: рерайтинг, написание уникальных мета-тегов, использование ключевых запросов в текстах, заголовках H1 и H2, метатегах и тегах для изображений</li>
+        <li>Оптимизация под социальные сети (SMO) размещение кнопок соцсетей, с помощью которых посетитель сможет поделиться интересным контентом в своей новостной ленте</li>
+        <li>Индексация в поисковых системах, анализ продвижения сайта с точки зрения ботов Google</li>
+        <li>Наращивание естественной ссылочной массы: регистрация в тематических справочниках, получение обратных ссылок с трастовых ресурсов</li>
+        <li>Установка систем аналитика: анализ трафика, его структуры, а также снятие поисковых позиций</li>
+        <li>Подготовка рекомендаций для дальнейшей раскрутке сайта: ведение блога или ленты новостей для регулярного обновления материалов сайта.</li>
+    </ol>
+<p>Будьте на виду везде!<br />Продвижение в Google-картах</p>
+<p>82% потребителей используют поисковые системы для выбора локальных компаний.</p>
+<p>Поэтому при раскрутке сайта уделяем особое внимание продвижению компании в Google-картах (Google Local business). Данный инструмент кроме очевидной выгоды в виде получения дополнительного трафика на сайт, также позволяет задействовать крауд-маркетинг (управление репутацией и работа с отзывами), что оказывает немаловажное влияние на принятие решения о выборе той, или иной компании потенциальным клиентом.</p>
 
+<h2>Сроки и стоимость продвижения сайта в ТОП</h2>
+<p><strong>Стоимость продвижения и раскрутки сайта в Харькове</strong> и в Киеве зависит от определенного комплекса факторов, среди которых: конкурентность в продвигаемой тематике, отправное состояние сайта на момент аудита, объемы и структура сайта и его юзабилити, используемая cms, качество кода, наличие ссылок, спама, размер семантического ядра, необходимость копирайтинга/рерайтинга, состояние хостинга и прочее.</p>
+<p>Подробно ознакомится со сроками и ценами продвижения сайтов Вы можете, оставив заявку на сайте.</p>
+<p>Заказать продвижение сайта в Харькове и Киеве Вы можете по нашим контактным телефонам.</p>
+<p>Ознакомьтесь с нашими кейсами по продвижению интернет-магазинов и SEO оптимизации информационных сайтов, а также отзывами клиентов о проделанной нами работе. Стоимость продвижения сайта — от $500 в мес. Предоставляем прогнозы результатов продвижения.</p>
+<p>Реальные результаты.<br /> Возврат инвестиций (ROI)<br />и рост продаж</p>
 
-        </div>
-        </div>
-      <div className="relative w-full overflow-hidden white112">
-      <div className="relative z-10 container mx-auto p-10 px-10 m-10 w-100">
-      <div className={'grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2'}>
+<p>При продвижении сайтов ориентируемся на максимизацию конверсий и возврат вложенных в интернет-маркетинг средств!</p>
 
-      <AnimatedLink 
-          href="/"
-          imgSrc="/images/portfolio/okko_cover_01-min.png"
-          imgAlt="Design, technical support and development of sections on the website of the OKKO gas station network."
-          caseText="Case"
-          stackArray={["React.js", "Design", "SEO", "Web-development"]}
-          titleText="Design, technical support and development of sections on the website of the OKKO gas station network."
-        />
+<p>Стоимость раскрутки сайтов зависит от множества факторов, среди которых:</p>
+<ul className='spoilerUlStyle'>
+<li>Тип сайта (продвижение портала, сайта-визитки и интернет-магазина будет отличатся по предполагаемым объемам и составу работ)</li>
+<li>Техническое состояние ресурса</li>
+<li>Текущий ссылочный профиль</li>
+<li>Необходимое количество продвигаемых категорий и посадочных страниц</li>
+<li>География продвижения сайта</li>
+<li>Уровень конкуренции в нише и отраслевая принадлежность</li>
+<li>Цели и задачи раскрутки сайта (акцент на трафике и конверсиях / вывод в ТОП-10 поисковых систем)</li>
+<li>Объем продвигаемого семантического ядра</li>
+<li>Вспомогательные инструменты при продвижении сайта (PR, продвижение в Google картах, реклама в интернете, работа с отзывами - крауд маркетинг)</li>
+</ul>
+<p>Таким образом, стоимость раскрутки сайта определяется в индивидуальном порядке и основывается на данных маркетингового исследования и аудита сайта.</p>
 
-
-      <AnimatedLink 
-          href="/"
-          imgSrc="/images/portfolio/case_carglass_cover.jpeg"
-          imgAlt="Creation of a website for the Carglass® brand - an international brand of a division of the Belron® Group - a world leader in the field of repair and replacement of automobile glass"
-          caseText="Case"
-          stackArray={["React.js", "Design", "SEO", "Web-development"]}
-          titleText="Creation of a website for the Carglass® brand - an international brand of a division of the Belron® Group - a world leader in the field of repair and replacement of automobile glass"
-        />
-      
-        </div>
-
-        <AnimatedVideoLink 
-          href="/"
-          videoSrcWebm="/movie/case_zplay_cover.webm"
-          caseText="Case"
-          stackArray={["React.js", "Design", "SEO", "Web-development"]}
-          titleText="International mobile game developer Zplay: design and website development"
-        />
-
-      <h2 className='h3ash1'>Этапы разработки сайта</h2>
-      <p>Разрабатываем сайты и проектируем веб-интерфейсы с 2013 года, имеем опыт и экспертизу в веб-дизайне, верстке и программировании на PHP, JS.</p>
-      <p>Создали более 100 сайтов в различных тематиках и нишах.</p>
-      <div className='space20'></div>
-      <StageSliderDevRu />
-      <div className='space20'></div>
-      <div className='space20'></div>
-      </div>
-
-      <MarqueeText />
-
-        <div className='relative z-0 blackblock mx-auto p-10 px-10 m-10'>
-          <div className='fake-container'>
-          <h2 className='h3ash1'>Think Big!</h2>
-          <BrandSection />
-          </div>
-        </div>
-
-        <div id="content-container" className='relative z-0 container mx-auto p-10 px-10 m-10'>
-        <h2 className='h3ash1'>Testimonials</h2>
-        <Testimonials />
 
 <div itemScope itemType="https://schema.org/FAQPage">
     <h2 itemProp="name" className="h3ash1">FAQ по продвижению сайта</h2>
@@ -285,7 +228,137 @@ const SEORus = () => {
     </div>
 </div>
 
-        <CostEstimation />
+  </div>
+  </div>
+
+      </div>
+      </div>
+      </div>
+
+      <div className="relative w-full overflow-hidden white112">
+    <div className="relative z-10 container mx-auto p-10 px-10 m-10 w-100">
+    <h2 className='h3ash1'>Кейсы по продвижению сайтов</h2>
+    <p>Изучите примеры достигнутых результатов по SEO оптимизации сайтов. В целом нами выполнено более 300 кампаний по интернет-маркетингу и продвижению сайтов, среди которых оптовые и розничные интернет-магазины, IT-компании, производственные компании, медицинские центры, торговые компании, предприятия общественного питания.</p>
+      <div className='space20'></div>
+    <div className={'desc-flex-mob-block'}>
+      <div className={'desc-col-2-50-mob-1-100'}>
+
+      <AnimatedLink 
+          href="/"
+          imgSrc="/images/portfolio/okko_cover_01-min.png"
+          imgAlt="Design, technical support and development of sections on the website of the OKKO gas station network."
+          caseText="Case"
+          stackArray={["React.js", "Design", "SEO", "Web-development"]}
+          titleText="Design, technical support and development of sections on the website of the OKKO gas station network."
+        />
+
+
+      <AnimatedLink 
+          href="/"
+          imgSrc="/images/portfolio/case_carglass_cover.jpeg"
+          imgAlt="Creation of a website for the Carglass® brand - an international brand of a division of the Belron® Group - a world leader in the field of repair and replacement of automobile glass"
+          caseText="Case"
+          stackArray={["React.js", "Design", "SEO", "Web-development"]}
+          titleText="Creation of a website for the Carglass® brand - an international brand of a division of the Belron® Group - a world leader in the field of repair and replacement of automobile glass"
+        />
+      
+      </div>
+
+<div className={'desc-col-2-50-mob-1-100'}>
+
+        <AnimatedVideoLink 
+          href="/ru/seo-cost-calculator"
+          videoSrcWebm="/movie/SEOCostCalculatorVideo.webm"
+          caseText="SEO сервис"
+          stackArray={["Typescript", "Node.js", "React.js", "SEO", "Web-development"]}
+          titleText="SEO калькулятор онлайн: сервис оценки инвестиций в онлайн маркетинг"
+        />
+
+</div>
+        
+
+        </div>
+        <div className='flex'>
+          <CircleDiscussButtonSEORu text="Больше кейсов" reflink="/ru/cases" />
+        </div>
+
+        </div>
+        </div>
+
+
+
+
+        <div className="relative w-full overflow-hidden brave112">
+                <div className="relative z-10 container mx-auto p-10 px-10 m-10 w-100">
+                <h2 className='h3ash1'>Опыт отраслевого продвижения сайтов</h2>
+                <p>Определяем правильную стратегию продвижения прежде всего на основе отраслевой принадлежности и аудите рыночной конъюнктуры.</p>
+                <div className='space40'></div>
+                <div className='descCol4Mob1'>
+                  <div>
+                  <ul className='spoilerUlStyle'>
+                      <li>Продвижение интернет-магазинов</li>
+                      <li>Раскрутка сайта IT-компаний</li>
+                      <li>Продвижение стартапов</li>
+                      <li>Продвижение сайтов строительных компаний</li>
+                      </ul>
+                  </div>
+                  <div>
+                    <ul className='spoilerUlStyle'>
+                    <li>Продвижение товаров для дома и офиса</li>
+                    <li>Раскрутка сайтов B2B-компаний</li>
+                    <li>Раскрутка студий дизайна</li>
+                    <li>Раскрутка салон красоты</li>
+                    </ul>
+                  </div>
+                  <div>
+                  <ul className='spoilerUlStyle'>
+                  <li>Продвижение медицинских сайтов</li>
+                      <li>Продвижение автомобильных сайтов</li>
+                      <li>Продвижение финансовых компаний</li>
+                      <li>Раскрутка магазинов одежды</li>
+                      </ul>
+                  </div>
+                  <div>
+                  <ul className='spoilerUlStyle'>
+                  <li>Продвижение юридических компаний</li>
+                    <li>Продвижение ресторанов и кафе</li>
+                    <li>Туристические компании</li>
+                    <li>Продвижение строительного бизнеса</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+
+<div className="relative w-full overflow-hidden white112">
+<div className="relative z-10 container mx-auto p-10 px-10 m-10 w-100">
+      <h2 className='h3ash1'>Методика продвижения сайтов и состав работ по SEO</h2>
+      <p>Продвигаем сайты на основе маркетинговых целей клиента и технического аудита. В рамках SEO-стратегии реализуются следующие этапы:</p>
+      <div className='space20'></div>
+      <StageSliderSeoRu />
+        <div className='space40'></div>
+
+      </div>
+      <MarqueeText />
+
+      <div className='relative z-0 blackblock mx-auto p-10 px-10 m-10'>
+        <div className='fake-container'>
+        <h2 className='h3ash1'>Мыслим масштабно!</h2>
+        <p>Среди наших клиентов по разработке, интернет-маркетингу и комплексному продвижению в Украине такие компании как имеющие свой отдел маркетинга, так и компании, с которыми мы работаем как аутсорсинговый отдел digital-маркетинга.<br>
+        </br>География ключевых клиентов: Украина, Великобритания, Китай, США, Эстония, Австралия, Польша, Канада.</p>
+        <div className='space20'></div>
+        <BrandSectionRu />
+        </div>
+      </div>
+
+        <div id="content-container" className='relative z-0 container mx-auto p-10 px-10 m-10'>
+        <h2 className='h3ash1'>Отзывы клиентов</h2>
+        <TestimonialsRu />
+
+        
+        <div id="contact-form-here"></div>
+        <ContactFormRus />
 
       </div>
       </div>

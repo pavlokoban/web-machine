@@ -92,7 +92,7 @@ const MainComponentRus = () => {
         <div className='space20'></div>
        
         <div className='inline-flex-desc'>
-        <ButtonLetsTalk сtahref="#" text="Обсудить проект" />
+        <ButtonLetsTalk сtahref="#contact-form-here" text="Обсудить проект" />
 
 
         <div className='projects-clutch whiteToLightGreen'>
@@ -256,7 +256,7 @@ const MainComponentRus = () => {
           imgAlt="Creation of a website for the Carglass® brand - an international brand of a division of the Belron® Group - a world leader in the field of repair and replacement of automobile glass"
           caseText="Кейс"
           stackArray={["Opencart", "Design", "SEO", "Web-development"]}
-          titleText="Дизайн и разработка сайта лоя Carglass® (Belron® групп) - мирового лидера производства и замены стекол для автомобилей"
+          titleText="Дизайн и разработка сайта для Carglass® (Belron® групп) - мирового лидера производства и замены стекол для автомобилей"
         />
        
        <AnimatedLink 
@@ -312,6 +312,8 @@ const MainComponentRus = () => {
         <div id="content-container" className='relative z-0 container mx-auto p-10 px-10 m-10'>
         <h2 className='h3ash1'>Отзывы клиентов</h2>
         <TestimonialsRu />
+
+        <div id="contact-form-here"></div>
 
         <ContactFormRus />
 

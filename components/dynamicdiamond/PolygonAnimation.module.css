@@ -1,0 +1,24 @@
+.svg {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .vertex {
+    stroke: #1af287;
+    stroke-width: 2;
+    fill: none;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      stroke-width: 2;
+    }
+    50% {
+      stroke-width: 4;
+    }
+    100% {
+      stroke-width: 2;
+    }
+  }
+  

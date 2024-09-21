@@ -10,6 +10,7 @@ import React from 'react';
 // import { ReactNode } from 'react';
 // import { getLangFromPath } from '../getLangFromPath';
 import { headers } from 'next/headers';
+import Script from 'next/script';
 
 const unbounded = Unbounded({ subsets: ["latin", "cyrillic-ext"] });
 const montserrat = Montserrat({ subsets: ["latin", "cyrillic-ext"] });
@@ -53,6 +54,17 @@ export default function RootLayout({
           <meta itemProp="telephone" content="+38 068 112 112 8" />
           <meta itemProp="streetAddress" content="вул. Дорогожицька, 3" />
           <meta itemProp="addressLocality" content="Киев, Украина" />
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6PCHTYTKR"></script>
+        <Script id="google-analytics" strategy="afterInteractive">
+        {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-X6PCHTYTKR');
+      `}
+          </Script>
+
         <HeadComponent />
       </head>
       <body className={montserrat.className}>

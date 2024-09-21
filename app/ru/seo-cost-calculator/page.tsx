@@ -5,7 +5,6 @@ import ContactFormRus from '@/components/contact-form/ContactFormRus';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import OfficeLocationsRus from '@/components/officelocations/OfficeLocationsRus';
-import ImageRow from '@/components/imagerow/ImageRow';
 import SEOCalculatorRus from '@/components/seocalculator/SEOCalculatorRus';
 
 
@@ -23,7 +22,7 @@ export const metadata: Metadata = {
   };
 
 
-const ContactPageRu = () => {
+const ContactSEOCalcularorRu = () => {
   return (
     <>
       <LayoutMainRus>
@@ -44,4 +43,4 @@ const ContactPageRu = () => {
   );
 };
 
-export default ContactPageRu;
+export default ContactSEOCalcularorRu;

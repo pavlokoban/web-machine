@@ -86,6 +86,19 @@ body {
   color: black !important;
 }
 
+.greenToBlack {
+  border: 1px solid var(--color-main-1-deep) !important;
+  background-color: var(--color-main-1-deep) !important;
+  color: black !important;
+  
+}
+.greenToBlack:hover {
+  border: 1px solid black !important;;
+  background-color: #000 !important;
+  color: white !important;
+}
+
+
 .lightGreenToWhite {
   border: 1px solid var(--color-main-1-light) !important;
   background-color: var(--color-main-1-light) !important;
@@ -112,6 +125,10 @@ body {
 
 .grayscale30 {
 filter: grayscale(.3);
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 hr.servicesHr {
@@ -236,6 +253,14 @@ width: 100%;
   }
 }
 
+.descCol4Mob1 {
+  display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 .second-container {
   margin-top: -100px;
   margin-bottom: 50px;
@@ -343,6 +368,12 @@ h4  {
   font-size: x-large;
   margin: 0 12px;
   font-weight: 700;
+}
+
+.stackForPP {
+  margin-bottom: 4px !important;
+  background-color: #1c1c1c !important;
+  color: #aaaaaa !important;
 }
 
 .big-padding-top-desc {
@@ -888,7 +919,6 @@ h4  {
 
 /* стили спойлера */
 .spoiler {
-  /*border: 1px solid #ccc;*/
   padding: 10px;
   margin: 10px 0;
 }
@@ -912,7 +942,8 @@ h4  {
 }
 
 .spoiler-content.open {
-  max-height: 200px; /* Задайте максимальную высоту раскрытого контента */
+  max-height: 5000px;
+  color: #e4ebf5;
 }
 
 .plus-icon {
@@ -922,6 +953,12 @@ h4  {
 
 .plus-icon.rotate {
   transform: rotate(45deg);
+}
+
+.spoilerUlStyle {
+list-style-type: square;
+list-style-position: inside;
+padding-left: 20px;
 }
 /* стили спойлера: конец */
 
@@ -1073,6 +1110,7 @@ h4  {
   line-height: 1.6;
   font-weight: 600;
   background: #f5f5fa;
+  background:#f5f5fa17;
   margin-top: 12px;
 }
 .faq-ans {
@@ -1115,6 +1153,9 @@ overflow: hidden;
   .desc-67-mob-100 {
     width: 100%;
     display: block;
+  }
+  .descCol4Mob1 {
+    grid-template-columns: 1fr;
   }
   .desc-flex-mob-block {
     display: block;
@@ -1221,7 +1262,6 @@ overflow: hidden;
 @media (max-width: 768px) {
   .achievements-wrapper {
     padding: 30px 0;
-    
   }
 
   .achievements-row {

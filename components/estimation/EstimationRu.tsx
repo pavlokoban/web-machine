@@ -1,4 +1,5 @@
-// EstimationComponent.tsx
+'use client';
+// EstimationComponentRu.tsx
 import React, { useState } from 'react';
 import styles from './Estimation.module.css';
 import emailjs from "@emailjs/browser";
@@ -20,7 +21,7 @@ interface Hours {
     security: Record<Security, number>;
 }
 
-const EstimationComponent: React.FC = () => {
+const EstimationComponentRu: React.FC = () => {
     const [rate, setRate] = useState<number>(30);
     const [platform, setPlatform] = useState<Platform>('WordPress');
     const [appType, setAppType] = useState<AppType>('Корпоративный сайт');
@@ -277,4 +278,4 @@ const EstimationComponent: React.FC = () => {
     );
 };
 
-export default EstimationComponent;
+export default EstimationComponentRu;
