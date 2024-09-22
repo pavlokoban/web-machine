@@ -283,7 +283,7 @@ const MainComponentRus = () => {
           imgAlt="Дизайн и создание интернет-магазина Haited"
           caseText="Кейс"
           stackArray={["Opencart", "Design", "Web-development"]}
-          titleText="Дизайн и создание интернет-магазина Haited"
+          titleText="Дизайн и создание интернет-магазина Hited"
         />
       
         </div>

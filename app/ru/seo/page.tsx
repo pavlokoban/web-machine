@@ -5,7 +5,7 @@ import LayoutMainRus from "@/components/LayoutMainRus";
 import SEORus from './SEORus';
 
 export const metadata: Metadata = {
-  title: "Продвижение сайтов и раскрутка сайта в Киеве и Украине. WEB-MACHINE",
+  title: "Продвижение сайтов и SEO раскрутка сайта в Киеве и Украине. WEB-MACHINE",
   description: "⭐ Раскрутка сайта в Киеве, SEO оптимизация и продвижение сайтов в топ поисковых систем - Google от Веб-машины. ✅ Звоните - обсудим!",
   alternates: {
     canonical: "https://web-machine.rocks/ru/seo",

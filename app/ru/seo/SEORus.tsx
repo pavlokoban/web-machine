@@ -145,7 +145,7 @@ const SEORus = () => {
 <p>Эффективное продвижение сайта зависит от множества факторов. Так, например, существует более 200 факторов ранжирования сайта в поисковой системе Google, проводя работу по каждому из них можно влиять на результаты выдачи. Наша компания при проведении полного seo-аудита анализирует их все, но, к сожалению, повлиять на все факторы невозможно, например, нельзя скорректировать возраст домена, указав вместо 5 мес. – 5 лет. Тем не менее, среди факторов есть основные, работая с которыми мы можем достичь заметного успеха!</p>
 <h2>Раскрутка сайта в поисковых системах</h2>
 <p>Наши действия по SEO-оптимизации сайта:</p>
-    <ol>
+    <ul className='spoilerUlStyle'>
         <li>Проведение маркетингового исследования, включающего анализ конъюнктуры рынка, конкуренции, потребительского рынка, сегментирование целевой аудитории, а также подготовку маркетинговой стратегии продвижения (позиционирование и прочее)</li>
         <li>Проведение расширенного аудита сайта, включая анализ скорости загрузки продвигаемого сайта, а также работоспособность сервера</li>
         <li>Подбор и составление семантического ядра пул поисковых запросов, по которым сайт будет продвигаться в поисковых системах</li>
@@ -157,7 +157,7 @@ const SEORus = () => {
         <li>Наращивание естественной ссылочной массы: регистрация в тематических справочниках, получение обратных ссылок с трастовых ресурсов</li>
         <li>Установка систем аналитика: анализ трафика, его структуры, а также снятие поисковых позиций</li>
         <li>Подготовка рекомендаций для дальнейшей раскрутке сайта: ведение блога или ленты новостей для регулярного обновления материалов сайта.</li>
-    </ol>
+    </ul>
 <p>Будьте на виду везде!<br />Продвижение в Google-картах</p>
 <p>82% потребителей используют поисковые системы для выбора локальных компаний.</p>
 <p>Поэтому при раскрутке сайта уделяем особое внимание продвижению компании в Google-картах (Google Local business). Данный инструмент кроме очевидной выгоды в виде получения дополнительного трафика на сайт, также позволяет задействовать крауд-маркетинг (управление репутацией и работа с отзывами), что оказывает немаловажное влияние на принятие решения о выборе той, или иной компании потенциальным клиентом.</p>
@@ -245,23 +245,21 @@ const SEORus = () => {
 
       <AnimatedLink 
           href="/"
-          imgSrc="/images/portfolio/okko_cover_01-min.png"
-          imgAlt="Design, technical support and development of sections on the website of the OKKO gas station network."
-          caseText="Case"
-          stackArray={["React.js", "Design", "SEO", "Web-development"]}
-          titleText="Design, technical support and development of sections on the website of the OKKO gas station network."
+          imgSrc="/images/portfolio/case_toptv_cover.png"
+          imgAlt="Интернет-магазин TopTV: SEO, продвижение, раскрутка сайта"
+          caseText="SEO кейс"
+          stackArray={["Реклама", "Дизайн", "SEO", "Разработка"]}
+          titleText="SEO продвижение сайта бытовой техники TopTV. Результаты - рост конверсий: 523%, рост трафика: 221%, рост видимости в поисковой системе Google: 131%"
         />
-
 
       <AnimatedLink 
           href="/"
-          imgSrc="/images/portfolio/case_carglass_cover.jpeg"
-          imgAlt="Creation of a website for the Carglass® brand - an international brand of a division of the Belron® Group - a world leader in the field of repair and replacement of automobile glass"
-          caseText="Case"
-          stackArray={["React.js", "Design", "SEO", "Web-development"]}
-          titleText="Creation of a website for the Carglass® brand - an international brand of a division of the Belron® Group - a world leader in the field of repair and replacement of automobile glass"
+          imgSrc="/images/portfolio/spetslaw-1.jpg"
+          imgAlt="Раскрутка сайта для адвокатов из Нью-Йорка и продвижение юридических услуг в США"
+          caseText="SEO кейс"
+          stackArray={["Реклама", "Дизайн", "SEO", "Разработка"]}
+          titleText="Разработка сайта для адвокатов из Нью-Йорка и продвижение юридических услуг в США"
         />
-      
       </div>
 
 <div className={'desc-col-2-50-mob-1-100'}>
@@ -270,11 +268,22 @@ const SEORus = () => {
           href="/ru/seo-cost-calculator"
           videoSrcWebm="/movie/SEOCostCalculatorVideo.webm"
           caseText="SEO сервис"
-          stackArray={["Typescript", "Node.js", "React.js", "SEO", "Web-development"]}
+          stackArray={["Typescript", "Node.js", "React.js", "SEO", "Разработка"]}
           titleText="SEO калькулятор онлайн: сервис оценки инвестиций в онлайн маркетинг"
         />
 
-</div>
+        <AnimatedLink 
+          href="/"
+          imgSrc="/images/portfolio/stomatolog-demo-min.jpg"
+          imgAlt="SEO продвижение сайта стоматологии, продвижение в Google-картах"
+          caseText="SEO кейс"
+          stackArray={["SEO", "Google-карты"]}
+          titleText="Продвижение сайта стоматологии, продвижение в Google-картах. Результаты SEO: рост целевого трафика в 7 раз за 6 месяцев."
+        />
+
+
+
+      </div>
         
 
         </div>
@@ -284,8 +293,6 @@ const SEORus = () => {
 
         </div>
         </div>
-
-
 
 
         <div className="relative w-full overflow-hidden brave112">

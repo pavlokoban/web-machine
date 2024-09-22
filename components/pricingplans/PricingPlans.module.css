@@ -60,6 +60,10 @@
     margin-bottom: 10px;
   }
 
+  .planNote {
+    min-height: 42px;
+  }
+
   .planDuration {
     border: 1px solid #1c1c1c;
     border-radius: 12px;
@@ -168,4 +172,14 @@
     border: 1px solid var(--color-main-1-deep);
     background-color: var(--color-main-1-deep);
     color: black;
+  }
+
+  .forBlackBack {
+    border: 1px solid #5c5c5c !important;;
+    color: white !important;
+    background-color: #000;
+  }
+  .forBlackBack:hover {
+    border: 1px solid var(--color-main-1-deep) !important;;
+    color: white !important;
   }

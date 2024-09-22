@@ -942,7 +942,7 @@ h4  {
 }
 
 .spoiler-content.open {
-  max-height: 5000px;
+  max-height: 10000px;
   color: #e4ebf5;
 }
 
