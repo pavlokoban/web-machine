@@ -21,6 +21,7 @@
     "react": "^18",
     "react-countup": "^6.5.3",
     "react-dom": "^18",
+    "react-responsive": "^10.0.0",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1"
   },
@@ -29,6 +30,7 @@
     "@types/nodemailer": "^6.4.15",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-responsive": "^8.0.8",
     "autoprefixer": "^10.4.19",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",

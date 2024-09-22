@@ -1,8 +1,12 @@
 import React, { useEffect } from "react";
+import { useMediaQuery } from 'react-responsive';
 
 const PolygonWithDotsRu = () => {
+  // Используем медиазапросы для мобильной и десктопной версии
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+
   useEffect(() => {
-    const outlines = document.querySelectorAll(".outline-circle") as NodeListOf<HTMLElement>;
+    const outlines = document.querySelectorAll<HTMLElement>(".outline-circle");
 
     const createPulse = (outline: HTMLElement) => {
       setTimeout(() => {
@@ -30,8 +34,13 @@ const PolygonWithDotsRu = () => {
     { cx: 68, cy: 28, label: "Устранение проблем индексации", align: "right", textX: 73, textY: 28 }, // Вершина 10
   ];
 
+  // Мобильные и десктопные стили
+  const fontSize = isMobile ? "2" : "3";
+  const offset = isMobile ? 6 : 12;
+  const svgHeight = isMobile ? "auto" : "100vh";
+
   return (
-    <svg width="100%" height="100vh" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style={{ background: "#000" }}>
+    <svg width="100%" height={svgHeight} viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style={{ background: "#000" }}>
       <defs>
         <pattern id="dotPattern" width="1.5" height="1.5" patternUnits="userSpaceOnUse">
           <circle cx="0.75" cy="0.75" r="0.15" fill="#1af287" />
@@ -69,60 +78,57 @@ const PolygonWithDotsRu = () => {
         />
       ))}
 
-    {/* Подписи */} 
-    {points.map((point, index) => {
-    const words = point.label.split(" ");
-    const lines = [];
-    let currentLine = "";
+      {/* Подписи */}
+      {points.map((point, index) => {
+        const words = point.label.split(" ");
+        const lines = [];
+        let currentLine = "";
 
-    words.forEach((word) => {
-        if (currentLine.length + word.length <= 10) {
-        currentLine += `${word} `;
-        } else {
+        words.forEach((word) => {
+          if (currentLine.length + word.length <= 10) {
+            currentLine += `${word} `;
+          } else {
+            lines.push(currentLine.trim());
+            currentLine = `${word} `;
+          }
+        });
+
         lines.push(currentLine.trim());
-        currentLine = `${word} `;
+
+        let adjustedX = point.textX;
+        if (point.align === "left") {
+          adjustedX -= offset; // Отступ влево
+        } else if (point.align === "right") {
+          adjustedX += offset; // Отступ вправо
         }
-    });
 
-    lines.push(currentLine.trim());
-
-    // Добавляем отступы в зависимости от направления выравнивания
-    const offset = 12;
-    let adjustedX = point.textX;
-    
-    if (point.align === "left") {
-        adjustedX -= offset; // Отступ влево
-    } else if (point.align === "right") {
-        adjustedX += offset; // Отступ вправо
-    }
-
-    return (
-        <text
-        key={index}
-        x={adjustedX}
-        y={point.textY}
-        textAnchor={point.align === "center" ? "middle" : point.align === "right" ? "start" : "end"}
-        fill="#1af287"
-        fontSize="3"
-        className="vertex-label"
-        >
-        {lines.map((line, i) => (
-            <tspan key={i} x={adjustedX} dy={i === 0 ? 0 : "1em"}>
-            {line}
-            </tspan>
-        ))}
-        </text>
-    );
-    })}
+        return (
+          <text
+            key={index}
+            x={adjustedX}
+            y={point.textY}
+            textAnchor={point.align === "center" ? "middle" : point.align === "right" ? "start" : "end"}
+            fill="#1af287"
+            fontSize={fontSize}
+            className="vertex-label"
+          >
+            {lines.map((line, i) => (
+              <tspan key={i} x={adjustedX} dy={i === 0 ? 0 : "1em"}>
+                {line}
+              </tspan>
+            ))}
+          </text>
+        );
+      })}
 
       {/* Стрелки */}
-        <defs>
-            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="5" refY="3.5" orient="auto" markerUnits="strokeWidth">
-            <polygon points="0 0, 10 3.5, 0 7" fill="#1af287" />
-            </marker>
-        </defs>
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="5" refY="3.5" orient="auto" markerUnits="strokeWidth">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#1af287" />
+        </marker>
+      </defs>
 
-        <line x1="49" y1="22" x2="23" y2="43" stroke="#1af287" strokeWidth="0.2" markerEnd="url(#arrowhead)" />
+      <line x1="49" y1="22" x2="23" y2="43" stroke="#1af287" strokeWidth="0.2" markerEnd="url(#arrowhead)" />
         <line x1="31" y1="30" x2="22" y2="42" stroke="#1af287" stroke-width="0.2" marker-end="url(#arrowhead)"></line>
         <line x1="20" y1="47" x2="20" y2="57" stroke="#1af287" strokeWidth="0.2" markerEnd="url(#arrowhead)" />
         <line x1="50" y1="22" x2="50" y2="77" stroke="#1af287" strokeWidth="0.2" markerEnd="url(#arrowhead)" />
@@ -138,7 +144,6 @@ const PolygonWithDotsRu = () => {
         <line x1="66" y1="29" x2="23" y2="44.5" stroke="#1af287" strokeWidth="0.2" markerEnd="url(#arrowhead)" />
         <line x1="51" y1="78" x2="78" y2="47" stroke="#1af287" strokeWidth="0.2" markerEnd="url(#arrowhead)" />
 
-
       <style>{`
         .outline-circle {
           transition: stroke-width 0.5s ease;
@@ -148,7 +153,7 @@ const PolygonWithDotsRu = () => {
         }
         .vertex-label {
           text-anchor: middle;
-         font-weight: 400;
+          font-weight: 400;
         }
       `}</style>
     </svg>
@@ -156,3 +161,6 @@ const PolygonWithDotsRu = () => {
 };
 
 export default PolygonWithDotsRu;
+
+
+
