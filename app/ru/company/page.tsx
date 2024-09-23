@@ -6,7 +6,6 @@ import { Metadata } from 'next';
 import BrandSectionRu from '@/components/brandsection/BrandSectionRu';
 import MarqueeText from '@/components/marqueetext/MarqueeText';
 import TestimonialsRu from '@/components/testimonials/TestimonialsRu';
-import ImageRow from '@/components/imagerow/ImageRow';
 
 export const metadata: Metadata = {
     title: "WEB-MACHINE – о компании: история, ценности, команда и фото",
@@ -40,7 +39,7 @@ const CompanyPageRu = () => {
         </p>
         <br></br>
         <div className="tooltip">
-            <img className="border-36" src='/images/team/web-machine-team-2018.jpg' width={1600} height={800} alt='Команда Веб-машины в 2018 году'/>
+            <img className="border-36 grayscale100" src='/images/team/team-photo-wm.png' width={1600} height={800} alt='Команда Веб-машины в 2018 году'/>
             <span className="tooltiptext">Команда &quot;WEB-MACHINE&quot;, 2018 год. Харьков</span>
         </div>
         <br></br>
@@ -62,28 +61,44 @@ const CompanyPageRu = () => {
 
         <div className="grid-container-4-1">
         <div className="grid-item-4-1">
+        <div className='square-image-container'>
             <img className="border-12" src='/images/team/office-2024.jpg' width={600} height={600}/>
             </div>
+            </div>
             <div className="grid-item-4-1">
+            <div className='square-image-container'>
             <img className="border-12" src='/images/team/team-3.jpg' width={600} height={600}/>
             </div>
+            </div>
             <div className="grid-item-4-1">
+            <div className='square-image-container'>
             <img className="border-12" src='/images/team/team-4.jpg' width={600} height={600}/>
             </div>
+            </div>
             <div className="grid-item-4-1">
+            <div className='square-image-container'>
             <img className="border-12" src='/images/team/team-5.jpg' width={600} height={600}/>
             </div>
+            </div>
             <div className="grid-item-4-1">
+            <div className='square-image-container'>
             <img className="border-12" src='/images/team/conference-2018.jpg' width={600} height={600}/>
             </div>
+            </div>
             <div className="grid-item-4-1">
+            <div className='square-image-container'>
             <img className="border-12" src='/images/team/team-2017.jpg' width={600} height={600}/>
             </div>
-            <div className="grid-item-4-1">
-            <img className="border-12" src='/images/team/office-1.jpg' width={600} height={600}/>
             </div>
             <div className="grid-item-4-1">
+            <div className='square-image-container'>
+            <img className="border-12" src='/images/team/office-1.jpg' width={600} height={600}/>
+            </div>
+            </div>
+            <div className="grid-item-4-1">
+            <div className='square-image-container'>
             <img className="border-12" src='/images/team/office-2.jpg' width={600} height={600}/>
+            </div>
             </div>
 
 </div>
@@ -93,7 +108,7 @@ const CompanyPageRu = () => {
         <br></br>
         <p><b>2022-2023.</b> 2022 год - год больших потрясений для всех в Украине, количество клиентов по объективным причинам значительно сократилось, как и команда. Тем не менее, удалось базово сохранить ядро компании, встретить и провести 2023 год в штатном формате.</p>
         <br></br>
-        <p><b>2024 год и планы.</b> Удалось реорганизовать ряд вопросов, также расширить стек, также открыть офис в ЕС и начать работу с европейскими клиентами, кроме Китая. В планах переход на разработку маркетплейсов и сервисов на фреймворках, а также развивать услуги онлайн-продвижения проектов. Важный акцент делается на эмоциональном дизайне и технологиях.</p>
+        <p><b>2024 год и планы.</b> Удалось реорганизовать ряд вопросов, расширить профильный стек, также открыть офис в ЕС и начать работу с европейскими клиентами. В планах, по-прежнему, развитие направления по разработке маркетплейсов и сервисов на фреймворках, а также планируем улучшать результаты кампаний по онлайн-продвижению проектов. Делаем ставку на дизайн и юзабилити.</p>
         </div>
         <div className='space80'></div>
         <div className="relative w-full overflow-hidden white112">

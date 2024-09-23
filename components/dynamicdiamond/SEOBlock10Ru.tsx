@@ -1,23 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import { useMediaQuery } from 'react-responsive';
 
-const PolygonWithDotsRu = () => {
-  // Состояние для отслеживания мобильной версии
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
-  // Функция для обновления состояния при изменении размера окна
-  const handleResize = () => {
-    setIsMobile(window.innerWidth <= 768);
-  };
-
-  useEffect(() => {
-    // Добавляем обработчик события resize
-    window.addEventListener('resize', handleResize);
-
-    // Удаляем обработчик события при размонтировании компонента
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+const SEOBlock10Ru = () => {
+  // Используем медиазапросы для мобильной и десктопной версии
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
   useEffect(() => {
     const outlines = document.querySelectorAll<HTMLElement>(".outline-circle");
@@ -36,16 +22,16 @@ const PolygonWithDotsRu = () => {
   }, []);
 
   const points = [
-    { cx: 50, cy: 20, label: "Контент", align: "center", textX: 50, textY: 15 },
-    { cx: 32, cy: 28, label: "Структура, навигация, семантика", align: "left", textX: 27, textY: 28 },
-    { cx: 20, cy: 45, label: "Стратегический анализ, аудиты", align: "left", textX: 15, textY: 45 },
-    { cx: 20, cy: 60, label: "Линкбилдинг, PR и репутация", align: "left", textX: 15, textY: 60 },
-    { cx: 32, cy: 73, label: "Работа с поведенческими факторами", align: "left", textX: 27, textY: 73 },
-    { cx: 50, cy: 80, label: "Региональное ранжирование", align: "center", textX: 50, textY: 85 },
-    { cx: 68, cy: 73, label: "Разработка программных рекомендаций", align: "right", textX: 73, textY: 73 },
-    { cx: 80, cy: 60, label: "Поисковая аналитика, отчетность", align: "right", textX: 85, textY: 60 },
-    { cx: 80, cy: 45, label: "Технические аспекты", align: "right", textX: 85, textY: 45 },
-    { cx: 68, cy: 28, label: "Устранение проблем индексации", align: "right", textX: 73, textY: 28 },
+    { cx: 50, cy: 20, label: "Контент", align: "center", textX: 50, textY: 15 }, // Вершина 1
+    { cx: 32, cy: 28, label: "Структура, навигация, семантика", align: "left", textX: 27, textY: 28 }, // Вершина 2
+    { cx: 20, cy: 45, label: "Стратегический анализ, аудиты", align: "left", textX: 15, textY: 45 }, // Вершина 3
+    { cx: 20, cy: 60, label: "Линкбилдинг, PR и репутация", align: "left", textX: 15, textY: 60 }, // Вершина 4
+    { cx: 32, cy: 73, label: "Работа с поведенческими факторами", align: "left", textX: 27, textY: 73 }, // Вершина 5
+    { cx: 50, cy: 80, label: "Региональное ранжирование", align: "center", textX: 50, textY: 85 }, // Вершина 6
+    { cx: 68, cy: 73, label: "Разработка программных рекомендаций", align: "right", textX: 73, textY: 73 }, // Вершина 7
+    { cx: 80, cy: 60, label: "Поисковая аналитика, отчетность", align: "right", textX: 85, textY: 60 }, // Вершина 8
+    { cx: 80, cy: 45, label: "Технические аспекты", align: "right", textX: 85, textY: 45 }, // Вершина 9
+    { cx: 68, cy: 28, label: "Устранение проблем индексации", align: "right", textX: 73, textY: 28 }, // Вершина 10
   ];
 
   // Мобильные и десктопные стили
@@ -65,16 +51,20 @@ const PolygonWithDotsRu = () => {
       </clipPath>
       <rect width="100" height="100" fill="url(#dotPattern)" clipPath="url(#polygonClip)" />
 
+      {/* Многоугольник */}
       <polygon points="50,20 32,28 20,45 20,60 32,73 50,80 68,73 80,60 80,45 68,28" fill="none" />
 
+      {/* Черные круги-подложки под вершинами */}
       {points.map((point, index) => (
         <circle key={index} cx={point.cx} cy={point.cy} r="2.5" fill="#000" />
       ))}
 
+      {/* Вершины многоугольника с точками */}
       {points.map((point, index) => (
         <circle key={index} cx={point.cx} cy={point.cy} r="1.2" fill="#1af287" />
       ))}
 
+      {/* Тонкие зеленые контуры вокруг вершин */}
       {points.map((point, index) => (
         <circle
           key={index}
@@ -88,6 +78,7 @@ const PolygonWithDotsRu = () => {
         />
       ))}
 
+      {/* Подписи */}
       {points.map((point, index) => {
         const words = point.label.split(" ");
         const lines = [];
@@ -106,9 +97,9 @@ const PolygonWithDotsRu = () => {
 
         let adjustedX = point.textX;
         if (point.align === "left") {
-          adjustedX -= offset;
+          adjustedX -= offset; // Отступ влево
         } else if (point.align === "right") {
-          adjustedX += offset;
+          adjustedX += offset; // Отступ вправо
         }
 
         return (
@@ -130,6 +121,7 @@ const PolygonWithDotsRu = () => {
         );
       })}
 
+      {/* Стрелки */}
       <defs>
         <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="5" refY="3.5" orient="auto" markerUnits="strokeWidth">
           <polygon points="0 0, 10 3.5, 0 7" fill="#1af287" />
@@ -168,4 +160,4 @@ const PolygonWithDotsRu = () => {
   );
 };
 
-export default PolygonWithDotsRu;
+export default SEOBlock10Ru;

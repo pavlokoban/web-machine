@@ -33,7 +33,7 @@ const ServicesPageRu = () => {
         <AnimatedLink 
           href="/ru/development-cost-calculator"
           imgSrc="/images/portfolio/estimator-image.jpg"
-          imgAlt="Оценка стоимости сайта онлайн: эстимейт на разработку проекта"
+          imgAlt="Оценка стоимости сайта онлайн: эстимейт разработки проекта"
           caseText="DEV сервис"
           stackArray={["Typescript", "Node.js", "React.js", "Разработка"]}
           titleText="Оценка стоимости сайта онлайн: эстимейт на разработку проекта"

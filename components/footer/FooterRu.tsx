@@ -32,7 +32,7 @@ const FooterRu: React.FC = () => {
                     <Link className={'p-1 a-anim-w'} href="/ru/web-development">Разработка сайтов</Link>
                     <Link className={'p-1 a-anim-w'} href="/ru/online-store-development">Разработка интернет-магазинов</Link>
                     <Link className={'p-1 a-anim-w'} href="/ru/marketplace-auction-development">Разработка маркетплейсов</Link>
-                    <Link className={'p-1 a-anim-w'} href="/ru/web-design">Веб-дизайн</Link>
+                    <Link className={'p-1 a-anim-w'} href="/ru/design">Веб-дизайн</Link>
                     <Link className={'p-1 a-anim-w'} href="/ru/seo">Раскрутка сайтов</Link>
                     <br></br>
                     <div className={styles.languages}>

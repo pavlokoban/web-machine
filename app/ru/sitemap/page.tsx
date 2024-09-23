@@ -3,8 +3,6 @@ import React from 'react';
 import LayoutMainRus from '@/components/LayoutMainRus';
 import ContactFormRus from '@/components/contact-form/ContactFormRus';
 import { Metadata } from 'next';
-import Link from 'next/link';
-import OfficeLocationsRus from '@/components/officelocations/OfficeLocationsRus';
 import ImageRow from '@/components/imagerow/ImageRow';
 
 export const metadata: Metadata = {
@@ -34,14 +32,15 @@ const SitemapPageRu = () => {
         <li><a className="p-1 a-anim-w text-xl font-bold" href="/ru/">Главная страница</a></li>
         <li><a className="p-1 a-anim-w text-xl font-bold" href="/ru/services">Услуги</a>
                 <ul className="ml-4">
-                    <li><a className="p-1 a-anim-w" href="/ru/web-design">Дизайн сайта</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/design">Дизайн сайта</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/web-development">Создание сайта</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/online-store-development">Создание интернет-магазина</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/marketplace-auction-development">Создание маркетплейса, ауциона</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/wordpress">Создание сайтов на Wordpress</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/opencart">Создание сайтов на OpenCart</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/laravel">Создание сайтов на Laravel</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/react-next-js">Создание сайтов на React / Next.js</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/web-development/marketplace-development">Создание маркетплейса</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/web-development/auction-development">Создание ауциона</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/web-development/wordpress">Создание сайтов на Wordpress</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/web-development/opencart">Создание сайтов на OpenCart</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/web-development/laravel">Создание сайтов на Laravel</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/web-development/react-next-js">Создание сайтов на React / Next.js</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/seo">Продвижение сайта</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/seo-online-store">Продвижение интернет-магазина</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/seo-on-development">Оптимизация сайта на этапе разработки</a></li>
