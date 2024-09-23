@@ -26,7 +26,7 @@ const DevelopmentCostCalculatorRu = () => {
   return (
     <>
       <LayoutMainRus>
-      <div id="content-container" className="relative z-0 container mx-auto p-10 px-10 m-10 border-36 white112 desc-padding-70-mob-30">
+      <div id="content-container" className="relative z-0 container mx-auto p-10 px-10 m-10 border-36 white112 desc-padding-70-mob-30 withoutPaddingTop">
         <CostEstimationRu />
         <div className='space20'></div>
         <hr></hr>

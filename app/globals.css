@@ -138,6 +138,9 @@ border: 1px;
 margin: 8px;
 }
 
+b {
+  font-weight: 700;
+}
 
 .border-36 {border-radius: 36px;}
 .border-12 {border-radius: 12px;}
@@ -1297,5 +1300,22 @@ overflow: hidden;
     .achievement-block {
       flex: 1 1 calc(50% - 20px); /* Блоки будут занимать 50% ширины */
     }
+  }
+}
+
+.grid-container-4-1 {
+  display: grid;
+  gap: 20px; /* Расстояние между элементами */
+  grid-template-columns: repeat(1, 1fr); /* По умолчанию 1 колонка */
+}
+
+.grid-item-4-1 {
+  text-align: center;
+}
+
+/* Стили для десктопа */
+@media (min-width: 768px) {
+  .grid-container-4-1 {
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки на экранах шире 768px */
   }
 }

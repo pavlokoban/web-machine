@@ -32,7 +32,7 @@ const LayoutMainRus: React.FC<LayoutMainProps> = ({ children }) => {
               <Link className={'p-2 a-anim main-menu-links'} href="/ru/ads">
                 Реклама
               </Link>
-              <Link className={'p-2 a-anim main-menu-links'} href="/ru/about">
+              <Link className={'p-2 a-anim main-menu-links'} href="/ru/company">
                 Компания
               </Link>
               <Link className={'p-2 a-anim main-menu-links'} href="/ru/contact">

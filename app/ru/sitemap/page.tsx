@@ -48,7 +48,7 @@ const SitemapPageRu = () => {
                     <li><a className="p-1 a-anim-w" href="/ru/ads">Интернет реклама</a></li>
                 </ul></li>
         <li><a className="p-1 a-anim-w text-xl font-bold" href="/ru/blog">Блог</a></li>
-        <li><a className="p-1 a-anim-w text-xl font-bold" href="/ru/services">Сервисы</a>
+        <li><a className="p-1 a-anim-w text-xl font-bold" href="/ru/online-services">Сервисы</a>
                 <ul className="ml-4">
                     <li><a className="p-1 a-anim-w" href="/ru/seo-cost-calculator">SEO калькулятор онлайн</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/development-cost-calculator">Калькулятор разработки сайта онлайн</a></li>
