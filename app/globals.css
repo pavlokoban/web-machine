@@ -1263,7 +1263,16 @@ overflow: hidden;
   .achievements-wrapper {
     padding: 30px 0;
   }
-
+  @media (max-width: 404px) {
+  h1, .h3ash1 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 345px) {
+  h1, .h3ash1 {
+    font-size: 30px;
+  }
+}
   .achievements-row {
     display: flex;
     flex-wrap: wrap; 

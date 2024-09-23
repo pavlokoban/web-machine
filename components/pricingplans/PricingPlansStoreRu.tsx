@@ -6,7 +6,7 @@ const PricingPlansStoreRu = () => {
 
   const plans = [
     {
-      title: 'Базовый вариант>',
+      title: 'Базовый вариант',
       price: '$2900',
       duration: '4-8 недель',
       stack: ['Figma', 'WooCommerce', 'Opencart', 'MySQL'],
