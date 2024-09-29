@@ -53,7 +53,7 @@ const FooterRu: React.FC = () => {
 
           <div className="inline-grid">
                 <Link className={'p-1 a-anim-w'} href="/ru/cases">Кейсы</Link>
-                <Link className={'p-1 a-anim-w'} href="/ru/price">Цены</Link>
+                <Link className={'p-1 a-anim-w'} href="/ru/blog">Блог</Link>
                 <Link className={'p-1 a-anim-w'} href="/ru/reviews">Отзывы</Link>
                 <Link className={'p-1 a-anim-w'} href="/ru/company">Компания</Link>
                 <Link className={'p-1 a-anim-w'} href="/ru/online-services">Сервисы</Link>

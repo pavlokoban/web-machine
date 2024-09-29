@@ -1,0 +1,40 @@
+.voteContainer {
+  max-width: 600px;
+}
+
+.voteContainer h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.option {
+  margin: 10px 0;
+}
+
+.voteButton, .returnButton {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: transparent;
+    /*background-color: #feee33;
+    color: white; */
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    margin: 10px auto;
+
+
+}
+
+.voteButton:hover, .returnButton:hover {
+    background-color: black;
+    color: white;
+
+}

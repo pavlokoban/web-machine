@@ -33,14 +33,19 @@ const SitemapPageRu = () => {
         <li><a className="p-1 a-anim-w text-xl font-bold" href="/ru/services">Услуги</a>
                 <ul className="ml-4">
                     <li><a className="p-1 a-anim-w" href="/ru/design">Дизайн сайта</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/landing">Разработка лендинга</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/web-development">Создание сайта</a></li>
+                    <ul className="ml-4">
+                        <li><a className="p-1 a-anim-w" href="/ru/web-development/wordpress">Создание сайтов на Wordpress</a></li>
+                        <li><a className="p-1 a-anim-w" href="/ru/web-development/opencart">Создание сайтов на OpenCart</a></li>
+                        <li><a className="p-1 a-anim-w" href="/ru/web-development/laravel">Создание сайтов на Laravel</a></li>
+                        <li><a className="p-1 a-anim-w" href="/ru/web-development/react-next-js">Создание сайтов на React / Next.js</a></li>
+                        <li><a className="p-1 a-anim-w" href="/ru/web-development/saas">Создание сайтов на конструкторе</a></li>
+                        </ul>
                     <li><a className="p-1 a-anim-w" href="/ru/online-store-development">Создание интернет-магазина</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/web-development/marketplace-development">Создание маркетплейса</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/web-development/auction-development">Создание ауциона</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web-development/wordpress">Создание сайтов на Wordpress</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web-development/opencart">Создание сайтов на OpenCart</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web-development/laravel">Создание сайтов на Laravel</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web-development/react-next-js">Создание сайтов на React / Next.js</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/web-development/portal">Разработка онлайн-портала</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/seo">Продвижение сайта</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/seo-online-store">Продвижение интернет-магазина</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/seo-on-development">Оптимизация сайта на этапе разработки</a></li>

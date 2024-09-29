@@ -10,6 +10,8 @@ export const getPageTitle = async (path) => {
       '/ru/web-development/react-next-js': 'Создание сайтов на React / Next.js',
       '/ru/seo': 'Продвижение сайтов',
       '/ru/cases': 'Наши работы',
+      '/ru/blog': 'Блог',
+      '/ru/seo-on-development': 'Оптимизация сайта на этапе разработки',
       '/ru/company': 'О компании',
       '/ru/reviews': 'Отзывы о компании',
       '/ru/sitemap': 'Карта сайта',

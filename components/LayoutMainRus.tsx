@@ -23,14 +23,8 @@ const LayoutMainRus: React.FC<LayoutMainProps> = ({ children }) => {
             </Link>
             <div className={'p-1'}>
                 <div className={'only-desc main-menu-links'}>
-              <Link className={'p-2 a-anim main-menu-links'} href="/ru/web-development">
-                Разработка
-              </Link>
-              <Link className={'p-2 a-anim main-menu-links'} href="/ru/seo">
-                SEO
-              </Link>
-              <Link className={'p-2 a-anim main-menu-links'} href="/ru/ads">
-                Реклама
+              <Link className={'p-2 a-anim main-menu-links'} href="/ru/services">
+                Услуги
               </Link>
               <Link className={'p-2 a-anim main-menu-links'} href="/ru/company">
                 Компания

@@ -11,7 +11,7 @@ const PricingPlansRu = () => {
       duration: '3-4 недели',
       stack: ['Figma', 'Wordpress', 'Next.js', 'Node.js', , 'MySQL'],
       note: 'Многостраничный сайт, уникальный дизайн',
-      link: '#',
+      link: '/ru/web-development',
     },
     {
       title: 'Интернет-магазин',
@@ -19,7 +19,7 @@ const PricingPlansRu = () => {
       duration: '4-8 недель',
       stack: ['Figma', 'WooCommerce', 'Opencart', 'MySQL'],
       note: 'Продажи онлайн, уникальный дизайн, интеграция с CRM',
-      link: '#',
+      link: '/ru/online-store-development',
     },
     {
       title: 'Маркетплейс',
@@ -27,7 +27,7 @@ const PricingPlansRu = () => {
       duration: '10+ недель',
       stack: ['Figma', 'WooCommerce', 'Laravel', 'PostgreSQL'],
       note: 'Мультивендор, фреймворк, интеграция с CRM',
-      link: '#',
+      link: '/ru/web-development/marketplace-development',
     },
     {
       title: 'Индивидуальный проект',
@@ -35,7 +35,7 @@ const PricingPlansRu = () => {
       duration: '10+ недель',
       stack: ['React', 'Next.js', 'Node.js', 'Figma', 'MongoDB'],
       note: 'Проект на основе индивиального технического задания',
-      link: '#',
+      link: '#contact-form-here',
     },
     {
       title: 'Аукцион',
@@ -43,7 +43,7 @@ const PricingPlansRu = () => {
       duration: '10+ недель',
       stack: ['Figma', 'WooCommerce', 'Opencart', 'MySQL'],
       note: 'Интернет-магазин с функцией онлайн лотов',
-      link: '#',
+      link: '/ru/web-development/auction-development',
     },
     {
       title: 'Портал / сервис',
@@ -51,7 +51,7 @@ const PricingPlansRu = () => {
       duration: '10+ недель',
       stack: ['React', 'Next.js', 'Node.js', 'Figma', 'MongoDB'],
       note: 'Сложный сайт с расширенным функционалом',
-      link: '#',
+      link: '/ru/web-development/portal',
     },
     {
       title: 'Лендинг',
@@ -67,7 +67,7 @@ const PricingPlansRu = () => {
       duration: '1-3 недели',
       stack: ['Tilda', 'Shopify', 'Wix', 'Webflow'],
       note: 'Создание сайта с уникальным дизайном',
-      link: '#',
+      link: '/ru/saas',
     },
   ];
 

@@ -1,0 +1,23 @@
+.articleFormat {
+    display: flex;
+    align-items: center; /* Для вертикального выравнивания иконок с текстом */
+    gap: 6px; /* Расстояние между элементами */
+    font-size: 12px;
+  }
+  
+  .icon {
+    display: flex; /* Для корректного отображения иконок */
+    align-items: center;
+  }
+  
+  .dateText,
+  .viewsText {
+    display: inline; /* Для отображения текста рядом с иконками */
+    margin-right: 12px;
+  }
+
+  
+  .articleFormat svg {
+    margin-right: 4px; /* Отступ справа от иконок */
+  }
+  

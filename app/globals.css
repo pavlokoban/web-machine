@@ -973,6 +973,12 @@ list-style-type: square;
 list-style-position: inside;
 padding-left: 20px;
 }
+
+.spoilerOlStyle {
+  list-style-type: auto;
+  list-style-position: inside;
+  padding-left: 20px;
+  }
 /* стили спойлера: конец */
 
 .achievements-wrapper {
@@ -1109,6 +1115,11 @@ padding-left: 20px;
 .desc-padding-70-mob-30 {
   padding: 70px !important;
 }
+
+.padding-blog-col {
+  padding: 0 30px;
+}
+
 .desc-space-120-mob-20 {
   display: block;
   width: 100%;
@@ -1181,6 +1192,28 @@ overflow: hidden;
   .desc-padding-70-mob-30 {
     padding: 30px !important;
   }
+  .padding-blog-col {
+    padding: 0 10px;
+  }
+  ul.ulBlogCol {
+    list-style-type: square !important;
+    list-style-position: inside !important;
+  }
+  ul.ulBlogCol li::marker {
+    vertical-align: middle !important; /* Поднимаем маркеры к центру текста */
+  }
+
+  ul.ulBlogCol li {
+    padding-left: 5px;
+    position: relative;
+    top: -2px; 
+  }
+  
+  .marginRight10px, input.marginRight10px {
+    margin-right: 10px !important;
+  }
+
+
   .esc-space-120-mob-20 {
     display: block;
     width: 100%;

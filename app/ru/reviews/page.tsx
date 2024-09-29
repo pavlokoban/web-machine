@@ -28,6 +28,7 @@ const ReviewsPageRu = () => {
         <p style={{marginTop:'10px'}}>Ознакомьтесь с отзывами наших клиентов — подтверждением качества наших услуг</p>
         <br></br>
         <TestimonialsAllRu />
+        <div className='space60'></div>
         </div>
         <div className='space80'></div>
         <div className="relative w-full overflow-hidden white112">
