@@ -6,11 +6,9 @@ import { Major_Mono_Display } from "next/font/google";
 import "./globals.css";
 import CookieBanner from '../components/cookiesbanner/CookieBanner';
 import React from 'react';
-// import { usePathname } from 'next/navigation';
-// import { ReactNode } from 'react';
-// import { getLangFromPath } from '../getLangFromPath';
 import { headers } from 'next/headers';
 import Script from 'next/script';
+
 
 const unbounded = Unbounded({ subsets: ["latin", "cyrillic-ext"] });
 const montserrat = Montserrat({ subsets: ["latin", "cyrillic-ext"] });
@@ -42,11 +40,6 @@ export default function RootLayout({
   return (
     <html lang={lang} dir="ltr">
       <head>
-        <script
-          src="https://www.googletagmanager.com/gtag/js?id=G-8Y0XBRKL31&amp;cx=c&amp;_slc=1"
-          async
-        >
-        </script>
           <meta itemScope itemType="https://schema.org/Organization" />
           <meta itemProp="name" content="WEB-MACHINE" />
           <meta itemProp="logo" content="https://web-machine.rocks/images/main/web-machine-logo.png" />
@@ -55,16 +48,18 @@ export default function RootLayout({
           <meta itemProp="streetAddress" content="вул. Дорогожицька, 3" />
           <meta itemProp="addressLocality" content="Киев, Украина" />
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6PCHTYTKR"></script>
-        <Script id="google-analytics" strategy="afterInteractive">
-        {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-X6PCHTYTKR');
-      `}
+          <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-X6PCHTYTKR"
+          strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-X6PCHTYTKR');
+          `}
           </Script>
-
         <HeadComponent />
       </head>
       <body className={montserrat.className}>
