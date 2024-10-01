@@ -43,8 +43,8 @@ const SitemapPageRu = () => {
                         <li><a className="p-1 a-anim-w" href="/ru/web-development/saas">Создание сайтов на конструкторе</a></li>
                         </ul>
                     <li><a className="p-1 a-anim-w" href="/ru/online-store-development">Создание интернет-магазина</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web-development/marketplace-development">Создание маркетплейса</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web-development/auction-development">Создание ауциона</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/web-development/marketplace">Создание маркетплейса</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/web-development/auction">Создание ауциона</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/web-development/portal">Разработка онлайн-портала</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/seo">Продвижение сайта</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/seo-online-store">Продвижение интернет-магазина</a></li>

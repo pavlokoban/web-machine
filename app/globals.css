@@ -72,7 +72,6 @@ body {
   max-width: 1280px;
   margin-right: auto;
   margin-left: auto;
-
 }
 
 .blackToGreen {
@@ -80,6 +79,7 @@ body {
   background-color: #000 !important;
   color: white !important;
 }
+
 .blackToGreen:hover {
   border: 1px solid var(--color-main-1-deep) !important;
   background-color: var(--color-main-1-deep) !important;
@@ -90,14 +90,13 @@ body {
   border: 1px solid var(--color-main-1-deep) !important;
   background-color: var(--color-main-1-deep) !important;
   color: black !important;
-  
 }
+
 .greenToBlack:hover {
   border: 1px solid black !important;;
   background-color: #000 !important;
   color: white !important;
 }
-
 
 .lightGreenToWhite {
   border: 1px solid var(--color-main-1-light) !important;
@@ -129,6 +128,10 @@ span.tooltiptext {
   margin: 12px;
   display: block;
 }
+
+.a-under {
+  text-decoration: underline;
+} 
 
 .grayscale30 {
 filter: grayscale(.3);
@@ -955,7 +958,7 @@ h4  {
 }
 
 .spoiler-content.open {
-  max-height: 10000px;
+  max-height: 18000px;
   color: #e4ebf5;
 }
 
@@ -1005,6 +1008,35 @@ padding-left: 20px;
   background-color: #8af8c4;
   background-color: #fff;
   */
+}
+
+.backgroundMarketplace {
+    background-image: url('/images/sozdanie-marketplace-sajt-agregatorov.webp');
+    width: 100%;
+    position: relative;
+    background-position: top center;
+    background-repeat: repeat;
+    background-color: #000000;
+    filter: grayscale(.5);
+    background-attachment: scroll;
+    background-size: cover;
+    border-radius: 36px;
+}
+
+.blockMarketplace {
+  max-width: 100%;
+    -webkit-text-shadow: 0px 0px 0px #ffffff;
+    text-shadow: 0px 0px 0px #ffffff;
+    padding: 15% 1% 15% 5%;
+    color: white;
+
+}
+
+.textMarketplace {
+  font-size: 42px;
+  line-height: 1.5;
+  border-left: 2px solid #fff;
+  padding-left: 30px;
 }
 
 /**/
@@ -1208,11 +1240,15 @@ overflow: hidden;
     position: relative;
     top: -2px; 
   }
-  
   .marginRight10px, input.marginRight10px {
     margin-right: 10px !important;
   }
-
+  .backgroundMarketplace {
+    background-image: none;
+  }
+  .textMarketplace {
+    font-size: 24px;
+  }
 
   .esc-space-120-mob-20 {
     display: block;

@@ -221,7 +221,7 @@ const MainComponentRus = () => {
           href="/"
           imgSrc="/images/portfolio/hyundai-cover-5.jpg"
           imgAlt="Дизайн и разработка сайта дилера Hyundai Truck and Bus"
-          caseText="Case"
+          caseText="Кейс"
           stackArray={["React.js", "Design", "Web-development"]}
           titleText="Дизайн и разработка сайта дилера Hyundai Truck and Bus"
         />

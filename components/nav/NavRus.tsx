@@ -51,7 +51,7 @@ const NavRus: React.FC = () => {
           <li><a className="p-1 a-anim-w" href="/ru/web-design">Веб-дизайн</a></li>
           <li><a className="p-1 a-anim-w" href="/ru/web-development">Разработка сайтов</a></li>
           <li><a className="p-1 a-anim-w" href="/ru/online-store-development">Разработка интернет магазинов</a></li>
-          <li><a className="p-1 a-anim-w" href="/ru/marketplace-auction-development">Разработка маркетплейсов, аукционов</a></li>
+          <li><a className="p-1 a-anim-w" href="/ru/web-development/marketplace">Разработка маркетплейсов, аукционов</a></li>
           <li><a className="p-1 a-anim-w" href="/ru/seo">Продвижение сайтов</a></li>
           <li><a className="p-1 a-anim-w" href="/ru/ads">Интернет-реклама</a></li>
         </ul>

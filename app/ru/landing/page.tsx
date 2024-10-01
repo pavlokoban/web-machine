@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const LandingPageRu = () => {
   return (
     <LayoutMainRus>
-  <LandingComponentRu></LandingComponentRu>
+  <LandingComponentRu />
   </LayoutMainRus>
   );
 };

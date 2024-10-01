@@ -83,11 +83,11 @@ export default function BlogArticlePage({ params }: BlogArticlePageProps) {
                 <h2>Наши услуги</h2>
                 <br></br>
                 <ul className='ulBlogCol'>
-                    <li><Link className={'a-anim'} href="/ru/web-development">Разработка сайтов</Link></li>
-                    <li><Link className={'a-anim'} href="/ru/online-store-development">Разработка интернет-магазинов</Link></li>
-                    <li><Link className={'a-anim'} href="/ru/marketplace-auction-development">Разработка маркетплейсов</Link></li>
-                    <li><Link className={'a-anim'} href="/ru/design">Веб-дизайн</Link></li>
-                    <li><Link className={'a-anim'} href="/ru/seo">Раскрутка сайтов</Link></li>
+                    <li><Link className={'a-anim'} href="/ru/web-development">Разработка сайта</Link></li>
+                    <li><Link className={'a-anim'} href="/ru/online-store-development">Разработка интернет-магазина</Link></li>
+                    <li><Link className={'a-anim'} href="/ru/marketplace-auction-development">Разработка маркетплейса</Link></li>
+                    <li><Link className={'a-anim'} href="/ru/design">Редизайн сайта</Link></li>
+                    <li><Link className={'a-anim'} href="/ru/seo">Раскрутка сайта</Link></li>
                     <li><Link className={'a-anim'} href="/ru/services">Все услуги</Link></li>
                 </ul>
             </div>

@@ -119,7 +119,7 @@ const DevComponentRus = () => {
       <div className="relative w-full overflow-hidden black112">
       <div className="relative z-10 container mx-auto p-10 px-10 m-10 w-100">
         <h2 className='h3ash1'>Цены на разработку сайта</h2>
-        <p>В зависимости от целей и задач, могут быть разные варианты реализации. От промо-лендингов до маркетплейсов и порталов, также существуют различные программные решения и используемые платформы, такие как Wordpress, React, Next, Opencart, Shopify, Laravel и прочие.</p>
+        <p>В зависимости от целей и задач, могут быть разные варианты реализации. От промо-лендингов до маркетплейсов и порталов, также существуют различные программные решения и используемые платформы, такие как <a className="a-under" href="/ru/web-development/wordpress" title="Разработка сайтов на Wordpress">Wordpress</a>, <a className="a-under" href="/ru/web-development/react-next-js" title="Разработка сайтов на React/Next JS">React, Next</a>, <a className="a-under" href="/ru/web-development/opencart" title="Разработка сайтов на Ocstore/Opencart">Opencart</a>, Shopify, <a className="a-under" href="/ru/web-development/laravel" title="Разработка сайтов на Laravel">Laravel</a> и прочие.</p>
           <div className='space40'></div>
 
           <PricingPlansRu />
@@ -233,7 +233,7 @@ const DevComponentRus = () => {
           href="/"
           imgSrc="/images/portfolio/hyundai-cover-5.jpg"
           imgAlt="Дизайн и разработка сайта дилера Hyundai Truck and Bus"
-          caseText="Case"
+          caseText="Кейс"
           stackArray={["React.js", "Design", "Web-development"]}
           titleText="Дизайн и разработка сайта дилера Hyundai Truck and Bus"
         />

@@ -27,7 +27,7 @@ const PricingPlansRu = () => {
       duration: '10+ недель',
       stack: ['Figma', 'WooCommerce', 'Laravel', 'PostgreSQL'],
       note: 'Мультивендор, фреймворк, интеграция с CRM',
-      link: '/ru/web-development/marketplace-development',
+      link: '/ru/web-development/marketplace',
     },
     {
       title: 'Индивидуальный проект',
@@ -43,7 +43,7 @@ const PricingPlansRu = () => {
       duration: '10+ недель',
       stack: ['Figma', 'WooCommerce', 'Opencart', 'MySQL'],
       note: 'Интернет-магазин с функцией онлайн лотов',
-      link: '/ru/web-development/auction-development',
+      link: '/ru/web-development/auction',
     },
     {
       title: 'Портал / сервис',
@@ -67,7 +67,7 @@ const PricingPlansRu = () => {
       duration: '1-3 недели',
       stack: ['Tilda', 'Shopify', 'Wix', 'Webflow'],
       note: 'Создание сайта с уникальным дизайном',
-      link: '/ru/saas',
+      link: '/ru/web-development/saas',
     },
   ];
 

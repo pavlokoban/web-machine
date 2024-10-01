@@ -1,6 +1,4 @@
 import * as React from 'react';
-import Head from 'next/head';
-import styles from './RuStyle.module.css'
 import type { Metadata } from "next";
 import LayoutMainRus from "@/components/LayoutMainRus";
 import DevComponentRus from './DevComponentRus';
@@ -21,7 +19,7 @@ export const metadata: Metadata = {
 const RusMain = () => {
   return (
     <LayoutMainRus>
-  <DevComponentRus></DevComponentRus>
+  <DevComponentRus />
   </LayoutMainRus>
   );
 };
