@@ -6,20 +6,7 @@ const VoteComponentRu = () => {
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [showResults, setShowResults] = useState(false);
   const [votes, setVotes] = useState<{ [key: string]: number }>({});
-
-  const options = [
-    "PPC-реклама, в т.ч. товарная реклама",
-    "Ремаркетинг",
-    "Реклама в Youtube",
-    "Ценовые агрегаторы",
-    "Оффлайн-реклама",
-    "Рекомендации",
-    "SEO-продвижение",
-    "SMM и реклама в социальных сетях",
-    "Партизанский и крауд-маркетинг",
-    "Видео обзоры",
-    "Маркетплейсы",
-  ];
+  const [options, setOptions] = useState<string[]>([]); // Опции теперь будут загружаться из базы
 
   // Загружаем данные голосования при первом рендере
   useEffect(() => {
@@ -27,7 +14,9 @@ const VoteComponentRu = () => {
       try {
         const res = await fetch('/api/vote/get');
         const data = await res.json();
-        setVotes(data);
+        setVotes(data.votes);
+        setOptions(data.options); // Загрузка опций из базы данных
+        console.log(data);
       } catch (error) {
         console.error('Ошибка при загрузке данных голосования:', error);
       }

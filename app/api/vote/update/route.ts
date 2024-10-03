@@ -1,26 +1,36 @@
 import { NextResponse } from 'next/server';
-import { promises as fs } from 'fs';
-import path from 'path';
+import { prisma } from '@/lib/prisma'; // Подключение Prisma
 
 export async function POST(req: Request) {
-  const filePath = path.join(process.cwd(), 'utils', 'voteBlog.json');
   try {
-    const voteData = await req.json(); // Получаем данные из POST-запроса
+    const { option } = await req.json();
+    console.log('Полученные данные из запроса:', { option });
 
-    // Читаем текущие данные из файла
-    const fileData = await fs.readFile(filePath, 'utf-8');
-    const votes = JSON.parse(fileData);
+    // Проверяем, существует ли уже такой вариант голосования в базе данных
+    const existingVote = await prisma.vote.findFirst({
+      where: { option },
+    });
 
-    // Обновляем данные голосования
-    const { option } = voteData;
-    if (votes[option] !== undefined) {
-      votes[option] += 1;
+    if (existingVote) {
+      // Если запись найдена, обновляем количество голосов
+      await prisma.vote.update({
+        where: { id: existingVote.id }, // Используем id для обновления
+        data: { count: { increment: 1 } },
+      });
+    } else {
+      console.error('Ошибка: Вариант не найден');
+      return NextResponse.json({ error: 'Вариант не найден' }, { status: 404 });
     }
 
-    // Записываем обновленные данные обратно в файл
-    await fs.writeFile(filePath, JSON.stringify(votes, null, 2));
+    // После обновления голоса, снова получаем все опции с их голосами
+    const votes = await prisma.vote.findMany();
+    const votesObj: { [key: string]: number } = {};
+    votes.forEach((vote: { option: string, count: number }) => {
+      votesObj[vote.option] = vote.count;
+    });
 
-    return NextResponse.json({ success: true, votes });
+    // Возвращаем обновленные данные для всех опций
+    return NextResponse.json({ success: true, votes: votesObj });
   } catch (error) {
     console.error('Ошибка при обновлении голосования:', error);
     return NextResponse.json({ error: 'Не удалось обновить данные голосования' }, { status: 500 });

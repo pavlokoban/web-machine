@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 interface ViewsCounterProps {
   slug: string;
@@ -8,13 +8,14 @@ interface ViewsCounterProps {
 
 const ViewsCounter = ({ slug }: ViewsCounterProps) => {
   const [views, setViews] = useState<number | null>(null);
+  const hasFetched = useRef(false); // Флаг для отслеживания выполнения запроса
 
   useEffect(() => {
+    if (hasFetched.current) return; // Если запрос уже выполнялся, выходим
+
     const fetchViews = async () => {
       try {
-        // Делаем запрос для получения текущего количества просмотров
-        
-    
+        // Получаем текущее количество просмотров
         const response = await fetch(`/api/getViews?slug=${slug}`);
         const data = await response.json();
 
@@ -28,21 +29,21 @@ const ViewsCounter = ({ slug }: ViewsCounterProps) => {
       }
     };
 
-    fetchViews(); // Получаем количество просмотров при монтировании компонента
-
-      
     const incrementViews = async () => {
       try {
-        // Делаем запрос для увеличения количества просмотров
-        await fetch(`/api/incrementViews?slug=${slug}`);
+        // Увеличиваем количество просмотров
+        await fetch(`/api/incrementViews?slug=${slug}`, {
+          method: 'POST',
+        });
       } catch (error) {
         console.error('Ошибка увеличения просмотров:', error);
       }
     };
 
+    fetchViews();     // Получаем количество просмотров при монтировании компонента
     incrementViews(); // Увеличиваем количество просмотров
 
-    // Обратите внимание: вы можете добавить условия, чтобы не увеличивать просмотры несколько раз
+    hasFetched.current = true; // Устанавливаем флаг после выполнения запросов
 
   }, [slug]);
 
