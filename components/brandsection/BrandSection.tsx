@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './BrandSection.module.css';
+import Image from 'next/image';
 
 interface Brand {
   name: string;
@@ -26,7 +27,7 @@ const BrandSection: React.FC = () => {
         <div key={index} className={styles.brand}>
           <div className={styles.flag}>{brand.flag}</div>
           <div className={styles.imageCont}>
-          <img src={brand.image} alt={brand.alt} className={styles.logo} />
+          <Image width={180} height={50} src={brand.image} alt={brand.alt} className={styles.logo} />
           </div>
           <div className={styles.name}>{brand.name}</div>
         </div>

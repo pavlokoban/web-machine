@@ -6,6 +6,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import OfficeLocationsRus from '@/components/officelocations/OfficeLocationsRus';
 import ImageRow from '@/components/imagerow/ImageRow';
+import Image from 'next/image';
 
 
 export const metadata: Metadata = {
@@ -34,16 +35,16 @@ const ContactPageRu = () => {
         <div>
         <div className="social-links">
               <a href="https://www.linkedin.com/in/pavlosokolenko/" target="_blank" rel="noopener noreferrer">
-                <img src="/images/team/pavlo-sokolenko.webp" alt="LinkedIn CEO" />
+                <Image src="/images/team/pavlo-sokolenko.webp" alt="LinkedIn CEO" />
               </a>
               <a href="https://www.linkedin.com/in/dmytro-petrushenko/" target="_blank" rel="noopener noreferrer">
-                <img src="/images/team/1644932312854.jpeg" alt="LinkedIn COO" />
+                <Image src="/images/team/1644932312854.jpeg" alt="LinkedIn COO" />
               </a>
               <a href="https://www.linkedin.com/in/margarita-melikyan-6a2036160/" target="_blank" rel="noopener noreferrer">
-                <img src="/images/team/1521754615526.jpeg" alt="LinkedIn SEO" />
+                <Image src="/images/team/1521754615526.jpeg" alt="LinkedIn SEO" />
               </a>
               <a href="https://www.linkedin.com/in/irina-pelipko-92098152/" target="_blank" rel="noopener noreferrer">
-                <img src="/images/team/1647853856121.jpeg" alt="LinkedIn CMO" />
+                <Image src="/images/team/1647853856121.jpeg" alt="LinkedIn CMO" />
               </a>
           </div>
           <p>Также Вы можете написать нам в LinkedIn.</p>

@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import AnimatedLink from './animatedlinks/AnimatedLink';
 import AnimatedVideoLink from './animatedlinks/AnimatedVideoLink';
 import ContactFormRus from './contact-form/ContactFormRus';
@@ -12,7 +13,6 @@ import TestimonialsRu from './testimonials/TestimonialsRu';
 import ButtonLetsTalk from './buttonletstalk/ButtonLetsTalk';
 import ImageRow from './imagerow/ImageRow';
 import CircleDiscussButtonSEORu from '@/components/buttonletstalk/CircleButtonSEORu';
-
 
 const MainComponentRus = () => {
   const textContainerRef = useRef<HTMLDivElement>(null);
@@ -97,7 +97,7 @@ const MainComponentRus = () => {
 
         <div className='projects-clutch whiteToLightGreen'>
         <Link href="/ru/reviews">
-        <img src="/clutch_review_unit_black.svg" alt="Clutch Review" />
+        <Image src="/clutch_review_unit_black.svg" alt="Clutch Review" width={135} height={20} />
         </Link>
         </div>
         <div className='projects-num whiteToLightGreen'>
@@ -168,31 +168,31 @@ const MainComponentRus = () => {
             <div className="achievements-wrapper">
               <div className="achievements-row flex">
                 <div className="achievement-block">
-                  <img className="achievement-image" src="/images/achievements/adc.png" alt="ADC" />
+                  <Image width={70} height={25} className="achievement-image" src="/images/achievements/adc.png" alt="ADC" />
                 </div>
                 <div className="achievement-block">
-                  <img className="achievement-image" src="/images/achievements/google-partners.svg" alt="Google Partner" />
+                  <Image width={70} height={25} className="achievement-image" src="/images/achievements/google-partners.svg" alt="Google Partner" />
                 </div>
                 <div className="achievement-block">
-                  <img className="achievement-image" src="/images/achievements/kyiv.png" alt="Kyiv international Advertisiment Festival" />
+                  <Image width={85} height={25} className="achievement-image" src="/images/achievements/kyiv.png" alt="Kyiv international Advertisiment Festival" />
                 </div>
                 <div className="achievement-block">
-                  <img className="achievement-image" src="/images/achievements/verybest.png" alt="Very best of" />
+                  <Image width={55} height={25} className="achievement-image" src="/images/achievements/verybest.png" alt="Very best of" />
                 </div>
                 <div className="achievement-block">
-                  <img className="achievement-image" src="/images/achievements/web-awards.png" alt="Web Awards" />
+                  <Image width={50} height={25} className="achievement-image" src="/images/achievements/web-awards.png" alt="Web Awards" />
                 </div>
                 <div className="achievement-block">
-                  <img className="achievement-image" src="/images/achievements/wow.png" alt="Wow-Done Awards" />
+                  <Image width={30} height={25} className="achievement-image" src="/images/achievements/wow.png" alt="Wow-Done Awards" />
                 </div>
                 <div className="achievement-block">
-                  <img className="achievement-image" src="/images/achievements/cms.png" alt="Cms rating" />
+                  <Image width={90} height={25} className="achievement-image" src="/images/achievements/cms.png" alt="Cms rating" />
                 </div>
                 <div className="achievement-block">
-                  <img className="achievement-image" src="/images/achievements/it-r.png" alt="It-rating" />
+                  <Image width={60} height={25} className="achievement-image" src="/images/achievements/it-r.png" alt="It-rating" />
                 </div>
                 <div className="achievement-block">
-                  <img className="achievement-image-clutch" src="/clutch_review_unit_black.svg" alt="Clutch" />
+                  <Image width={115} height={17} className="achievement-image-clutch" src="/clutch_review_unit_black.svg" alt="Clutch" />
                 </div>
               </div>
             </div>

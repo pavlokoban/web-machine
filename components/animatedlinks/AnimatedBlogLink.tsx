@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './AnimatedBlogLink.module.css'; // Подключаем стили
+import Image from 'next/image';
 
 interface AnimatedBlogLinkProps {
   href: string;
@@ -18,11 +19,12 @@ const AnimatedBlogLink: React.FC<AnimatedBlogLinkProps> = ({ href, imgSrc, imgAl
   return (
     <Link href={href}>
       <div className="animated-link relative group">
-        <img 
+        <Image 
           src={imgSrc}
           alt={imgAlt}
           className="border-12 w-full transition-transform duration-500 ease-in-out group-hover:transform group-hover:translate-y-2"
-          width={500}
+          width={700}
+          height={500}
         />
       <div className="info-case">
   <h3 className="title-format-info">{titleText}</h3>

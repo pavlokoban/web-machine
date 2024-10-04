@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
-import Link from 'next/link';
 import AnimatedLink from '@/components/animatedlinks/AnimatedLink';
 import AnimatedVideoLink from '@/components/animatedlinks/AnimatedVideoLink';
 import BrandSectionRu from '@/components/brandsection/BrandSectionRu';
@@ -12,6 +11,7 @@ import ContactFormRus from '@/components/contact-form/ContactFormRus';
 import StageSliderDevRu from '@/components/stageslider/StageSliderDevRu';
 import CircleDiscussButtonSEORu from '@/components/buttonletstalk/CircleButtonSEORu';
 import CountUp from 'react-countup';
+import Image from 'next/image';
 
 
 const AuctionComponentRu = () => {
@@ -118,7 +118,7 @@ const AuctionComponentRu = () => {
       <div className="relative z-10 container mx-auto p-10 px-10 m-10 w-100">
         <br></br>
         <div style={{maxWidth: '1200px', margin: 'auto'}}>
-        <img className="border-36" src='/images/portfolio/auction-cover-1.webp' width={1600} height={800} alt='Разработка интернет-аукциона'/>
+        <Image className="border-36" src='/images/portfolio/auction-cover-1.webp' width={1600} height={800} alt='Разработка интернет-аукциона'/>
         </div>
         <br></br>
 

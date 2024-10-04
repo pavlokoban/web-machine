@@ -9,6 +9,7 @@ import ViewsCounter from './ViewsCounter';
 import styles from '@/components/animatedlinks/AnimatedBlogLink.module.css';
 import type { Metadata } from "next";
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface BlogArticlePageProps {
   params: { slug: string };
@@ -49,7 +50,7 @@ export default function BlogArticlePage({ params }: BlogArticlePageProps) {
     <div className="relative z-10 container mx-auto p-10 px-10 m-10 w-100">
         <div className='flex' style={{width:'100%'}}>
             <div className='desc-67-mob-100'>
-            <img 
+            <Image 
             src={article?.image} // Используем свойство 'image', которое есть в структуре
             alt={article?.imageAlt} // Используем свойство 'imageAlt', которое есть в структуре
             className="border-12 w-full transition-transform duration-500 ease-in-out group-hover:transform group-hover:translate-y-2"

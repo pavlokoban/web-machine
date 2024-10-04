@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
-import Link from 'next/link';
+import Image from 'next/image';
 import AnimatedLink from '@/components/animatedlinks/AnimatedLink';
 import AnimatedVideoLink from '@/components/animatedlinks/AnimatedVideoLink';
 import BrandSectionRu from '@/components/brandsection/BrandSectionRu';
@@ -163,7 +163,7 @@ const LaravelComponentRu = () => {
 <p>
     <br></br>
 </p>
-    <img src="/images/laravel-web-machine-min.webp" alt="Создание интернет-магазинов на фреймверках Laravel, Yii2 в Киеве, Харькове" width="100%" height="auto" />
+    <Image src="/images/laravel-web-machine-min.webp" alt="Создание интернет-магазинов на фреймверках Laravel, Yii2 в Киеве, Харькове" width="1200" height="800" />
 
 
 <h2>Создание сайтов на платформе Laravel цели и возможности применения</h2>

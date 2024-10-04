@@ -13,6 +13,7 @@ import StageSliderDevRu from '@/components/stageslider/StageSliderDevRu';
 import CircleDiscussButtonSEORu from '@/components/buttonletstalk/CircleButtonSEORu';
 import CountUp from 'react-countup';
 import PricingPlansRu from '@/components/pricingplans/PricingPlansRu';
+import Image from 'next/image';
 
 
 const MarketplaceComponentRu = () => {
@@ -226,18 +227,18 @@ const MarketplaceComponentRu = () => {
         <h2>Примеры агрегаторов и маркетплейсов (модели B2B, B2C, C2C/P2P)</h2>
         <p><br></br></p>
         <div className='grid-container-4-1' style={{backgroundColor: 'var(--color-main-1-deep)', padding: '2%'}}>
-            <div><img className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-airbnb.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
-            <div><img className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-aliexpress.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
-            <div><img className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-amazon.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
-            <div><img className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-booking.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
-            <div><img className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-doc.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
-            <div><img className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-googleplay.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
-            <div><img className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-indeed.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
-            <div><img className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-olx.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
-            <div><img className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-prom.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
-            <div><img className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-rozetka.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
-            <div><img className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-wiki.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
-            <div><img className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-youtube.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
+            <div><Image className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-airbnb.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
+            <div><Image className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-aliexpress.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
+            <div><Image className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-amazon.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
+            <div><Image className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-booking.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
+            <div><Image className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-doc.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
+            <div><Image className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-googleplay.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
+            <div><Image className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-indeed.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
+            <div><Image className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-olx.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
+            <div><Image className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-prom.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
+            <div><Image className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-rozetka.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
+            <div><Image className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-wiki.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
+            <div><Image className="border-36 grayscale100" src='/images/blog/articles/marketplace/agregator-youtube.png' width={171} height={86} alt='Создание маркетплейс, заказать разработку маркетплейса'/></div>
        </div>
   </div>
 </div>

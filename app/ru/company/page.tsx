@@ -6,6 +6,7 @@ import { Metadata } from 'next';
 import BrandSectionRu from '@/components/brandsection/BrandSectionRu';
 import MarqueeText from '@/components/marqueetext/MarqueeText';
 import TestimonialsRu from '@/components/testimonials/TestimonialsRu';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
     title: "WEB-MACHINE – о компании: история, ценности, команда и фото",
@@ -39,7 +40,7 @@ const CompanyPageRu = () => {
         </p>
         <br></br>
         <div className="tooltip">
-            <img className="border-36 grayscale100" src='/images/team/team-photo-wm.png' width={1600} height={800} alt='Команда Веб-машины в 2018 году'/>
+            <Image className="border-36 grayscale100" src='/images/team/team-photo-wm.png' width={1600} height={800} alt='Команда Веб-машины в 2018 году'/>
             <span className="tooltiptext">Команда &quot;WEB-MACHINE&quot;, 2018 год. Харьков</span>
         </div>
         <br></br>
@@ -62,42 +63,42 @@ const CompanyPageRu = () => {
         <div className="grid-container-4-1">
         <div className="grid-item-4-1">
         <div className='square-image-container'>
-            <img className="border-12" src='/images/team/office-2024.jpg' width={600} height={600}/>
+            <Image className="border-12" src='/images/team/office-2024.jpg' alt='Команда Web-Machine' width={600} height={600}/>
             </div>
             </div>
             <div className="grid-item-4-1">
             <div className='square-image-container'>
-            <img className="border-12" src='/images/team/team-3.jpg' width={600} height={600}/>
+            <Image className="border-12" src='/images/team/team-3.jpg' alt='Команда Web-machine' width={600} height={600}/>
             </div>
             </div>
             <div className="grid-item-4-1">
             <div className='square-image-container'>
-            <img className="border-12" src='/images/team/team-4.jpg' width={600} height={600}/>
+            <Image className="border-12" src='/images/team/team-4.jpg' alt='Команда Web-machine' width={600} height={600}/>
             </div>
             </div>
             <div className="grid-item-4-1">
             <div className='square-image-container'>
-            <img className="border-12" src='/images/team/team-5.jpg' width={600} height={600}/>
+            <Image className="border-12" src='/images/team/team-5.jpg' alt='Команда Web-machine' width={600} height={600}/>
             </div>
             </div>
             <div className="grid-item-4-1">
             <div className='square-image-container'>
-            <img className="border-12" src='/images/team/conference-2018.jpg' width={600} height={600}/>
+            <Image className="border-12" src='/images/team/conference-2018.jpg' alt='Команда Web-machine' width={600} height={600}/>
             </div>
             </div>
             <div className="grid-item-4-1">
             <div className='square-image-container'>
-            <img className="border-12" src='/images/team/team-2017.jpg' width={600} height={600}/>
+            <Image className="border-12" src='/images/team/team-2017.jpg' alt='Команда Web-machine' width={600} height={600}/>
             </div>
             </div>
             <div className="grid-item-4-1">
             <div className='square-image-container'>
-            <img className="border-12" src='/images/team/office-1.jpg' width={600} height={600}/>
+            <Image className="border-12" src='/images/team/office-1.jpg' alt='Команда Web-machine' width={600} height={600}/>
             </div>
             </div>
             <div className="grid-item-4-1">
             <div className='square-image-container'>
-            <img className="border-12" src='/images/team/office-2.jpg' width={600} height={600}/>
+            <Image className="border-12" src='/images/team/office-2.jpg' alt='Команда Web-machine' width={600} height={600}/>
             </div>
             </div>
 
