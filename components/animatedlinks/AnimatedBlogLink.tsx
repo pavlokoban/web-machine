@@ -50,7 +50,7 @@ const AnimatedBlogLink: React.FC<AnimatedBlogLinkProps> = ({ href, imgSrc, imgAl
 </p>
 
 
-    <div className="stack-array">
+    <div className="blog-stack-array">
       {topicArray.map((item, index) => (
         <span key={index} className="stack-item">
           {item}

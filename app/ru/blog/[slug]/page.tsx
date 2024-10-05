@@ -48,13 +48,13 @@ export default function BlogArticlePage({ params }: BlogArticlePageProps) {
     <>
     <LayoutMainRus>
     <div className="relative z-10 container mx-auto p-10 px-10 m-10 w-100">
-        <div className='flex' style={{width:'100%'}}>
+        <div className='desc-flex-mob-block'>
             <div className='desc-67-mob-100'>
             <Image 
             src={article?.image} // Используем свойство 'image', которое есть в структуре
             alt={article?.imageAlt} // Используем свойство 'imageAlt', которое есть в структуре
             className="border-12 w-full transition-transform duration-500 ease-in-out group-hover:transform group-hover:translate-y-2"
-            width={871}
+            width={871} height={450}
         />
                 <h1 className={'unbounded'}>{article?.title}</h1>
                 <div className='flex'>
