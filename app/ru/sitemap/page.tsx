@@ -44,7 +44,7 @@ const SitemapPageRu = () => {
                         </ul>
                     <li><a className="p-1 a-anim-w" href="/ru/online-store-development">Создание интернет-магазина</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/web-development/marketplace">Создание маркетплейса</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web-development/auction">Создание ауциона</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/web-development/auction">Создание аукциона</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/web-development/portal">Разработка онлайн-портала</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/seo">Продвижение сайта</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/seo-online-store">Продвижение интернет-магазина</a></li>
@@ -61,7 +61,6 @@ const SitemapPageRu = () => {
           <li><a className="p-1 a-anim-w text-xl font-bold" href="/ru/cookies">Политика кукис</a></li>
           <li><a className="p-1 a-anim-w text-xl font-bold" href="/ru/legal">Юридическая информация</a></li>
           <li><a className="p-1 a-anim-w text-xl font-bold" href="#">Карта сайта</a></li>
-          <li><a className="p-1 a-anim-w text-xl font-bold" href="/ru/price">Цены</a></li>
           <li><a className="p-1 a-anim-w text-xl font-bold" href="/ru/reviews">Отзывы</a></li>
           <li><a className="p-1 a-anim-w text-xl font-bold" href="/ru/company">О нас</a></li>
           <li><a className="p-1 a-anim-w text-xl font-bold" href="/ru/contact">Контакты</a></li>
@@ -71,42 +70,46 @@ const SitemapPageRu = () => {
         <ul>
             <li><a className="p-1 a-anim-w text-xl font-bold" href="/ru/cases">Портфолио</a>
             <ul className="ml-4">
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Разработка интернет-магазина Ukreina</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Создание сайта ведущего китайского разработчика игр ZPLAY</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Разработка портала Health-UA</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Дизайн, техподдержка и разработка разделов на сайте сети ОККО</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Дизайн и разработка сайта для бренда Роганская вода</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Разработка интернет-магазина швейного оборудования Amtex</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Разработка сайта Carglass</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Разработка интернет-магазина Procraft</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Разработка сайта автодилера Hyundai</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Разработка интернет-магазина Modiva</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">SEO оптимизация оптового магазина Карнавал Приколов</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Разработка и продвижение интернет-магазина Palvira</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Разработка интернет-магазина Haited</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Разработка сайта IT компании Chm-soft</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Рекламная кампания для интернет магазина Masshold</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Дизайн интернет-магазина VARVAR</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Дизайн и разработка интернет-магазина Lamps4makeup</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Разработка сайта для агрокомпании</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Дизайн и создание медицинского сайта для МЦ Молекула</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Создание интернет-магазина одежды RANNOV</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Дизайн интернет-магазина одежды Джинсовик</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Дизайн сайта для китайского сервиса монетизации Yumi</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Разработка сайта застройщика «Витязь СтройЦентр»</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Редизайн сайта автосалона официального дилера Toyota</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Разработка мебельного интернет-магазина Мебликс</a></li>
+
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/ukreina">Разработка интернет-магазина Ukreina</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/amtex">Разработка интернет-магазина швейного оборудования Amtex</a></li>
+
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/zplay">Создание сайта ведущего китайского разработчика игр ZPLAY</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/okko">Дизайн, техподдержка и разработка разделов на сайте сети ОККО</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/roganska">Дизайн и разработка сайта для бренда Роганская вода</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/carglass">Разработка сайта Carglass</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/health-ua">Разработка портала Health-UA</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/chmsoft">Разработка сайта IT компании Chmsoft</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/hyundai">Разработка сайта автодилера Hyundai</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/varvar">Дизайн интернет-магазина VARVAR</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/lamps4makeup">Дизайн и разработка интернет-магазина Lamps4makeup</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/agro">Разработка сайта для агрокомпании</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/molekula">Дизайн и создание медицинского сайта для МЦ Молекула</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/rannov">Создание интернет-магазина одежды RANNOV</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/jinsovik">Дизайн интернет-магазина одежды Джинсовик</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/yumi">Дизайн сайта для китайского сервиса монетизации Yumi</a></li>
+                    
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/procraft">Разработка интернет-магазина Procraft</a></li>
+                    
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/modiva">Разработка интернет-магазина Modiva</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/palvira">Разработка и продвижение интернет-магазина Palvira</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/hited">Разработка интернет-магазина Hited</a></li>
+                    
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/masshold">Рекламная кампания для интернет магазина Masshold</a></li>
+                    
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/building">Разработка сайта застройщика «Витязь СтройЦентр»</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/toyota">Редизайн сайта автосалона официального дилера Toyota</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/meblix">Разработка мебельного интернет-магазина Мебликс</a></li>
                     <li><a className="p-1 a-anim-w" href="/ru/web">Создание интернет-магазина хайповой одежды TheKingHouse</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Создание нишевого маркетплейс MeridianNurse</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Дизайн сайта для компании 32.in.ua</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Дизайн маркетплейса Steli.top</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Разработка сайта для студии архитектурной визуализации</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Редизайн сайта магазина детских товаров MEGA Zayka</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Разработка лендинга для дилера Hyundai</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Создание сайта клиники эстетической косметологии Aesthetta (США)</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Продвижение сервиса онлайн кредитов «Ultracash»</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Продвижение клиники «Стоматология для всех»</a></li>
-                    <li><a className="p-1 a-anim-w" href="/ru/web">Создание сайта LegalGround.top</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/meridian">Создание нишевого маркетплейс MeridianNurse</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/32">Дизайн сайта для компании 32.in.ua</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/steli">Дизайн маркетплейса Steli.top</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/a1">Разработка сайта для студии архитектурной визуализации</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/megazayka">Редизайн сайта магазина детских товаров MEGA Zayka</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/aesthetta">Создание сайта клиники эстетической косметологии Aesthetta (США)</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/ultracash">Продвижение сервиса онлайн кредитов «Ultracash»</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/dental">Продвижение клиники «Стоматология для всех»</a></li>
+                    <li><a className="p-1 a-anim-w" href="/ru/cases/legalgrounds">Создание сайта LegalGround.top</a></li>
                     
             </ul></li>
         </ul>

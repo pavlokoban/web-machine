@@ -1204,6 +1204,23 @@ overflow: hidden;
     overflow: hidden;
 }
 
+/* Начальное состояние: изображение скрыто */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* Смещено чуть ниже */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Когда изображение в поле видимости, применяется этот класс */
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.paddingTopBottom20 {
+  padding: 20px 0;
+}
+
 /* Медиа */
 @media (max-width: 992px) { 
   .desc-33-mob-100 {

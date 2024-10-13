@@ -34,7 +34,7 @@ const CasesRu = () => {
       <div className={'desc-col-2-50-mob-1-100'}>
 
       <AnimatedLink 
-          href="/"
+          href="/ru/cases/okko"
           imgSrc="/images/portfolio/okko_cover_01-min.png"
           imgAlt="Дизайн, техподдержка и развитие сайта сети OKKO"
           caseText="Кейс"
@@ -43,7 +43,7 @@ const CasesRu = () => {
         />
 
         <AnimatedLink 
-          href="/"
+          href="/ru/cases/hyundai"
           imgSrc="/images/portfolio/hyundai-cover-5.jpg"
           imgAlt="Дизайн и разработка сайта дилера Hyundai Truck and Bus"
           caseText="Case"
@@ -53,7 +53,7 @@ const CasesRu = () => {
 
 
         <AnimatedLink 
-          href="/"
+          href="/ru/cases/zplay"
           imgSrc="/images/portfolio/zplay-cover-1.jpg"
           imgAlt="Дизайн и разработка сайта для разработка игр Zplay (Китай, Пекин)"
           caseText="Кейс"
@@ -63,7 +63,7 @@ const CasesRu = () => {
 
 
         <AnimatedLink 
-          href="/"
+          href="/ru/cases/legalgrounds"
           imgSrc="/images/portfolio/lg-cover-1.jpg"
           imgAlt="Дизайн и разработка международного иммиграционного сервиса LegalGrounds"
           caseText="Кейс"
@@ -76,7 +76,7 @@ const CasesRu = () => {
         <div className={'desc-col-2-50-mob-1-100'}>
        
         <AnimatedLink 
-          href="/"
+          href="/ru/cases/carglass"
           imgSrc="/images/portfolio/carglass-cover-1.jpg"
           imgAlt="Creation of a website for the Carglass® brand - an international brand of a division of the Belron® Group - a world leader in the field of repair and replacement of automobile glass"
           caseText="Кейс"
@@ -85,7 +85,7 @@ const CasesRu = () => {
         />
        
        <AnimatedLink 
-          href="/"
+          href="/ru/cases/roganska"
           imgSrc="/images/portfolio/roganska-cover-3.jpg"
           imgAlt="Дизайн и создание сайта для бренда воды Роганская"
           caseText="Кейс"
@@ -103,9 +103,9 @@ const CasesRu = () => {
         />
 
         <AnimatedLink 
-          href="/"
+          href="/ru/cases/hited"
           imgSrc="/images/portfolio/haited-cover-2.jpg"
-          imgAlt="Дизайн и создание интернет-магазина Haited"
+          imgAlt="Дизайн и создание интернет-магазина Hited"
           caseText="Кейс"
           stackArray={["Opencart", "Design", "Web-development"]}
           titleText="Дизайн и создание интернет-магазина Haited"

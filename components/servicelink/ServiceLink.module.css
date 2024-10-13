@@ -13,16 +13,19 @@
 }
 
 .serviceLink:hover {
-  background-color: #e4ebf575;
+  /* background-color: #e4ebf575; */
+  background-color: #000;
 }
 
 .serviceLink:hover .arrowContainer {
   background-color: #000;
   border-color: #000;
+  border-color: var(--color-main-1-deep);
 }
 
 .serviceLink:hover .arrow {
   color: #f5f5f5;
+  color: var(--color-main-1-deep);
 }
 
 .title {
@@ -30,6 +33,13 @@
   font-size: x-large;
   font-weight: 500;
   font-family: 'Unbounded', system-ui, sans-serif;
+}
+
+.serviceLink:hover .title {
+  color: var(--color-main-1-deep);
+}
+.serviceLink:hover .description {
+  color: var(--color-main-1-deep);
 }
 
 .description {
