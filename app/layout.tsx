@@ -42,6 +42,7 @@ export default function RootLayout({
       <head>
           <meta name="theme-color" content="#1af287" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta name="msapplication-navbutton-color" content="#1af287" />
           <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
           <meta itemScope itemType="https://schema.org/Organization" />
           <meta itemProp="name" content="WEB-MACHINE" />
