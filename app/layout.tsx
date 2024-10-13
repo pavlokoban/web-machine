@@ -40,6 +40,9 @@ export default function RootLayout({
   return (
     <html lang={lang} dir="ltr">
       <head>
+          <meta name="theme-color" content="#1af287" />
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
           <meta itemScope itemType="https://schema.org/Organization" />
           <meta itemProp="name" content="WEB-MACHINE" />
           <meta itemProp="logo" content="https://web-machine.rocks/images/main/web-machine-logo.png" />
@@ -47,9 +50,6 @@ export default function RootLayout({
           <meta itemProp="telephone" content="+38 068 112 112 8" />
           <meta itemProp="streetAddress" content="вул. Дорогожицька, 3" />
           <meta itemProp="addressLocality" content="Киев, Украина" />
-          <meta name="theme-color" content="#1af287" />
-          <meta name="apple-mobile-web-app-capable" content="yes" />
-          <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
           <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-X6PCHTYTKR"
