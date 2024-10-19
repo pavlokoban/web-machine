@@ -4,22 +4,10 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  /*
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  */
-  --archive-color-blue: #463bf7;
-  /* https://colorscheme.ru/#3521Tn7Jdw0w0  */
   --background-global: 255,255,255;
-  /*
-  --color-main-1-deep-bak: #3ad196;
-  --color-main-1-light: #83f8be;
-  */
   --color-main-1-deep: #1af287;
   --color-main-1-light: #8af8c4;
   --color-main-1-dark: #0b683e;  
-  /*--color-main-1-light: #ACF4D9;
-  --color-main-1-medium: #6AE8B8;*/
   --color-main-1-light2: #8CE8C5;
   --color-main-2-deep: #0119fa;
   --color-main-2-light: #a5adff;
@@ -29,6 +17,16 @@
   --color-add-1: #ee82ee;
   --color-c0fc01: #c0fc01;
   --color-1af287: #1af287;
+  --archive-color-blue: #463bf7;
+  /*
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --color-main-1-light: #ACF4D9;
+  --color-main-1-medium: #6AE8B8;
+  --color-main-1-deep-bak: #3ad196;
+  --color-main-1-light: #83f8be;
+ https://colorscheme.ru/#3521Tn7Jdw0w0 
+  */
 }
 
 /*
@@ -161,6 +159,7 @@ b {
 
 .border-36 {border-radius: 36px;}
 .border-12 {border-radius: 12px;}
+.border-100 {border-radius: 100%;}
 
 .projects-clutch {
   display: inline-flex;
@@ -204,7 +203,8 @@ b {
   border: 1px solid #101010;
   background-color: transparent;
   color: #000000;
-  font-size: 14px;
+  font-size: 12px;
+  font-family: 'Unbounded';
   font-weight: 600;
   text-transform: uppercase;
   cursor: pointer;
@@ -349,7 +349,8 @@ h4  {
   margin-top: 24px;
 }
 
-/*@layer components {
+/* 
+@layer components {
   .multimple-link {
     @apply font-bold no-underline;
     @apply bg-gradient-to-r from-green-500 to-pink-500;
@@ -389,6 +390,22 @@ h4  {
   margin: 0 12px;
   font-weight: 700;
 }
+.a-main-menu-cta {
+  border: 1px solid var(--color-main-1-deep);
+  padding: 6px 24px;
+  border-radius: 36px;
+  background: var(--color-main-1-deep);
+  color: #000;
+  font-weight: 700;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+.a-main-menu-cta:hover {
+  border: 1px solid #000;
+  background: #000;
+  color: var(--color-main-1-deep);
+}
 
 .stackForPP {
   margin-bottom: 4px !important;
@@ -425,6 +442,8 @@ h4  {
 .main-menu-links{
   margin-right: 30px;
   font-weight: 500;
+  /* font-family: 'Unbounded'; */
+  /* margin-top: -15px; */
 }
 
 @layer utilities {
@@ -932,6 +951,43 @@ h4  {
   border-left: 15px solid black;
 }
 */
+
+.blockquote-6 {
+  border-left: 6px solid #000;
+  font-size: 16px;
+  font-style: italic;
+  margin: 16px;
+  padding: 16px 24px;
+  position: relative;
+}
+.blockquote-6:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -6px;
+  height: 40px;
+  background-color: #e4ebf5;
+  width: 6px;
+  margin-top: -1em;
+}
+.blockquote-6:after {
+  content: "”";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  color: #000;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 30px;   
+}
+.blockquote-6 cite {
+  color: #000;
+  font-size: 15px;
+  padding-top: 10px;
+  display: block;
+  text-align: right;
+}
+
 .arrow {
   font-size: 24px; /* Установите нужный размер */
   color: black; /* Цвет стрелки */

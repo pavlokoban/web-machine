@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import HeadComponent from './head'; 
-import { Unbounded } from "next/font/google";
 import { Montserrat } from "next/font/google";
+import { Unbounded } from "next/font/google";
 import { Major_Mono_Display } from "next/font/google";
 import "./globals.css";
 import CookieBanner from '../components/cookiesbanner/CookieBanner';
@@ -9,10 +9,25 @@ import React from 'react';
 import { headers } from 'next/headers';
 import Script from 'next/script';
 
+// import { Raleway } from "next/font/google";
+// import { Nunito_Sans } from "next/font/google";
+// import { Golos_Text } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
+import { Source_Code_Pro } from "next/font/google";
+
 
 const unbounded = Unbounded({ subsets: ["latin", "cyrillic-ext"] });
 const montserrat = Montserrat({ subsets: ["latin", "cyrillic-ext"] });
 const majorMonoDisplay = Major_Mono_Display({ subsets: ["latin"], weight: ['400'], variable: '--font-major-mono-display' });
+
+// const raleway = Raleway({ subsets: ["latin", "cyrillic-ext"] }); //номер 3
+// const nunitosans = Nunito_Sans({ subsets: ["latin", "cyrillic-ext"] }); //неплохо
+// const golostext = Golos_Text({ subsets: ["latin", "cyrillic-ext"] }); //не понятно может и не плохо
+const robotomono = Roboto_Mono({ subsets: ["latin", "cyrillic-ext"] }); //номер 2
+const sourcecodepro = Source_Code_Pro({ subsets: ["latin", "cyrillic-ext"] }); //номер 1
+
+
+
 
 export const metadata: Metadata = {
   title: "Web Machine Rocks!",
@@ -40,10 +55,6 @@ export default function RootLayout({
   return (
     <html lang={lang} dir="ltr">
       <head>
-          <meta name="theme-color" content="#1af287" />
-          <meta name="apple-mobile-web-app-capable" content="yes" />
-          <meta name="msapplication-navbutton-color" content="#1af287" />
-          <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
           <meta itemScope itemType="https://schema.org/Organization" />
           <meta itemProp="name" content="WEB-MACHINE" />
           <meta itemProp="logo" content="https://web-machine.rocks/images/main/web-machine-logo.png" />
@@ -51,7 +62,10 @@ export default function RootLayout({
           <meta itemProp="telephone" content="+38 068 112 112 8" />
           <meta itemProp="streetAddress" content="вул. Дорогожицька, 3" />
           <meta itemProp="addressLocality" content="Киев, Украина" />
-
+          <meta name="theme-color" content="#1af287" />
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+          <meta name="msapplication-navbutton-color" content="#1af287" />
           <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-X6PCHTYTKR"
           strategy="afterInteractive"
@@ -66,7 +80,7 @@ export default function RootLayout({
           </Script>
         <HeadComponent />
       </head>
-      <body className={montserrat.className}>
+      <body className={sourcecodepro.className}>
         {children}
         <CookieBanner />
       </body>

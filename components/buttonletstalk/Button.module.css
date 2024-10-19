@@ -9,7 +9,8 @@
     /*background-color: #feee33;
     color: white; */
     color: black;
-    font-size: 14px;
+    font-size: 12px;
+    font-family: 'Unbounded';
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
@@ -40,7 +41,8 @@
     margin-top: 40px;
     margin-bottom: 40px;
     color: rgb(0, 0, 0);
-    font-size: 14px;
+    font-size: 12px;
+    font-family: 'Unbounded';
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
@@ -110,7 +112,8 @@
     margin-top: 40px;
     margin-bottom: 40px;
     color: rgb(0, 0, 0);
-    font-size: 14px;
+    font-size: 12px;
+    font-family: 'Unbounded';
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;

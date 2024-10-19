@@ -35,16 +35,16 @@ const ContactPageRu = () => {
         <div>
         <div className="social-links">
               <a href="https://www.linkedin.com/in/pavlosokolenko/" target="_blank" rel="noopener noreferrer">
-                <Image src="/images/team/pavlo-sokolenko.webp" alt="LinkedIn CEO" />
+                <Image width="100" height="100" src="/images/team/pavlo-sokolenko.webp" alt="LinkedIn CEO" />
               </a>
               <a href="https://www.linkedin.com/in/dmytro-petrushenko/" target="_blank" rel="noopener noreferrer">
-                <Image src="/images/team/1644932312854.jpeg" alt="LinkedIn COO" />
+                <Image width="100" height="100" src="/images/team/1644932312854.jpeg" alt="LinkedIn COO" />
               </a>
               <a href="https://www.linkedin.com/in/margarita-melikyan-6a2036160/" target="_blank" rel="noopener noreferrer">
-                <Image src="/images/team/1521754615526.jpeg" alt="LinkedIn SEO" />
+                <Image width="100" height="100" src="/images/team/1521754615526.jpeg" alt="LinkedIn SEO" />
               </a>
               <a href="https://www.linkedin.com/in/irina-pelipko-92098152/" target="_blank" rel="noopener noreferrer">
-                <Image src="/images/team/1647853856121.jpeg" alt="LinkedIn CMO" />
+                <Image width="100" height="100" src="/images/team/1647853856121.jpeg" alt="LinkedIn CMO" />
               </a>
           </div>
           <p>Также Вы можете написать нам в LinkedIn.</p>

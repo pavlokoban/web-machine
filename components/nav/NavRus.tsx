@@ -66,7 +66,9 @@ const NavRus: React.FC = () => {
         </ul>
         <br></br>
         <p><a className="p-1 a-anim-w" href="mailto:hello@web-machine.rocks">Email: hello@web-machine.rocks</a></p>
-        <ButtonLetsTalk сtahref="#" text="Обсудить проект" additionalClasses="greenToBlack"/>
+        <div className='button-font-size-16'>
+        <ButtonLetsTalk сtahref="/ru/contact" text="Обсудить проект" additionalClasses="greenToBlack button-font-size-16"/>
+        </div>
       </div>
       </div>
     </div>

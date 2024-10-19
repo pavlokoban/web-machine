@@ -26,12 +26,12 @@ const CasesJinsovikRu = () => {
         <h1 className={'unbounded'}>Разработка интернет-магазина одежды Джинсовик</h1>
         <h4 className={''}>Дизайн и разработка интернет-магазина для украинской компании по продаже одежды - Джинсовик. Период работы: декабрь 2020 года - февраль 2021 года</h4>
        
-        <FadeInImage src="/images/portfolio/jinsovik/jinsovik-01.webp" alt="Разработка интернет-магазина на Yii" />
-        <FadeInImage src="/images/portfolio/jinsovik/jinsovik-02.webp" alt="Разработка интернет-магазина Modiva на Yii" />
-        <FadeInImage src="/images/portfolio/jinsovik/jinsovik-03.webp" alt="Разработка интернет-магазина Modiva на Yii" />
-        <FadeInImage src="/images/portfolio/jinsovik/jinsovik-04.webp" alt="Разработка интернет-магазина Modiva на Yii" />
-        <FadeInImage src="/images/portfolio/jinsovik/jinsovik-05.webp" alt="Разработка интернет-магазина Modiva на Yii" />
-        <FadeInImage src="/images/portfolio/jinsovik/jinsovik-06.webp" alt="Разработка интернет-магазина Modiva на Yii" />
+        <FadeInImage src="/images/portfolio/jinsovik/jinsovik-01.webp" alt="Разработка интернет-магазина одежды" />
+        <FadeInImage src="/images/portfolio/jinsovik/jinsovik-02.webp" alt="Разработка интернет-магазина одежды" />
+        <FadeInImage src="/images/portfolio/jinsovik/jinsovik-03.webp" alt="Разработка интернет-магазина одежды" />
+        <FadeInImage src="/images/portfolio/jinsovik/jinsovik-04.webp" alt="Разработка интернет-магазина одежды" />
+        <FadeInImage src="/images/portfolio/jinsovik/jinsovik-05.webp" alt="Разработка интернет-магазина одежды" />
+        <FadeInImage src="/images/portfolio/jinsovik/jinsovik-06.webp" alt="Разработка интернет-магазина одежды" />
        
         </div>
         <div id="content-container" className="relative z-0 container mx-auto p-10 px-10 m-10 border-36 white112 desc-padding-70-mob-30">
