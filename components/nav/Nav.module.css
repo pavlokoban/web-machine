@@ -184,9 +184,15 @@
     max-height: 46px;
   }
 
-  .button-font-size-16 {
+  .buttonfontsize16 {
     font-size: 16px !important;
   }
+  a.Button_discussButton {
+    font-size: 16px !important;
+}
+.menuColumn a.buttonfontsize16 {
+  font-size: 16px !important;
+}
 
   @media (max-width: 1024px) {
     .menu {
@@ -240,9 +246,12 @@
   
   .footerContainer {
     position: absolute;
-    bottom: 20px;
+    /* bottom: 20px; */
     width: 100%;
+    bottom: 0px;
+    background: #000000eb;
   }
+  
   a.p-1.a-anim-w.aAsH3 {
     font-size: 24px;
     font-weight: 600;

@@ -452,6 +452,15 @@ h4  {
   }
 }
 
+.buttonfontsize16 {
+  font-size: 16px !important;
+}
+a.Button_discussButton {
+  font-size: 16px !important;
+}
+.menuColumn a.buttonfontsize16 {
+font-size: 16px !important;
+}
 
 /* эффекты */
 /* The Text Swapping Link Hover Effect */
