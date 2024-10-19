@@ -39,7 +39,7 @@ const LayoutMainRus: React.FC<LayoutMainProps> = ({ children }) => {
         </header>
         <main>{children}</main>
         <FooterRu />
-        <Script>
+        <Script id="tawk-script">
         {`
             var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
             (function(){
